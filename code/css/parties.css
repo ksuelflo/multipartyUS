@@ -1,0 +1,92 @@
+    /* ── Subnav ── */
+      .subnav-wrapper {
+        width: 100%;
+        background: #fafafa;
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        overflow-x: auto;
+        position: sticky;
+        top: 49px;
+        z-index: 99;
+      }
+ 
+      .subnav-tab {
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+        padding: 10px 16px;
+        font-size: 13px;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+ 
+      .subnav-tab:hover {
+        color: #111;
+        background: #f0f0f0;
+      }
+ 
+      .subnav-tab.active {
+        color: #111;
+        border-bottom: 2px solid #111;
+      }
+
+        .tab-progressive-left { background-color: #0a3d6b80; }
+        .tab-progressive-left:hover,
+        .tab-progressive-left.active { background-color: #0a3d6bff; color: #fff; }
+
+        .tab-religious-progressives { background-color: #1a5fa080; }
+        .tab-religious-progressives:hover,
+        .tab-religious-progressives.active { background-color: #1a5fa0ff; color: #fff; }
+
+        .tab-moderate-democrats { background-color: #2e86c180; }
+        .tab-moderate-democrats:hover,
+        .tab-moderate-democrats.active { background-color: #2e86c1ff; color: #fff; }
+
+        .tab-low-information-center-left { background-color: #7ab8e880; }
+        .tab-low-information-center-left:hover,
+        .tab-low-information-center-left.active { background-color: #7ab8e8ff; color: black; }
+
+        .tab-disengaged-middle { background-color: #e8d44d80; }
+        .tab-disengaged-middle:hover,
+        .tab-disengaged-middle.active { background-color: #e8d44dff; color: #111; }
+
+        .tab-racial-justice-conservatives { background-color: #f4a04380; }
+        .tab-racial-justice-conservatives:hover,
+        .tab-racial-justice-conservatives.active { background-color: #f4a043ff; color: #fff; }
+
+        .tab-secular-moderates { background-color: #e05c2a80; }
+        .tab-secular-moderates:hover,
+        .tab-secular-moderates.active { background-color: #e05c2aff; color: #fff; }
+
+        .tab-traditional-conservatives { background-color: #c0202080; }
+        .tab-traditional-conservatives:hover,
+        .tab-traditional-conservatives.active { background-color: #c02020ff; color: #fff; }
+
+        .tab-maga-right { background-color: #6b000048; }
+        .tab-maga-right:hover,
+        .tab-maga-right.active { background-color: #6b0000ff; color: #fff; }
+
+     /* ── Party panels ── */
+      .party-panel {
+        display: none;
+        padding: 2rem 1.5rem;
+      }
+ 
+      .party-panel.active {
+        display: block;
+      }
+ 
+      .party-panel h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #111;
+      }
+ 
+      .party-panel p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+      }

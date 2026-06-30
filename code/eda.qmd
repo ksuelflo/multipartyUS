@@ -1,0 +1,178 @@
+---
+title: "eda"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(haven)
+library(mice)
+library(WeightedCluster)
+set.seed(123)
+```
+
+## Introduction
+
+I am attempting to "recreate" the Pew Research political typology results (2026 results came out in June 10th) using the Cooperative election study (CES) from Harvard and Tufts. The methodology that Pew Research uses can be found here: https://www.pewresearch.org/politics/2026/06/10/appendix-b-typology-group-creation-and-analysis/
+
+### Key features of Methods
+
+- Clustering done using the WeightedCluster package version 1.8.1 in R version 4.1.3. This is similar to K means, but can account for survey weights
+- To account for the missingness in the measures, multiple imputation (via the mice package version 3.18.0) using predictive mean matching was used.
+- Different numbers of clusters were tested
+- Different sets of questions were tested
+- They only uses registered voters in their clustering model, but re-included the nonregistered voters at the end. They reason that disengaged voters are inconsistent in their beliefs and can screw up the results. Something to consider!
+
+## Initial read, Codebook creation
+
+```{r}
+data <- read_csv("../data/CCES24_Common_OUTPUT_vv_topost_final.csv")
+dta_data <- read_dta("../data/CCES24_Common_OUTPUT_vv_topost_final.dta")
+
+codebook_full <- map_dfr(names(dta_data), function(var) {
+  col <- dta_data[[var]]
+  q_label <- attr(col, "label") %||% NA_character_
+  val_labels <- attr(col, "labels")  # named numeric vector
+  
+  if (!is.null(val_labels)) {
+    tibble(
+      variable  = var,
+      question  = q_label,
+      value     = val_labels,
+      value_label = names(val_labels)
+    )
+  } else {
+    tibble(
+      variable    = var,
+      question    = q_label,
+      value       = NA_real_,
+      value_label = NA_character_
+    )
+  }
+})
+
+
+```
+
+## Model 1
+
+Going to use 9 clusters (Same as Pew), and questions that Claude thought we're good for this. 
+
+```{r}
+ces_issue_vars <- c(
+  # Environment/climate
+  "CC24_326a", "CC24_326b", "CC24_326c", "CC24_326d",
+  # Guns
+  "CC24_321a", "CC24_321b", "CC24_321c",
+  # Immigration
+  "CC24_323a", "CC24_323b", "CC24_323c", "CC24_323d", "CC24_340f",
+  # Abortion
+  "CC24_324a", "CC24_324c",
+  # LGBT / gender
+  "CC24_340c", "CC24_444a", "CC24_444b",
+  # Race
+  "CC24_440a", "CC24_440b", "CC24_441a", "CC24_441b",
+  # Government size / welfare
+  "CC24_328c", "CC24_328d", "CC24_328e", "CC24_443_1",
+  # Taxes
+  "CC24_341b", "CC24_341c",
+  # Foreign policy
+  "CC24_420_5", "CC24_420_6",
+  # Political engagement
+  "newsint",
+  #Importance of religion, church attendance
+  "pew_religimp", 
+  "pew_churatd",
+  #Christian nationality
+  "pew_bornagain"
+)
+
+codebook_full%>%
+  filter(variable %in% ces_issue_vars)
+```
+
+### Cleaning
+
+- To account for the missingness in the measures, multiple imputation (via the mice package version 3.18.0) using predictive mean matching was used.
+
+
+```{r}
+#Getting only the variables used in the clustering
+clustering_vars <- data%>%
+  select(ces_issue_vars)
+
+#Multiple imputation
+imputation <- mice(clustering_vars, m = 1, method = "pmm")
+
+#Standardize variables
+standardize <- function(dat){
+  dat%>%
+    mutate(across(everything(), ~ (. - mean(., na.rm = TRUE)) / sd(., na.rm = TRUE)))
+}
+
+imp <- complete(imputation, 1)
+```
+
+### Clustering
+
+- WHAT PEW DID: Clustering done using the WeightedCluster package version 1.8.1 in R version 4.1.3
+- WHAT I DID: used clara() function due to large size of data
+
+```{r}
+cluster <- clara(imp, k = 9, metric = "euclidean",
+               samples = 50, sampsize = 1000,
+               pamLike = TRUE, rngR = TRUE)
+
+cluster_aggregate <- imp%>%
+  mutate(group = cluster$clustering)%>%
+  group_by(group)%>%
+  summarize(across(everything(), ~ mean(.)))
+
+# write_csv(cluster_aggregate, "../data/cluster_aggregate.csv")
+
+write_csv(codebook_full, "../data/codebook.csv")
+
+```
+
+### Finalize cluster csv
+
+```{r}
+export_cluster <- data%>%
+  mutate(group = cluster$clustering)%>%
+  mutate(party = case_when(
+    group == 1 ~ "Progressive Left",
+    group == 9 ~ "Religious Progressives",
+    group == 2 ~ "Moderate Dems",
+    group == 6 ~ "Disengaged Center-Left",
+    group == 5 ~ "Political Bystanders",
+    group == 4 ~ "Racial Justice Conservatives",
+    group == 3 ~ "Secular Moderates",
+    group == 7 ~ "Traditional Right",
+    group == 8 ~ "MAGA Right"
+  ))%>%
+  select(commonweight, birthyr, gender4, educ, race, hispanic, multrace_1, multrace_2, multrace_3, multrace_4, multrace_5, multrace_8, multrace_97, multrace_98,comptype, votereg, pid3, pid7, inputstate, region, ces_issue_vars, party)
+
+write_csv(export_cluster, "../data/export_cluster.csv")
+
+export_cluster%>%
+  group_by(party)%>%
+  summarize(total = n(),
+            percentage = total/nrow(export_cluster))%>%
+  mutate(parent = "Origin")%>%
+  write_csv("../data/treemap_data.csv")
+
+```
+
+
+
+## Visualizations
+
+Dashboard!! 
+- Starts with a welcome message which explains the project, a bit about the methodology (links to another page with full breakdown, and shows the first viz which is a rectangle style square plot.) You hit the "x" button to leave, or the "explore dashboard" button at the bottom of the introduction
+- Then moves into the dashboard, where there are several pages. 
+  - Geography page
+  - Question page
+  - Party page
+
+
+

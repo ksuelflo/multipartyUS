@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NBA Shot Charts</title>
+
+        <!-- The following line references an external css file -->
+        <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/parties.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    </head>
+    <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src = "../js/parties.js" type = "module"></script>
+    <div class="nav-wrapper">
+        <a href="index.html" class="nav-tab active">
+        <i class="ti ti-users"></i>Parties
+        </a>
+        <a href="geography.html" class="nav-tab">
+        <i class="ti ti-map"></i>Geography
+        </a>
+        <a href="demographics.html" class="nav-tab" >
+        <i class="ti ti-chart-bar"></i>Demographics
+        </a>
+    </div>
+    <div class="subnav-wrapper">
+        <a class="subnav-tab active" onclick="switchParty(event, 'overview')">Party Overview</a>
+        <a class="subnav-tab tab-progressive-left" onclick="switchParty(event, 'progressive-left')">Progressive Left</a>
+        <a class="subnav-tab tab-religious-progressives" onclick="switchParty(event, 'religious-progressives')">Religious Progressives</a>
+        <a class="subnav-tab tab-moderate-democrats" onclick="switchParty(event, 'moderate-democrats')">Moderate Dems</a>
+        <a class="subnav-tab tab-low-information-center-left" onclick="switchParty(event, 'low-information-center-left')">Disengaged Center-Left</a>
+        <a class="subnav-tab tab-disengaged-middle" onclick="switchParty(event, 'disengaged-middle')">Political Bystanders</a>
+        <a class="subnav-tab tab-racial-justice-conservatives" onclick="switchParty(event, 'racial-justice-conservatives')">Racial Justice Conservatives</a>
+        <a class="subnav-tab tab-secular-moderates" onclick="switchParty(event, 'secular-moderates')">Secular Moderates</a>
+        <a class="subnav-tab tab-traditional-conservatives" onclick="switchParty(event, 'traditional-conservatives')">Traditional Right</a>
+        <a class="subnav-tab tab-maga-right" onclick="switchParty(event, 'maga-right')">MAGA Right</a>
+    </div>
+
+  <!-- Party panels -->
+    <div id="overview" class="party-panel active">
+        <div id="tree_map">
+        </div>
+    </div>
+ 
+    <div id="progressive-left" class="party-panel">
+    </div>
+ 
+    <div id="religious-progressives" class="party-panel">
+    </div>
+ 
+    <div id="moderate-democrats" class="party-panel">
+    </div>
+ 
+    <div id="low-information-center-left" class="party-panel">
+    </div>
+ 
+    <div id="disengaged-middle" class="party-panel">
+    </div>
+ 
+    <div id="racial-justice-conservatives" class="party-panel">
+    </div>
+ 
+    <div id="secular-moderates" class="party-panel">
+    </div>
+ 
+    <div id="traditional-conservatives" class="party-panel">
+    </div>
+ 
+    <div id="maga-right" class="party-panel">
+    </div>
+
+    </body>
+</html>

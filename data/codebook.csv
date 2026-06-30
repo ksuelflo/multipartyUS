@@ -1,0 +1,2608 @@
+variable,question,value,value_label
+caseid,Case ID,NA,NA
+tookpost,Took post-election survey,1,No
+tookpost,Took post-election survey,2,Yes
+commonweight,Weight - Common,NA,NA
+commonpostweight,Weight - Common Post,NA,NA
+vvweight,Weight - Validated Registered Voters,NA,NA
+vvweight_post,Weight - Validated Registered Voters - Post,NA,NA
+CCEStake,Consent to participate,1,Yes
+CCEStake,Consent to participate,2,No
+CCEStake,Consent to participate,8,skipped
+CCEStake,Consent to participate,9,not asked
+add_confirm,Confirm address,1,Yes
+add_confirm,Confirm address,2,No
+add_confirm,Confirm address,8,skipped
+add_confirm,Confirm address,9,not asked
+inputzip,Zip code,999999,not asked
+birthyr,Birth Year,NA,NA
+gender4,Gender,1,Man
+gender4,Gender,2,Woman
+gender4,Gender,3,Non-binary
+gender4,Gender,4,Other
+gender4,Gender,8,skipped
+gender4,Gender,9,not asked
+gender4_t,Gender - Other,NA,NA
+educ,Education,1,No HS
+educ,Education,2,High school graduate
+educ,Education,3,Some college
+educ,Education,4,2-year
+educ,Education,5,4-year
+educ,Education,6,Post-grad
+educ,Education,8,skipped
+educ,Education,9,not asked
+race,Race,1,White
+race,Race,2,Black
+race,Race,3,Hispanic
+race,Race,4,Asian
+race,Race,5,Native American
+race,Race,6,Two or more races
+race,Race,7,Other
+race,Race,8,Middle Eastern
+race,Race,98,skipped
+race,Race,99,not asked
+race_other,"Race, other",NA,NA
+hispanic,Hispanic,1,Yes
+hispanic,Hispanic,2,No
+hispanic,Hispanic,8,skipped
+hispanic,Hispanic,9,not asked
+multrace_1,Multiracial - White,1,selected
+multrace_1,Multiracial - White,2,not selected
+multrace_1,Multiracial - White,8,skipped
+multrace_1,Multiracial - White,9,not asked
+multrace_2,Multiracial - Black,1,selected
+multrace_2,Multiracial - Black,2,not selected
+multrace_2,Multiracial - Black,8,skipped
+multrace_2,Multiracial - Black,9,not asked
+multrace_3,Multiracial - Hispanic,1,selected
+multrace_3,Multiracial - Hispanic,2,not selected
+multrace_3,Multiracial - Hispanic,8,skipped
+multrace_3,Multiracial - Hispanic,9,not asked
+multrace_4,Multiracial - Asian,1,selected
+multrace_4,Multiracial - Asian,2,not selected
+multrace_4,Multiracial - Asian,8,skipped
+multrace_4,Multiracial - Asian,9,not asked
+multrace_5,Multiracial - Native American,1,selected
+multrace_5,Multiracial - Native American,2,not selected
+multrace_5,Multiracial - Native American,8,skipped
+multrace_5,Multiracial - Native American,9,not asked
+multrace_8,Multiracial - Middle Eastern,1,selected
+multrace_8,Multiracial - Middle Eastern,2,not selected
+multrace_8,Multiracial - Middle Eastern,8,skipped
+multrace_8,Multiracial - Middle Eastern,9,not asked
+multrace_97,Multiracial - Other,1,selected
+multrace_97,Multiracial - Other,2,not selected
+multrace_97,Multiracial - Other,8,skipped
+multrace_97,Multiracial - Other,9,not asked
+multrace_98,Multiracial - Don't know,1,selected
+multrace_98,Multiracial - Don't know,2,not selected
+multrace_98,Multiracial - Don't know,8,skipped
+multrace_98,Multiracial - Don't know,9,not asked
+comptype,Device type,1,"I am taking this survey on a smart phone (e.g., iPhone or Android phone)"
+comptype,Device type,2,"I am taking this survey on a tablet (e.g., iPad)"
+comptype,Device type,3,I am taking this survey on a desktop computer or laptop computer
+comptype,Device type,8,skipped
+comptype,Device type,9,not asked
+votereg,Voter Registration Status,1,Yes
+votereg,Voter Registration Status,2,No
+votereg,Voter Registration Status,3,Don't know
+votereg,Voter Registration Status,8,skipped
+votereg,Voter Registration Status,9,not asked
+votereg_f,Registered to vote,1,Yes
+votereg_f,Registered to vote,2,No
+votereg_f,Registered to vote,8,skipped
+votereg_f,Registered to vote,9,not asked
+regzip,Zip code where registered,999999,not asked
+pid3,3 point party ID,1,Democrat
+pid3,3 point party ID,2,Republican
+pid3,3 point party ID,3,Independent
+pid3,3 point party ID,4,Other
+pid3,3 point party ID,5,Not sure
+pid3,3 point party ID,8,skipped
+pid3,3 point party ID,9,not asked
+pid3_t,3 point party ID - other,NA,NA
+pid7,7 point Party ID,1,Strong Democrat
+pid7,7 point Party ID,2,Not very strong Democrat
+pid7,7 point Party ID,3,Lean Democrat
+pid7,7 point Party ID,4,Independent
+pid7,7 point Party ID,5,Lean Republican
+pid7,7 point Party ID,6,Not very strong Republican
+pid7,7 point Party ID,7,Strong Republican
+pid7,7 point Party ID,8,Not sure
+pid7,7 point Party ID,9,Don't know
+pid7,7 point Party ID,98,skipped
+pid7,7 point Party ID,99,not asked
+inputstate,State of Residence,1,Alabama
+inputstate,State of Residence,2,Alaska
+inputstate,State of Residence,4,Arizona
+inputstate,State of Residence,5,Arkansas
+inputstate,State of Residence,6,California
+inputstate,State of Residence,8,Colorado
+inputstate,State of Residence,9,Connecticut
+inputstate,State of Residence,10,Delaware
+inputstate,State of Residence,11,District of Columbia
+inputstate,State of Residence,12,Florida
+inputstate,State of Residence,13,Georgia
+inputstate,State of Residence,15,Hawaii
+inputstate,State of Residence,16,Idaho
+inputstate,State of Residence,17,Illinois
+inputstate,State of Residence,18,Indiana
+inputstate,State of Residence,19,Iowa
+inputstate,State of Residence,20,Kansas
+inputstate,State of Residence,21,Kentucky
+inputstate,State of Residence,22,Louisiana
+inputstate,State of Residence,23,Maine
+inputstate,State of Residence,24,Maryland
+inputstate,State of Residence,25,Massachusetts
+inputstate,State of Residence,26,Michigan
+inputstate,State of Residence,27,Minnesota
+inputstate,State of Residence,28,Mississippi
+inputstate,State of Residence,29,Missouri
+inputstate,State of Residence,30,Montana
+inputstate,State of Residence,31,Nebraska
+inputstate,State of Residence,32,Nevada
+inputstate,State of Residence,33,New Hampshire
+inputstate,State of Residence,34,New Jersey
+inputstate,State of Residence,35,New Mexico
+inputstate,State of Residence,36,New York
+inputstate,State of Residence,37,North Carolina
+inputstate,State of Residence,38,North Dakota
+inputstate,State of Residence,39,Ohio
+inputstate,State of Residence,40,Oklahoma
+inputstate,State of Residence,41,Oregon
+inputstate,State of Residence,42,Pennsylvania
+inputstate,State of Residence,44,Rhode Island
+inputstate,State of Residence,45,South Carolina
+inputstate,State of Residence,46,South Dakota
+inputstate,State of Residence,47,Tennessee
+inputstate,State of Residence,48,Texas
+inputstate,State of Residence,49,Utah
+inputstate,State of Residence,50,Vermont
+inputstate,State of Residence,51,Virginia
+inputstate,State of Residence,53,Washington
+inputstate,State of Residence,54,West Virginia
+inputstate,State of Residence,55,Wisconsin
+inputstate,State of Residence,56,Wyoming
+inputstate,State of Residence,98,skipped
+inputstate,State of Residence,99,not asked
+region,Region,1,Northeast
+region,Region,2,Midwest
+region,Region,3,South
+region,Region,4,West
+region,Region,8,skipped
+region,Region,9,not asked
+ccesmodule,Team module assigned,1,UNC
+ccesmodule,Team module assigned,2,GSU
+ccesmodule,Team module assigned,3,UIM
+ccesmodule,Team module assigned,4,CNJ
+ccesmodule,Team module assigned,5,RUT
+ccesmodule,Team module assigned,6,MIZ
+ccesmodule,Team module assigned,7,VAN
+ccesmodule,Team module assigned,8,SYR
+ccesmodule,Team module assigned,9,UMS
+ccesmodule,Team module assigned,10,USC
+ccesmodule,Team module assigned,11,TTU
+ccesmodule,Team module assigned,12,NEU
+ccesmodule,Team module assigned,13,DKU
+ccesmodule,Team module assigned,14,CAC
+ccesmodule,Team module assigned,15,ZOU
+ccesmodule,Team module assigned,16,GTN
+ccesmodule,Team module assigned,17,UTA
+ccesmodule,Team module assigned,18,UTB
+ccesmodule,Team module assigned,19,TAM
+ccesmodule,Team module assigned,20,UHO
+ccesmodule,Team module assigned,21,HOO
+ccesmodule,Team module assigned,22,NCW
+ccesmodule,Team module assigned,23,CAR
+ccesmodule,Team module assigned,24,FSU
+ccesmodule,Team module assigned,25,UCI
+ccesmodule,Team module assigned,26,MSL
+ccesmodule,Team module assigned,27,IOW
+ccesmodule,Team module assigned,28,UGA
+ccesmodule,Team module assigned,29,BFL
+ccesmodule,Team module assigned,30,COR
+ccesmodule,Team module assigned,31,LBU
+ccesmodule,Team module assigned,32,UMA
+ccesmodule,Team module assigned,33,BRN
+ccesmodule,Team module assigned,34,TUF
+ccesmodule,Team module assigned,35,UTK
+ccesmodule,Team module assigned,36,HOB
+ccesmodule,Team module assigned,37,OXF
+ccesmodule,Team module assigned,38,CSF
+ccesmodule,Team module assigned,39,MSU
+ccesmodule,Team module assigned,40,GWU
+ccesmodule,Team module assigned,41,BOS
+ccesmodule,Team module assigned,42,JHU
+ccesmodule,Team module assigned,43,UTD
+ccesmodule,Team module assigned,44,UND
+ccesmodule,Team module assigned,45,BYU
+ccesmodule,Team module assigned,46,AUB
+ccesmodule,Team module assigned,47,CUB
+ccesmodule,Team module assigned,48,NYU
+ccesmodule,Team module assigned,49,UCL
+ccesmodule,Team module assigned,50,YAL
+ccesmodule,Team module assigned,51,NCB
+ccesmodule,Team module assigned,52,UCR
+ccesmodule,Team module assigned,53,DAR
+ccesmodule,Team module assigned,54,YLS
+ccesmodule,Team module assigned,55,MCS
+ccesmodule,Team module assigned,56,CSU
+ccesmodule,Team module assigned,57,HUA
+ccesmodule,Team module assigned,58,CHI
+ccesmodule,Team module assigned,59,SDS_SUJ
+ccesmodule,Team module assigned,98,skipped
+ccesmodule,Team module assigned,99,not asked
+CC24_300_1,Media use past 24 hrs - Used social media,1,selected
+CC24_300_1,Media use past 24 hrs - Used social media,2,not selected
+CC24_300_1,Media use past 24 hrs - Used social media,8,skipped
+CC24_300_1,Media use past 24 hrs - Used social media,9,not asked
+CC24_300_2,Media use past 24 hrs - Watched TV news,1,selected
+CC24_300_2,Media use past 24 hrs - Watched TV news,2,not selected
+CC24_300_2,Media use past 24 hrs - Watched TV news,8,skipped
+CC24_300_2,Media use past 24 hrs - Watched TV news,9,not asked
+CC24_300_3,Media use past 24 hrs - Read a newspaper,1,selected
+CC24_300_3,Media use past 24 hrs - Read a newspaper,2,not selected
+CC24_300_3,Media use past 24 hrs - Read a newspaper,8,skipped
+CC24_300_3,Media use past 24 hrs - Read a newspaper,9,not asked
+CC24_300_4,Media use past 24 hrs - Listened to radio news,1,selected
+CC24_300_4,Media use past 24 hrs - Listened to radio news,2,not selected
+CC24_300_4,Media use past 24 hrs - Listened to radio news,8,skipped
+CC24_300_4,Media use past 24 hrs - Listened to radio news,9,not asked
+CC24_300_5,Media use past 24 hrs - None of these,1,selected
+CC24_300_5,Media use past 24 hrs - None of these,2,not selected
+CC24_300_5,Media use past 24 hrs - None of these,8,skipped
+CC24_300_5,Media use past 24 hrs - None of these,9,not asked
+CC24_300a,Media use - TV news type,1,Local Newscast
+CC24_300a,Media use - TV news type,2,National Newscast
+CC24_300a,Media use - TV news type,3,Both
+CC24_300a,Media use - TV news type,8,skipped
+CC24_300a,Media use - TV news type,9,not asked
+CC24_300c,Media use - Newspaper type,1,Print
+CC24_300c,Media use - Newspaper type,2,Online
+CC24_300c,Media use - Newspaper type,3,Both
+CC24_300c,Media use - Newspaper type,8,skipped
+CC24_300c,Media use - Newspaper type,9,not asked
+CC24_300b_1,Media networks - ABC,1,selected
+CC24_300b_1,Media networks - ABC,2,not selected
+CC24_300b_1,Media networks - ABC,8,skipped
+CC24_300b_1,Media networks - ABC,9,not asked
+CC24_300b_2,Media networks - CBS,1,selected
+CC24_300b_2,Media networks - CBS,2,not selected
+CC24_300b_2,Media networks - CBS,8,skipped
+CC24_300b_2,Media networks - CBS,9,not asked
+CC24_300b_3,Media networks - NBC,1,selected
+CC24_300b_3,Media networks - NBC,2,not selected
+CC24_300b_3,Media networks - NBC,8,skipped
+CC24_300b_3,Media networks - NBC,9,not asked
+CC24_300b_4,Media networks - CNN,1,selected
+CC24_300b_4,Media networks - CNN,2,not selected
+CC24_300b_4,Media networks - CNN,8,skipped
+CC24_300b_4,Media networks - CNN,9,not asked
+CC24_300b_5,Media networks - Fox News,1,selected
+CC24_300b_5,Media networks - Fox News,2,not selected
+CC24_300b_5,Media networks - Fox News,8,skipped
+CC24_300b_5,Media networks - Fox News,9,not asked
+CC24_300b_6,Media networks - MSNBC,1,selected
+CC24_300b_6,Media networks - MSNBC,2,not selected
+CC24_300b_6,Media networks - MSNBC,8,skipped
+CC24_300b_6,Media networks - MSNBC,9,not asked
+CC24_300b_7,Media networks - PBS,1,selected
+CC24_300b_7,Media networks - PBS,2,not selected
+CC24_300b_7,Media networks - PBS,8,skipped
+CC24_300b_7,Media networks - PBS,9,not asked
+CC24_300b_8,Media networks - Other,1,selected
+CC24_300b_8,Media networks - Other,2,not selected
+CC24_300b_8,Media networks - Other,8,skipped
+CC24_300b_8,Media networks - Other,9,not asked
+CC24_300d_1,"Recent social media use - Posted a story, photo, video or link about politics",1,selected
+CC24_300d_1,"Recent social media use - Posted a story, photo, video or link about politics",2,not selected
+CC24_300d_1,"Recent social media use - Posted a story, photo, video or link about politics",8,skipped
+CC24_300d_1,"Recent social media use - Posted a story, photo, video or link about politics",9,not asked
+CC24_300d_2,Recent social media use - Posted a comment about politics,1,selected
+CC24_300d_2,Recent social media use - Posted a comment about politics,2,not selected
+CC24_300d_2,Recent social media use - Posted a comment about politics,8,skipped
+CC24_300d_2,Recent social media use - Posted a comment about politics,9,not asked
+CC24_300d_3,Recent social media use - Read a story or watched a video about politics,1,selected
+CC24_300d_3,Recent social media use - Read a story or watched a video about politics,2,not selected
+CC24_300d_3,Recent social media use - Read a story or watched a video about politics,8,skipped
+CC24_300d_3,Recent social media use - Read a story or watched a video about politics,9,not asked
+CC24_300d_4,Recent social media use - Followed a political event,1,selected
+CC24_300d_4,Recent social media use - Followed a political event,2,not selected
+CC24_300d_4,Recent social media use - Followed a political event,8,skipped
+CC24_300d_4,Recent social media use - Followed a political event,9,not asked
+CC24_300d_5,"Recent social media use - Forwarded a story, photo, video or link about politics to friends",1,selected
+CC24_300d_5,"Recent social media use - Forwarded a story, photo, video or link about politics to friends",2,not selected
+CC24_300d_5,"Recent social media use - Forwarded a story, photo, video or link about politics to friends",8,skipped
+CC24_300d_5,"Recent social media use - Forwarded a story, photo, video or link about politics to friends",9,not asked
+CC24_300d_6,Recent social media use - None of the above,1,selected
+CC24_300d_6,Recent social media use - None of the above,2,not selected
+CC24_300d_6,Recent social media use - None of the above,8,skipped
+CC24_300d_6,Recent social media use - None of the above,9,not asked
+CC24_301,National Economics,1,Gotten much better
+CC24_301,National Economics,2,Gotten somewhat better
+CC24_301,National Economics,3,Stayed about the same
+CC24_301,National Economics,4,Gotten somewhat worse
+CC24_301,National Economics,5,Gotten much worse
+CC24_301,National Economics,6,Not sure
+CC24_301,National Economics,8,skipped
+CC24_301,National Economics,9,not asked
+CC24_302,Household income,1,Increased a lot
+CC24_302,Household income,2,Increased somewhat
+CC24_302,Household income,3,Stayed about the same
+CC24_302,Household income,4,Decreased somewhat
+CC24_302,Household income,5,Decreased a lot
+CC24_302,Household income,8,skipped
+CC24_302,Household income,9,not asked
+CC24_303,Price change in past year,1,Increased a lot
+CC24_303,Price change in past year,2,Increased somewhat
+CC24_303,Price change in past year,3,Stayed about the same
+CC24_303,Price change in past year,4,Decreased somewhat
+CC24_303,Price change in past year,5,Decreased a lot
+CC24_303,Price change in past year,8,skipped
+CC24_303,Price change in past year,9,not asked
+CC24_305_1,Life Changes - Married,1,selected
+CC24_305_1,Life Changes - Married,2,not selected
+CC24_305_1,Life Changes - Married,8,skipped
+CC24_305_1,Life Changes - Married,9,not asked
+CC24_305_2,Life Changes - Lost a job,1,selected
+CC24_305_2,Life Changes - Lost a job,2,not selected
+CC24_305_2,Life Changes - Lost a job,8,skipped
+CC24_305_2,Life Changes - Lost a job,9,not asked
+CC24_305_3,Life Changes - Finished school,1,selected
+CC24_305_3,Life Changes - Finished school,2,not selected
+CC24_305_3,Life Changes - Finished school,8,skipped
+CC24_305_3,Life Changes - Finished school,9,not asked
+CC24_305_4,Life Changes - Retired,1,selected
+CC24_305_4,Life Changes - Retired,2,not selected
+CC24_305_4,Life Changes - Retired,8,skipped
+CC24_305_4,Life Changes - Retired,9,not asked
+CC24_305_5,Life Changes - Divorced,1,selected
+CC24_305_5,Life Changes - Divorced,2,not selected
+CC24_305_5,Life Changes - Divorced,8,skipped
+CC24_305_5,Life Changes - Divorced,9,not asked
+CC24_305_6,Life Changes - Had a child,1,selected
+CC24_305_6,Life Changes - Had a child,2,not selected
+CC24_305_6,Life Changes - Had a child,8,skipped
+CC24_305_6,Life Changes - Had a child,9,not asked
+CC24_305_7,Life Changes - Taken a new job,1,selected
+CC24_305_7,Life Changes - Taken a new job,2,not selected
+CC24_305_7,Life Changes - Taken a new job,8,skipped
+CC24_305_7,Life Changes - Taken a new job,9,not asked
+CC24_305_9,Life Changes - Been a victim of a crime,1,selected
+CC24_305_9,Life Changes - Been a victim of a crime,2,not selected
+CC24_305_9,Life Changes - Been a victim of a crime,8,skipped
+CC24_305_9,Life Changes - Been a victim of a crime,9,not asked
+CC24_305_10,Life Changes - Visited an emergency room,1,selected
+CC24_305_10,Life Changes - Visited an emergency room,2,not selected
+CC24_305_10,Life Changes - Visited an emergency room,8,skipped
+CC24_305_10,Life Changes - Visited an emergency room,9,not asked
+CC24_305_11,Life Changes - Visited a doctor for a regular examination,1,selected
+CC24_305_11,Life Changes - Visited a doctor for a regular examination,2,not selected
+CC24_305_11,Life Changes - Visited a doctor for a regular examination,8,skipped
+CC24_305_11,Life Changes - Visited a doctor for a regular examination,9,not asked
+CC24_305_12,Life Changes - Received a raise at work,1,selected
+CC24_305_12,Life Changes - Received a raise at work,2,not selected
+CC24_305_12,Life Changes - Received a raise at work,8,skipped
+CC24_305_12,Life Changes - Received a raise at work,9,not asked
+CC24_305_13,Life Changes - Had a pay cut at work,1,selected
+CC24_305_13,Life Changes - Had a pay cut at work,2,not selected
+CC24_305_13,Life Changes - Had a pay cut at work,8,skipped
+CC24_305_13,Life Changes - Had a pay cut at work,9,not asked
+CC24_305_14,Life Changes - None of the above,1,selected
+CC24_305_14,Life Changes - None of the above,2,not selected
+CC24_305_14,Life Changes - None of the above,8,skipped
+CC24_305_14,Life Changes - None of the above,9,not asked
+CC24_309e,General health,1,Excellent
+CC24_309e,General health,2,Very good
+CC24_309e,General health,3,Good
+CC24_309e,General health,4,Fair
+CC24_309e,General health,5,Poor
+CC24_309e,General health,8,skipped
+CC24_309e,General health,9,not asked
+CC24_308a_1,Ukraine - Do not get involved,1,selected
+CC24_308a_1,Ukraine - Do not get involved,2,not selected
+CC24_308a_1,Ukraine - Do not get involved,8,skipped
+CC24_308a_1,Ukraine - Do not get involved,9,not asked
+CC24_308a_2,"Ukraine - Send food, medicine, and other humanitarian aid to Ukraine",1,selected
+CC24_308a_2,"Ukraine - Send food, medicine, and other humanitarian aid to Ukraine",2,not selected
+CC24_308a_2,"Ukraine - Send food, medicine, and other humanitarian aid to Ukraine",8,skipped
+CC24_308a_2,"Ukraine - Send food, medicine, and other humanitarian aid to Ukraine",9,not asked
+CC24_308a_3,Ukraine - Impose economic sanctions on Russia,1,selected
+CC24_308a_3,Ukraine - Impose economic sanctions on Russia,2,not selected
+CC24_308a_3,Ukraine - Impose economic sanctions on Russia,8,skipped
+CC24_308a_3,Ukraine - Impose economic sanctions on Russia,9,not asked
+CC24_308a_4,Ukraine - Provide arms to Ukraine,1,selected
+CC24_308a_4,Ukraine - Provide arms to Ukraine,2,not selected
+CC24_308a_4,Ukraine - Provide arms to Ukraine,8,skipped
+CC24_308a_4,Ukraine - Provide arms to Ukraine,9,not asked
+CC24_308a_5,Ukraine - Send military support staff to Ukraine (non-combat),1,selected
+CC24_308a_5,Ukraine - Send military support staff to Ukraine (non-combat),2,not selected
+CC24_308a_5,Ukraine - Send military support staff to Ukraine (non-combat),8,skipped
+CC24_308a_5,Ukraine - Send military support staff to Ukraine (non-combat),9,not asked
+CC24_308a_6,Ukraine - Send significant force to fight Russia,1,selected
+CC24_308a_6,Ukraine - Send significant force to fight Russia,2,not selected
+CC24_308a_6,Ukraine - Send significant force to fight Russia,8,skipped
+CC24_308a_6,Ukraine - Send significant force to fight Russia,9,not asked
+CC24_308a_7,Ukraine - Negotiate a peace accord between Russia and Ukraine,1,selected
+CC24_308a_7,Ukraine - Negotiate a peace accord between Russia and Ukraine,2,not selected
+CC24_308a_7,Ukraine - Negotiate a peace accord between Russia and Ukraine,8,skipped
+CC24_308a_7,Ukraine - Negotiate a peace accord between Russia and Ukraine,9,not asked
+CC24_308a_8,"Ukraine - Send aid to the affected communities after the conflict to help rebuild destroyed schools, hospitals, and roads",1,selected
+CC24_308a_8,"Ukraine - Send aid to the affected communities after the conflict to help rebuild destroyed schools, hospitals, and roads",2,not selected
+CC24_308a_8,"Ukraine - Send aid to the affected communities after the conflict to help rebuild destroyed schools, hospitals, and roads",8,skipped
+CC24_308a_8,"Ukraine - Send aid to the affected communities after the conflict to help rebuild destroyed schools, hospitals, and roads",9,not asked
+CC24_308b_1,Israel/Gaza - Do not get involved,1,selected
+CC24_308b_1,Israel/Gaza - Do not get involved,2,not selected
+CC24_308b_1,Israel/Gaza - Do not get involved,8,skipped
+CC24_308b_1,Israel/Gaza - Do not get involved,9,not asked
+CC24_308b_2,"Israel/Gaza - Send food, medicine and other aid to the communities affected",1,selected
+CC24_308b_2,"Israel/Gaza - Send food, medicine and other aid to the communities affected",2,not selected
+CC24_308b_2,"Israel/Gaza - Send food, medicine and other aid to the communities affected",8,skipped
+CC24_308b_2,"Israel/Gaza - Send food, medicine and other aid to the communities affected",9,not asked
+CC24_308b_3,Israel/Gaza - Provide arms to Israel,1,selected
+CC24_308b_3,Israel/Gaza - Provide arms to Israel,2,not selected
+CC24_308b_3,Israel/Gaza - Provide arms to Israel,8,skipped
+CC24_308b_3,Israel/Gaza - Provide arms to Israel,9,not asked
+CC24_308b_4,Israel/Gaza - Provide arms to Hamas,1,selected
+CC24_308b_4,Israel/Gaza - Provide arms to Hamas,2,not selected
+CC24_308b_4,Israel/Gaza - Provide arms to Hamas,8,skipped
+CC24_308b_4,Israel/Gaza - Provide arms to Hamas,9,not asked
+CC24_308b_5,Israel/Gaza - Send the US Navy and troops to the region to keep the hostility from escalating,1,selected
+CC24_308b_5,Israel/Gaza - Send the US Navy and troops to the region to keep the hostility from escalating,2,not selected
+CC24_308b_5,Israel/Gaza - Send the US Navy and troops to the region to keep the hostility from escalating,8,skipped
+CC24_308b_5,Israel/Gaza - Send the US Navy and troops to the region to keep the hostility from escalating,9,not asked
+CC24_308b_6,Israel/Gaza - Send military support staff (non-combat) to Israel,1,selected
+CC24_308b_6,Israel/Gaza - Send military support staff (non-combat) to Israel,2,not selected
+CC24_308b_6,Israel/Gaza - Send military support staff (non-combat) to Israel,8,skipped
+CC24_308b_6,Israel/Gaza - Send military support staff (non-combat) to Israel,9,not asked
+CC24_308b_7,Israel/Gaza - Send military support staff (non-combat) to Gaza,1,selected
+CC24_308b_7,Israel/Gaza - Send military support staff (non-combat) to Gaza,2,not selected
+CC24_308b_7,Israel/Gaza - Send military support staff (non-combat) to Gaza,8,skipped
+CC24_308b_7,Israel/Gaza - Send military support staff (non-combat) to Gaza,9,not asked
+CC24_308b_8,Israel/Gaza - Negotiate a peace settlement,1,selected
+CC24_308b_8,Israel/Gaza - Negotiate a peace settlement,2,not selected
+CC24_308b_8,Israel/Gaza - Negotiate a peace settlement,8,skipped
+CC24_308b_8,Israel/Gaza - Negotiate a peace settlement,9,not asked
+CC24_308b_9,Israel/Gaza - Send aid to the affected communities after the conflict,1,selected
+CC24_308b_9,Israel/Gaza - Send aid to the affected communities after the conflict,2,not selected
+CC24_308b_9,Israel/Gaza - Send aid to the affected communities after the conflict,8,skipped
+CC24_308b_9,Israel/Gaza - Send aid to the affected communities after the conflict,9,not asked
+CC24_309d_1,Emergency expense - Put it on my credit card and pay it off in full at the next statement,1,selected
+CC24_309d_1,Emergency expense - Put it on my credit card and pay it off in full at the next statement,2,not selected
+CC24_309d_1,Emergency expense - Put it on my credit card and pay it off in full at the next statement,8,skipped
+CC24_309d_1,Emergency expense - Put it on my credit card and pay it off in full at the next statement,9,not asked
+CC24_309d_2,Emergency expense - Put it on my credit card and pay it off over time,1,selected
+CC24_309d_2,Emergency expense - Put it on my credit card and pay it off over time,2,not selected
+CC24_309d_2,Emergency expense - Put it on my credit card and pay it off over time,8,skipped
+CC24_309d_2,Emergency expense - Put it on my credit card and pay it off over time,9,not asked
+CC24_309d_3,Emergency expense - With the money currently in my checking/savings account or with cash,1,selected
+CC24_309d_3,Emergency expense - With the money currently in my checking/savings account or with cash,2,not selected
+CC24_309d_3,Emergency expense - With the money currently in my checking/savings account or with cash,8,skipped
+CC24_309d_3,Emergency expense - With the money currently in my checking/savings account or with cash,9,not asked
+CC24_309d_4,Emergency expense - Using money from a bank loan or line of credit,1,selected
+CC24_309d_4,Emergency expense - Using money from a bank loan or line of credit,2,not selected
+CC24_309d_4,Emergency expense - Using money from a bank loan or line of credit,8,skipped
+CC24_309d_4,Emergency expense - Using money from a bank loan or line of credit,9,not asked
+CC24_309d_5,Emergency expense - By borrowing from a friend or family member,1,selected
+CC24_309d_5,Emergency expense - By borrowing from a friend or family member,2,not selected
+CC24_309d_5,Emergency expense - By borrowing from a friend or family member,8,skipped
+CC24_309d_5,Emergency expense - By borrowing from a friend or family member,9,not asked
+CC24_309d_6,"Emergency expense - Using a payday loan, deposit advance, or overdraft",1,selected
+CC24_309d_6,"Emergency expense - Using a payday loan, deposit advance, or overdraft",2,not selected
+CC24_309d_6,"Emergency expense - Using a payday loan, deposit advance, or overdraft",8,skipped
+CC24_309d_6,"Emergency expense - Using a payday loan, deposit advance, or overdraft",9,not asked
+CC24_309d_7,Emergency expense - By selling something,1,selected
+CC24_309d_7,Emergency expense - By selling something,2,not selected
+CC24_309d_7,Emergency expense - By selling something,8,skipped
+CC24_309d_7,Emergency expense - By selling something,9,not asked
+CC24_309d_8,Emergency expense - I wouldn't be able to pay for the expense right now,1,selected
+CC24_309d_8,Emergency expense - I wouldn't be able to pay for the expense right now,2,not selected
+CC24_309d_8,Emergency expense - I wouldn't be able to pay for the expense right now,8,skipped
+CC24_309d_8,Emergency expense - I wouldn't be able to pay for the expense right now,9,not asked
+CC24_309d_9,Emergency expense - Other,1,selected
+CC24_309d_9,Emergency expense - Other,2,not selected
+CC24_309d_9,Emergency expense - Other,8,skipped
+CC24_309d_9,Emergency expense - Other,9,not asked
+CC24_309d_t,Emergency expense - Open,NA,NA
+CC24_310a,Know Party in Government -- U.S. House of Representatives,1,Republicans
+CC24_310a,Know Party in Government -- U.S. House of Representatives,2,Democrats
+CC24_310a,Know Party in Government -- U.S. House of Representatives,3,Neither
+CC24_310a,Know Party in Government -- U.S. House of Representatives,4,Not sure
+CC24_310a,Know Party in Government -- U.S. House of Representatives,8,skipped
+CC24_310a,Know Party in Government -- U.S. House of Representatives,9,not asked
+CC24_310b,Know Party in Government -- U.S. Senate,1,Republicans
+CC24_310b,Know Party in Government -- U.S. Senate,2,Democrats
+CC24_310b,Know Party in Government -- U.S. Senate,3,Neither
+CC24_310b,Know Party in Government -- U.S. Senate,4,Not sure
+CC24_310b,Know Party in Government -- U.S. Senate,8,skipped
+CC24_310b,Know Party in Government -- U.S. Senate,9,not asked
+CC24_310c,Know Party in Government -- $inputstate State Senate,1,Republicans
+CC24_310c,Know Party in Government -- $inputstate State Senate,2,Democrats
+CC24_310c,Know Party in Government -- $inputstate State Senate,3,Neither
+CC24_310c,Know Party in Government -- $inputstate State Senate,4,Not sure
+CC24_310c,Know Party in Government -- $inputstate State Senate,8,skipped
+CC24_310c,Know Party in Government -- $inputstate State Senate,9,not asked
+CC24_310d,Know Party in Government -- $LowerChamberName,1,Republicans
+CC24_310d,Know Party in Government -- $LowerChamberName,2,Democrats
+CC24_310d,Know Party in Government -- $LowerChamberName,3,Neither
+CC24_310d,Know Party in Government -- $LowerChamberName,4,Not sure
+CC24_310d,Know Party in Government -- $LowerChamberName,8,skipped
+CC24_310d,Know Party in Government -- $LowerChamberName,9,not asked
+CC24_311a,Know Party of Representative -- $CurrentGovName,1,Never Heard of Person
+CC24_311a,Know Party of Representative -- $CurrentGovName,2,Republican
+CC24_311a,Know Party of Representative -- $CurrentGovName,3,Democrat
+CC24_311a,Know Party of Representative -- $CurrentGovName,4,Other Party / Independent
+CC24_311a,Know Party of Representative -- $CurrentGovName,5,Not sure
+CC24_311a,Know Party of Representative -- $CurrentGovName,8,skipped
+CC24_311a,Know Party of Representative -- $CurrentGovName,9,not asked
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,1,Never Heard of Person
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,2,Republican
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,3,Democrat
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,4,Other Party / Independent
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,5,Not sure
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,8,skipped
+CC24_311b,Know Party of Representative -- $CurrentSen1Name,9,not asked
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,1,Never Heard of Person
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,2,Republican
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,3,Democrat
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,4,Other Party / Independent
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,5,Not sure
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,8,skipped
+CC24_311c,Know Party of Representative -- $CurrentSen2Name,9,not asked
+CC24_311d,Know Party of Representative -- $CurrentHouseName,1,Never Heard of Person
+CC24_311d,Know Party of Representative -- $CurrentHouseName,2,Republican
+CC24_311d,Know Party of Representative -- $CurrentHouseName,3,Democrat
+CC24_311d,Know Party of Representative -- $CurrentHouseName,4,Other Party / Independent
+CC24_311d,Know Party of Representative -- $CurrentHouseName,5,Not sure
+CC24_311d,Know Party of Representative -- $CurrentHouseName,8,skipped
+CC24_311d,Know Party of Representative -- $CurrentHouseName,9,not asked
+CC24_312a,Job Approval Institutions -- President Biden,1,Strongly approve
+CC24_312a,Job Approval Institutions -- President Biden,2,Somewhat approve
+CC24_312a,Job Approval Institutions -- President Biden,3,Somewhat disapprove
+CC24_312a,Job Approval Institutions -- President Biden,4,Strongly disapprove
+CC24_312a,Job Approval Institutions -- President Biden,5,Not sure
+CC24_312a,Job Approval Institutions -- President Biden,8,skipped
+CC24_312a,Job Approval Institutions -- President Biden,9,not asked
+CC24_312i,Job Approval Institutions -- Vice President Harris,1,Strongly approve
+CC24_312i,Job Approval Institutions -- Vice President Harris,2,Somewhat approve
+CC24_312i,Job Approval Institutions -- Vice President Harris,3,Somewhat disapprove
+CC24_312i,Job Approval Institutions -- Vice President Harris,4,Strongly disapprove
+CC24_312i,Job Approval Institutions -- Vice President Harris,5,Not sure
+CC24_312i,Job Approval Institutions -- Vice President Harris,8,skipped
+CC24_312i,Job Approval Institutions -- Vice President Harris,9,not asked
+CC24_312b,Job Approval Institutions -- The U.S. Congress,1,Strongly approve
+CC24_312b,Job Approval Institutions -- The U.S. Congress,2,Somewhat approve
+CC24_312b,Job Approval Institutions -- The U.S. Congress,3,Somewhat disapprove
+CC24_312b,Job Approval Institutions -- The U.S. Congress,4,Strongly disapprove
+CC24_312b,Job Approval Institutions -- The U.S. Congress,5,Not sure
+CC24_312b,Job Approval Institutions -- The U.S. Congress,8,skipped
+CC24_312b,Job Approval Institutions -- The U.S. Congress,9,not asked
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,1,Strongly approve
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,2,Somewhat approve
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,3,Somewhat disapprove
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,4,Strongly disapprove
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,5,Not sure
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,8,skipped
+CC24_312c,Job Approval Institutions -- The U.S. Supreme Court,9,not asked
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,1,Strongly approve
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,2,Somewhat approve
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,3,Somewhat disapprove
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,4,Strongly disapprove
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,5,Not sure
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,8,skipped
+CC24_312d,Job Approval Institutions -- The Governor of $inputstate,9,not asked
+CC24_312e,Job Approval Institutions -- $LegName,1,Strongly approve
+CC24_312e,Job Approval Institutions -- $LegName,2,Somewhat approve
+CC24_312e,Job Approval Institutions -- $LegName,3,Somewhat disapprove
+CC24_312e,Job Approval Institutions -- $LegName,4,Strongly disapprove
+CC24_312e,Job Approval Institutions -- $LegName,5,Not sure
+CC24_312e,Job Approval Institutions -- $LegName,8,skipped
+CC24_312e,Job Approval Institutions -- $LegName,9,not asked
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,1,Strongly approve
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,2,Somewhat approve
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,3,Somewhat disapprove
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,4,Strongly disapprove
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,5,Not sure
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,8,skipped
+CC24_312f,Job Approval Institutions -- $CurrentHouseName,9,not asked
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,1,Strongly approve
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,2,Somewhat approve
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,3,Somewhat disapprove
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,4,Strongly disapprove
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,5,Not sure
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,8,skipped
+CC24_312g,Job Approval Institutions -- $CurrentSen1Name,9,not asked
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,1,Strongly approve
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,2,Somewhat approve
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,3,Somewhat disapprove
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,4,Strongly disapprove
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,5,Not sure
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,8,skipped
+CC24_312h,Job Approval Institutions -- $CurrentSen2Name,9,not asked
+cit1,US citizen,1,Yes
+cit1,US citizen,2,No
+cit1,US citizen,8,skipped
+cit1,US citizen,9,not asked
+immstat,Immigration background,1,I am an immigrant to the USA and a naturalized citizen
+immstat,Immigration background,2,I am an immigrant to the USA but not a citizen
+immstat,Immigration background,3,I was born in the USA but at least one of my parents is an immigrant
+immstat,Immigration background,4,My parents and I were born in the USA but at least one of my grandparents was an immigrant
+immstat,Immigration background,5,"My parents, grandparents and I were all born in the USA"
+immstat,Immigration background,8,skipped
+immstat,Immigration background,9,not asked
+CC24_321a,Gun control -- Ban assault rifles,1,Support
+CC24_321a,Gun control -- Ban assault rifles,2,Oppose
+CC24_321a,Gun control -- Ban assault rifles,8,skipped
+CC24_321a,Gun control -- Ban assault rifles,9,not asked
+CC24_321b,Gun control -- Make it easier for people to obtain concealed-carry permit,1,Support
+CC24_321b,Gun control -- Make it easier for people to obtain concealed-carry permit,2,Oppose
+CC24_321b,Gun control -- Make it easier for people to obtain concealed-carry permit,8,skipped
+CC24_321b,Gun control -- Make it easier for people to obtain concealed-carry permit,9,not asked
+CC24_321c,Gun control -- Require criminal background checks on all gun sales,1,Support
+CC24_321c,Gun control -- Require criminal background checks on all gun sales,2,Oppose
+CC24_321c,Gun control -- Require criminal background checks on all gun sales,8,skipped
+CC24_321c,Gun control -- Require criminal background checks on all gun sales,9,not asked
+CC24_321d,"Gun control -- Increase the number of police on the street by 10 percent, even if it means fewer funds for other public services",1,Support
+CC24_321d,"Gun control -- Increase the number of police on the street by 10 percent, even if it means fewer funds for other public services",2,Oppose
+CC24_321d,"Gun control -- Increase the number of police on the street by 10 percent, even if it means fewer funds for other public services",8,skipped
+CC24_321d,"Gun control -- Increase the number of police on the street by 10 percent, even if it means fewer funds for other public services",9,not asked
+CC24_321e,"Gun control -- Decrease the number of police on the street by 10 percent, and increase funding for other public services",1,Support
+CC24_321e,"Gun control -- Decrease the number of police on the street by 10 percent, and increase funding for other public services",2,Oppose
+CC24_321e,"Gun control -- Decrease the number of police on the street by 10 percent, and increase funding for other public services",8,skipped
+CC24_321e,"Gun control -- Decrease the number of police on the street by 10 percent, and increase funding for other public services",9,not asked
+CC24_321f,Gun control -- Increase spending on mental health and school safety Allow police to confiscate guns from people deemed to be dangerous by a judge Prohibit people convicted of domestic violence from owning guns; enhance background checks on minors Increase,1,Support
+CC24_321f,Gun control -- Increase spending on mental health and school safety Allow police to confiscate guns from people deemed to be dangerous by a judge Prohibit people convicted of domestic violence from owning guns; enhance background checks on minors Increase,2,Oppose
+CC24_321f,Gun control -- Increase spending on mental health and school safety Allow police to confiscate guns from people deemed to be dangerous by a judge Prohibit people convicted of domestic violence from owning guns; enhance background checks on minors Increase,8,skipped
+CC24_321f,Gun control -- Increase spending on mental health and school safety Allow police to confiscate guns from people deemed to be dangerous by a judge Prohibit people convicted of domestic violence from owning guns; enhance background checks on minors Increase,9,not asked
+CC24_323a,"Immigration -- Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",1,Support
+CC24_323a,"Immigration -- Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",2,Oppose
+CC24_323a,"Immigration -- Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",8,skipped
+CC24_323a,"Immigration -- Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes",9,not asked
+CC24_323b,Immigration -- Increase the number of border patrols on the US-Mexican border,1,Support
+CC24_323b,Immigration -- Increase the number of border patrols on the US-Mexican border,2,Oppose
+CC24_323b,Immigration -- Increase the number of border patrols on the US-Mexican border,8,skipped
+CC24_323b,Immigration -- Increase the number of border patrols on the US-Mexican border,9,not asked
+CC24_323c,Immigration -- Build a wall between the U.S. and Mexico,1,Support
+CC24_323c,Immigration -- Build a wall between the U.S. and Mexico,2,Oppose
+CC24_323c,Immigration -- Build a wall between the U.S. and Mexico,8,skipped
+CC24_323c,Immigration -- Build a wall between the U.S. and Mexico,9,not asked
+CC24_323d,Immigration -- Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have,1,Support
+CC24_323d,Immigration -- Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have,2,Oppose
+CC24_323d,Immigration -- Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have,8,skipped
+CC24_323d,Immigration -- Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers). Provide these immigrants a pathway to citizenship if they meet the citizenship requirements and have,9,not asked
+CC24_324a,Abortion -- Always allow a woman the right to obtain an abortion as a matter of choice,1,Support
+CC24_324a,Abortion -- Always allow a woman the right to obtain an abortion as a matter of choice,2,Oppose
+CC24_324a,Abortion -- Always allow a woman the right to obtain an abortion as a matter of choice,8,skipped
+CC24_324a,Abortion -- Always allow a woman the right to obtain an abortion as a matter of choice,9,not asked
+CC24_324b,"Abortion -- Permit abortion only in case of rape, incest or when the woman's life is in danger",1,Support
+CC24_324b,"Abortion -- Permit abortion only in case of rape, incest or when the woman's life is in danger",2,Oppose
+CC24_324b,"Abortion -- Permit abortion only in case of rape, incest or when the woman's life is in danger",8,skipped
+CC24_324b,"Abortion -- Permit abortion only in case of rape, incest or when the woman's life is in danger",9,not asked
+CC24_324c,Abortion -- Make abortions illegal in all circumstances,1,Support
+CC24_324c,Abortion -- Make abortions illegal in all circumstances,2,Oppose
+CC24_324c,Abortion -- Make abortions illegal in all circumstances,8,skipped
+CC24_324c,Abortion -- Make abortions illegal in all circumstances,9,not asked
+CC24_324d,"Abortion -- Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",1,Support
+CC24_324d,"Abortion -- Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",2,Oppose
+CC24_324d,"Abortion -- Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",8,skipped
+CC24_324d,"Abortion -- Expand access to abortion, including making it more affordable, broadening the types of providers who can offer care, and protecting access to abortion clinics",9,not asked
+CC24_325,Abortion Month,998,skipped
+CC24_326a,Environment -- Give the Environmental Protection Agency power to regulate carbon dioxide emissions,1,Support
+CC24_326a,Environment -- Give the Environmental Protection Agency power to regulate carbon dioxide emissions,2,Oppose
+CC24_326a,Environment -- Give the Environmental Protection Agency power to regulate carbon dioxide emissions,8,skipped
+CC24_326a,Environment -- Give the Environmental Protection Agency power to regulate carbon dioxide emissions,9,not asked
+CC24_326b,"Environment -- Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power",1,Support
+CC24_326b,"Environment -- Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power",2,Oppose
+CC24_326b,"Environment -- Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power",8,skipped
+CC24_326b,"Environment -- Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power",9,not asked
+CC24_326c,Environment -- Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs,1,Support
+CC24_326c,Environment -- Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs,2,Oppose
+CC24_326c,Environment -- Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs,8,skipped
+CC24_326c,Environment -- Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs,9,not asked
+CC24_326d,Environment -- Increase fossil fuel production in the U.S.,1,Support
+CC24_326d,Environment -- Increase fossil fuel production in the U.S.,2,Oppose
+CC24_326d,Environment -- Increase fossil fuel production in the U.S.,8,skipped
+CC24_326d,Environment -- Increase fossil fuel production in the U.S.,9,not asked
+CC24_326e,Environment -- Halt new oil and gas leases on federal lands,1,Support
+CC24_326e,Environment -- Halt new oil and gas leases on federal lands,2,Oppose
+CC24_326e,Environment -- Halt new oil and gas leases on federal lands,8,skipped
+CC24_326e,Environment -- Halt new oil and gas leases on federal lands,9,not asked
+CC24_326f,Environment -- Prevent the government from banning gas stoves,1,Support
+CC24_326f,Environment -- Prevent the government from banning gas stoves,2,Oppose
+CC24_326f,Environment -- Prevent the government from banning gas stoves,8,skipped
+CC24_326f,Environment -- Prevent the government from banning gas stoves,9,not asked
+CC24_328a,Tax policies -- Relax local zoning laws in your state to allow for construction of more apartments and condos.,1,Support
+CC24_328a,Tax policies -- Relax local zoning laws in your state to allow for construction of more apartments and condos.,2,Oppose
+CC24_328a,Tax policies -- Relax local zoning laws in your state to allow for construction of more apartments and condos.,8,skipped
+CC24_328a,Tax policies -- Relax local zoning laws in your state to allow for construction of more apartments and condos.,9,not asked
+CC24_328b,Tax policies -- Expand federal tax incentives to encourage developers to build homes for people who make less than half of the average income in your area,1,Support
+CC24_328b,Tax policies -- Expand federal tax incentives to encourage developers to build homes for people who make less than half of the average income in your area,2,Oppose
+CC24_328b,Tax policies -- Expand federal tax incentives to encourage developers to build homes for people who make less than half of the average income in your area,8,skipped
+CC24_328b,Tax policies -- Expand federal tax incentives to encourage developers to build homes for people who make less than half of the average income in your area,9,not asked
+CC24_328c,Tax policies -- Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.,1,Support
+CC24_328c,Tax policies -- Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.,2,Oppose
+CC24_328c,Tax policies -- Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.,8,skipped
+CC24_328c,Tax policies -- Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.,9,not asked
+CC24_328d,Tax policies -- Repeal the Affordable Care Act,1,Support
+CC24_328d,Tax policies -- Repeal the Affordable Care Act,2,Oppose
+CC24_328d,Tax policies -- Repeal the Affordable Care Act,8,skipped
+CC24_328d,Tax policies -- Repeal the Affordable Care Act,9,not asked
+CC24_328e,"Tax policies -- Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",1,Support
+CC24_328e,"Tax policies -- Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",2,Oppose
+CC24_328e,"Tax policies -- Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",8,skipped
+CC24_328e,"Tax policies -- Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",9,not asked
+CC24_323f,"Tax policies -- Forgive up to $20,000 of student loan debt for each person",1,Support
+CC24_323f,"Tax policies -- Forgive up to $20,000 of student loan debt for each person",2,Oppose
+CC24_323f,"Tax policies -- Forgive up to $20,000 of student loan debt for each person",8,skipped
+CC24_323f,"Tax policies -- Forgive up to $20,000 of student loan debt for each person",9,not asked
+CC24_330a,Rate ideology -- Yourself,1,Very Liberal
+CC24_330a,Rate ideology -- Yourself,2,Liberal
+CC24_330a,Rate ideology -- Yourself,3,Somewhat Liberal
+CC24_330a,Rate ideology -- Yourself,4,Middle of the Road
+CC24_330a,Rate ideology -- Yourself,5,Somewhat Conservative
+CC24_330a,Rate ideology -- Yourself,6,Conservative
+CC24_330a,Rate ideology -- Yourself,7,Very Conservative
+CC24_330a,Rate ideology -- Yourself,8,Not sure
+CC24_330a,Rate ideology -- Yourself,98,skipped
+CC24_330a,Rate ideology -- Yourself,99,not asked
+CC24_330b,Rate ideology -- $CurrentGovName,1,Very Liberal
+CC24_330b,Rate ideology -- $CurrentGovName,2,Liberal
+CC24_330b,Rate ideology -- $CurrentGovName,3,Somewhat Liberal
+CC24_330b,Rate ideology -- $CurrentGovName,4,Middle of the Road
+CC24_330b,Rate ideology -- $CurrentGovName,5,Somewhat Conservative
+CC24_330b,Rate ideology -- $CurrentGovName,6,Conservative
+CC24_330b,Rate ideology -- $CurrentGovName,7,Very Conservative
+CC24_330b,Rate ideology -- $CurrentGovName,8,Not sure
+CC24_330b,Rate ideology -- $CurrentGovName,98,skipped
+CC24_330b,Rate ideology -- $CurrentGovName,99,not asked
+CC24_330c,Rate ideology -- Joe Biden,1,Very Liberal
+CC24_330c,Rate ideology -- Joe Biden,2,Liberal
+CC24_330c,Rate ideology -- Joe Biden,3,Somewhat Liberal
+CC24_330c,Rate ideology -- Joe Biden,4,Middle of the Road
+CC24_330c,Rate ideology -- Joe Biden,5,Somewhat Conservative
+CC24_330c,Rate ideology -- Joe Biden,6,Conservative
+CC24_330c,Rate ideology -- Joe Biden,7,Very Conservative
+CC24_330c,Rate ideology -- Joe Biden,8,Not sure
+CC24_330c,Rate ideology -- Joe Biden,98,skipped
+CC24_330c,Rate ideology -- Joe Biden,99,not asked
+CC24_330d,Rate ideology -- Kamala Harris,1,Very Liberal
+CC24_330d,Rate ideology -- Kamala Harris,2,Liberal
+CC24_330d,Rate ideology -- Kamala Harris,3,Somewhat Liberal
+CC24_330d,Rate ideology -- Kamala Harris,4,Middle of the Road
+CC24_330d,Rate ideology -- Kamala Harris,5,Somewhat Conservative
+CC24_330d,Rate ideology -- Kamala Harris,6,Conservative
+CC24_330d,Rate ideology -- Kamala Harris,7,Very Conservative
+CC24_330d,Rate ideology -- Kamala Harris,8,Not sure
+CC24_330d,Rate ideology -- Kamala Harris,98,skipped
+CC24_330d,Rate ideology -- Kamala Harris,99,not asked
+CC24_330e,Rate ideology -- Donald Trump,1,Very Liberal
+CC24_330e,Rate ideology -- Donald Trump,2,Liberal
+CC24_330e,Rate ideology -- Donald Trump,3,Somewhat Liberal
+CC24_330e,Rate ideology -- Donald Trump,4,Middle of the Road
+CC24_330e,Rate ideology -- Donald Trump,5,Somewhat Conservative
+CC24_330e,Rate ideology -- Donald Trump,6,Conservative
+CC24_330e,Rate ideology -- Donald Trump,7,Very Conservative
+CC24_330e,Rate ideology -- Donald Trump,8,Not sure
+CC24_330e,Rate ideology -- Donald Trump,98,skipped
+CC24_330e,Rate ideology -- Donald Trump,99,not asked
+CC24_330f,Rate ideology -- The Democratic Party,1,Very Liberal
+CC24_330f,Rate ideology -- The Democratic Party,2,Liberal
+CC24_330f,Rate ideology -- The Democratic Party,3,Somewhat Liberal
+CC24_330f,Rate ideology -- The Democratic Party,4,Middle of the Road
+CC24_330f,Rate ideology -- The Democratic Party,5,Somewhat Conservative
+CC24_330f,Rate ideology -- The Democratic Party,6,Conservative
+CC24_330f,Rate ideology -- The Democratic Party,7,Very Conservative
+CC24_330f,Rate ideology -- The Democratic Party,8,Not sure
+CC24_330f,Rate ideology -- The Democratic Party,98,skipped
+CC24_330f,Rate ideology -- The Democratic Party,99,not asked
+CC24_330g,Rate ideology -- The Republican Party,1,Very Liberal
+CC24_330g,Rate ideology -- The Republican Party,2,Liberal
+CC24_330g,Rate ideology -- The Republican Party,3,Somewhat Liberal
+CC24_330g,Rate ideology -- The Republican Party,4,Middle of the Road
+CC24_330g,Rate ideology -- The Republican Party,5,Somewhat Conservative
+CC24_330g,Rate ideology -- The Republican Party,6,Conservative
+CC24_330g,Rate ideology -- The Republican Party,7,Very Conservative
+CC24_330g,Rate ideology -- The Republican Party,8,Not sure
+CC24_330g,Rate ideology -- The Republican Party,98,skipped
+CC24_330g,Rate ideology -- The Republican Party,99,not asked
+CC24_330h,Rate ideology -- The U.S. Supreme Court,1,Very Liberal
+CC24_330h,Rate ideology -- The U.S. Supreme Court,2,Liberal
+CC24_330h,Rate ideology -- The U.S. Supreme Court,3,Somewhat Liberal
+CC24_330h,Rate ideology -- The U.S. Supreme Court,4,Middle of the Road
+CC24_330h,Rate ideology -- The U.S. Supreme Court,5,Somewhat Conservative
+CC24_330h,Rate ideology -- The U.S. Supreme Court,6,Conservative
+CC24_330h,Rate ideology -- The U.S. Supreme Court,7,Very Conservative
+CC24_330h,Rate ideology -- The U.S. Supreme Court,8,Not sure
+CC24_330h,Rate ideology -- The U.S. Supreme Court,98,skipped
+CC24_330h,Rate ideology -- The U.S. Supreme Court,99,not asked
+CC24_330i,Rate ideology -- $CurrentSen1Name,1,Very Liberal
+CC24_330i,Rate ideology -- $CurrentSen1Name,2,Liberal
+CC24_330i,Rate ideology -- $CurrentSen1Name,3,Somewhat Liberal
+CC24_330i,Rate ideology -- $CurrentSen1Name,4,Middle of the Road
+CC24_330i,Rate ideology -- $CurrentSen1Name,5,Somewhat Conservative
+CC24_330i,Rate ideology -- $CurrentSen1Name,6,Conservative
+CC24_330i,Rate ideology -- $CurrentSen1Name,7,Very Conservative
+CC24_330i,Rate ideology -- $CurrentSen1Name,8,Not sure
+CC24_330i,Rate ideology -- $CurrentSen1Name,98,skipped
+CC24_330i,Rate ideology -- $CurrentSen1Name,99,not asked
+CC24_330j,Rate ideology -- $CurrentSen2Name,1,Very Liberal
+CC24_330j,Rate ideology -- $CurrentSen2Name,2,Liberal
+CC24_330j,Rate ideology -- $CurrentSen2Name,3,Somewhat Liberal
+CC24_330j,Rate ideology -- $CurrentSen2Name,4,Middle of the Road
+CC24_330j,Rate ideology -- $CurrentSen2Name,5,Somewhat Conservative
+CC24_330j,Rate ideology -- $CurrentSen2Name,6,Conservative
+CC24_330j,Rate ideology -- $CurrentSen2Name,7,Very Conservative
+CC24_330j,Rate ideology -- $CurrentSen2Name,8,Not sure
+CC24_330j,Rate ideology -- $CurrentSen2Name,98,skipped
+CC24_330j,Rate ideology -- $CurrentSen2Name,99,not asked
+CC24_330l,Rate ideology -- $CurrentHouseName,1,Very Liberal
+CC24_330l,Rate ideology -- $CurrentHouseName,2,Liberal
+CC24_330l,Rate ideology -- $CurrentHouseName,3,Somewhat Liberal
+CC24_330l,Rate ideology -- $CurrentHouseName,4,Middle of the Road
+CC24_330l,Rate ideology -- $CurrentHouseName,5,Somewhat Conservative
+CC24_330l,Rate ideology -- $CurrentHouseName,6,Conservative
+CC24_330l,Rate ideology -- $CurrentHouseName,7,Very Conservative
+CC24_330l,Rate ideology -- $CurrentHouseName,8,Not sure
+CC24_330l,Rate ideology -- $CurrentHouseName,98,skipped
+CC24_330l,Rate ideology -- $CurrentHouseName,99,not asked
+CC24_340a,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, contraceptives",1,Support
+CC24_340a,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, contraceptives",2,Oppose
+CC24_340a,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, contraceptives",8,skipped
+CC24_340a,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, contraceptives",9,not asked
+CC24_340b,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, abortion services",1,Support
+CC24_340b,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, abortion services",2,Oppose
+CC24_340b,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, abortion services",8,skipped
+CC24_340b,"Congress Bills -- Prohibit government restrictions on the provision of, and access to, abortion services",9,not asked
+CC24_340c,Congress Bills -- Require that all federal agencies recognize same-sex marriages and interracial marriages,1,Support
+CC24_340c,Congress Bills -- Require that all federal agencies recognize same-sex marriages and interracial marriages,2,Oppose
+CC24_340c,Congress Bills -- Require that all federal agencies recognize same-sex marriages and interracial marriages,8,skipped
+CC24_340c,Congress Bills -- Require that all federal agencies recognize same-sex marriages and interracial marriages,9,not asked
+CC24_340d,Congress Bills -- Ban TikTok unless China sells it to a US company,1,Support
+CC24_340d,Congress Bills -- Ban TikTok unless China sells it to a US company,2,Oppose
+CC24_340d,Congress Bills -- Ban TikTok unless China sells it to a US company,8,skipped
+CC24_340d,Congress Bills -- Ban TikTok unless China sells it to a US company,9,not asked
+CC24_340e,Congress Bills -- Renew the federal surveillance programs that were adopted after 9/11 which allow the government to search private electronic data without a search warrant,1,Support
+CC24_340e,Congress Bills -- Renew the federal surveillance programs that were adopted after 9/11 which allow the government to search private electronic data without a search warrant,2,Oppose
+CC24_340e,Congress Bills -- Renew the federal surveillance programs that were adopted after 9/11 which allow the government to search private electronic data without a search warrant,8,skipped
+CC24_340e,Congress Bills -- Renew the federal surveillance programs that were adopted after 9/11 which allow the government to search private electronic data without a search warrant,9,not asked
+CC24_340f,Congress Bills -- Deny access to asylum for immigrants who cross the US-Mexico border illegally,1,Support
+CC24_340f,Congress Bills -- Deny access to asylum for immigrants who cross the US-Mexico border illegally,2,Oppose
+CC24_340f,Congress Bills -- Deny access to asylum for immigrants who cross the US-Mexico border illegally,8,skipped
+CC24_340f,Congress Bills -- Deny access to asylum for immigrants who cross the US-Mexico border illegally,9,not asked
+CC24_341a,"Tax rates -- Extend the tax cuts enacted in 2017, which reduced individual and corporate income tax rates and limited deductions on mortgage interest and state and local taxes",1,Support
+CC24_341a,"Tax rates -- Extend the tax cuts enacted in 2017, which reduced individual and corporate income tax rates and limited deductions on mortgage interest and state and local taxes",2,Oppose
+CC24_341a,"Tax rates -- Extend the tax cuts enacted in 2017, which reduced individual and corporate income tax rates and limited deductions on mortgage interest and state and local taxes",8,skipped
+CC24_341a,"Tax rates -- Extend the tax cuts enacted in 2017, which reduced individual and corporate income tax rates and limited deductions on mortgage interest and state and local taxes",9,not asked
+CC24_341b,Tax rates -- Raise the corporate income tax rate from 21 percent to 28 percent,1,Support
+CC24_341b,Tax rates -- Raise the corporate income tax rate from 21 percent to 28 percent,2,Oppose
+CC24_341b,Tax rates -- Raise the corporate income tax rate from 21 percent to 28 percent,8,skipped
+CC24_341b,Tax rates -- Raise the corporate income tax rate from 21 percent to 28 percent,9,not asked
+CC24_341c,"Tax rates -- Allow tax rates on those earning $400,000 or more a year to rise to 35 percent",1,Support
+CC24_341c,"Tax rates -- Allow tax rates on those earning $400,000 or more a year to rise to 35 percent",2,Oppose
+CC24_341c,"Tax rates -- Allow tax rates on those earning $400,000 or more a year to rise to 35 percent",8,skipped
+CC24_341c,"Tax rates -- Allow tax rates on those earning $400,000 or more a year to rise to 35 percent",9,not asked
+CC24_341d,"Tax rates -- Spend $150 billion a year for 8 years on construction and repair of roads and bridges, rail, public transit, airports, water systems, broadband internet, and electric grid",1,Support
+CC24_341d,"Tax rates -- Spend $150 billion a year for 8 years on construction and repair of roads and bridges, rail, public transit, airports, water systems, broadband internet, and electric grid",2,Oppose
+CC24_341d,"Tax rates -- Spend $150 billion a year for 8 years on construction and repair of roads and bridges, rail, public transit, airports, water systems, broadband internet, and electric grid",8,skipped
+CC24_341d,"Tax rates -- Spend $150 billion a year for 8 years on construction and repair of roads and bridges, rail, public transit, airports, water systems, broadband internet, and electric grid",9,not asked
+CC24_361b,Party Registration,1,"No Party, Independent, Declined to State"
+CC24_361b,Party Registration,2,Democratic Party
+CC24_361b,Party Registration,3,Republican Party
+CC24_361b,Party Registration,4,Other
+CC24_361b,Party Registration,5,Not sure
+CC24_361b,Party Registration,8,skipped
+CC24_361b,Party Registration,9,not asked
+CC24_360_t,Party Registration - other text,NA,NA
+presvote20post,2020 President Vote Post Election,1,Joe Biden
+presvote20post,2020 President Vote Post Election,2,Donald Trump
+presvote20post,2020 President Vote Post Election,3,Jo Jorgensen
+presvote20post,2020 President Vote Post Election,4,Howie Hawkins
+presvote20post,2020 President Vote Post Election,5,Other
+presvote20post,2020 President Vote Post Election,6,Did not vote for President
+presvote20post,2020 President Vote Post Election,8,skipped
+presvote20post,2020 President Vote Post Election,9,not asked
+presvote20post_t,2020 President Vote Post Election - open,NA,NA
+CC24_363,Vote Intention,1,"Yes, definitely"
+CC24_363,Vote Intention,2,Probably
+CC24_363,Vote Intention,3,I already voted (early or absentee)
+CC24_363,Vote Intention,4,I plan to vote before November 5th
+CC24_363,Vote Intention,5,No
+CC24_363,Vote Intention,6,Undecided
+CC24_363,Vote Intention,8,skipped
+CC24_363,Vote Intention,9,not asked
+CC24_364a,Pres vote,1,Kamala Harris (Democrat)
+CC24_364a,Pres vote,2,Donald Trump (Republican)
+CC24_364a,Pres vote,3,Someone else
+CC24_364a,Pres vote,4,I'm not sure
+CC24_364a,Pres vote,5,I didn't vote in this election
+CC24_364a,Pres vote,8,skipped
+CC24_364a,Pres vote,9,not asked
+CC24_365_voted,Senate vote,1,$SenCand1Name ($SenCand1Party)
+CC24_365_voted,Senate vote,2,$SenCand2Name ($SenCand2Party)
+CC24_365_voted,Senate vote,3,$SenCand3Name ($SenCand3Party)
+CC24_365_voted,Senate vote,7,Other
+CC24_365_voted,Senate vote,8,I'm not sure
+CC24_365_voted,Senate vote,9,I didn't vote in this election
+CC24_365_voted,Senate vote,98,skipped
+CC24_365_voted,Senate vote,99,not asked
+CC24_365_voted_t,Senate vote - open,NA,NA
+CC24_365b_voted,Senate vote 2nd race,1,$SenCand1Name2 ($SenCand1Party2)
+CC24_365b_voted,Senate vote 2nd race,2,$SenCand2Name2 ($SenCand2Party2)
+CC24_365b_voted,Senate vote 2nd race,7,Other
+CC24_365b_voted,Senate vote 2nd race,8,I'm not sure
+CC24_365b_voted,Senate vote 2nd race,9,I didn't vote in this election
+CC24_365b_voted,Senate vote 2nd race,98,skipped
+CC24_365b_voted,Senate vote 2nd race,99,not asked
+CC24_365b_voted_t,Senate vote 2nd race - open,NA,NA
+CC24_366_voted,Governor vote,1,$GovCand1Name ($GovCand1Party)
+CC24_366_voted,Governor vote,2,$GovCand2Name ($GovCand2Party)
+CC24_366_voted,Governor vote,7,Other
+CC24_366_voted,Governor vote,8,I'm not sure
+CC24_366_voted,Governor vote,9,I didn't vote in this election
+CC24_366_voted,Governor vote,98,skipped
+CC24_366_voted,Governor vote,99,not asked
+CC24_366_voted_t,Governor vote - open,NA,NA
+CC24_367_voted,House vote,1,$HouseCand1Name ($HouseCand1Party)
+CC24_367_voted,House vote,2,$HouseCand2Name ($HouseCand2Party)
+CC24_367_voted,House vote,3,$HouseCand3Name ($HouseCand3Party)
+CC24_367_voted,House vote,4,$HouseCand4Name ($HouseCand4Party)
+CC24_367_voted,House vote,5,$HouseCand5Name ($HouseCand5Party)
+CC24_367_voted,House vote,10,Other
+CC24_367_voted,House vote,98,I'm not sure
+CC24_367_voted,House vote,99,I didn't vote in this election
+CC24_367_voted,House vote,998,skipped
+CC24_367_voted,House vote,999,not asked
+CC24_367_voted_t,House vote - open,NA,NA
+CC24_364b,Pres preference,1,Kamala Harris (Democrat)
+CC24_364b,Pres preference,2,Donald Trump (Republican)
+CC24_364b,Pres preference,3,Other
+CC24_364b,Pres preference,4,I won't vote in this election
+CC24_364b,Pres preference,5,I'm not sure
+CC24_364b,Pres preference,8,skipped
+CC24_364b,Pres preference,9,not asked
+CC24_365,Senate preference,1,$SenCand1Name ($SenCand1Party)
+CC24_365,Senate preference,2,$SenCand2Name ($SenCand2Party)
+CC24_365,Senate preference,3,$SenCand3Name ($SenCand3Party)
+CC24_365,Senate preference,7,Other
+CC24_365,Senate preference,8,I'm not sure
+CC24_365,Senate preference,9,No one
+CC24_365,Senate preference,98,skipped
+CC24_365,Senate preference,99,not asked
+CC24_365_t,Senate preference - open,NA,NA
+CC24_365a,Senate second preference,1,$SenCand1Name ($SenCand1Party)
+CC24_365a,Senate second preference,2,$SenCand2Name ($SenCand2Party)
+CC24_365a,Senate second preference,3,$SenCand3Name ($SenCand3Party)
+CC24_365a,Senate second preference,7,Other
+CC24_365a,Senate second preference,8,I'm not sure
+CC24_365a,Senate second preference,9,No one
+CC24_365a,Senate second preference,98,skipped
+CC24_365a,Senate second preference,99,not asked
+CC24_365a_t,Senate second preference - open,NA,NA
+CC24_365b,Senate preference 2nd race,1,$SenCand1Name2 ($SenCand1Party2)
+CC24_365b,Senate preference 2nd race,2,$SenCand2Name2 ($SenCand2Party2)
+CC24_365b,Senate preference 2nd race,7,Other
+CC24_365b,Senate preference 2nd race,8,I'm not sure
+CC24_365b,Senate preference 2nd race,9,No one
+CC24_365b,Senate preference 2nd race,98,skipped
+CC24_365b,Senate preference 2nd race,99,not asked
+CC24_365b_t,Senate preference 2nd race - open,NA,NA
+CC24_365c,Senate second preference 2nd race,1,$SenCand1Name2 ($SenCand1Party2)
+CC24_365c,Senate second preference 2nd race,2,$SenCand2Name2 ($SenCand2Party2)
+CC24_365c,Senate second preference 2nd race,7,Other
+CC24_365c,Senate second preference 2nd race,8,I'm not sure
+CC24_365c,Senate second preference 2nd race,9,No one
+CC24_365c,Senate second preference 2nd race,98,skipped
+CC24_365c,Senate second preference 2nd race,99,not asked
+CC24_365c_t,Senate second preference 2nd race - open,NA,NA
+CC24_366,Governor preference,1,$GovCand1Name ($GovCand1Party)
+CC24_366,Governor preference,2,$GovCand2Name ($GovCand2Party)
+CC24_366,Governor preference,3,$GovCand3Name ($GovCand3Party)
+CC24_366,Governor preference,7,Other
+CC24_366,Governor preference,8,I'm not sure
+CC24_366,Governor preference,9,No one
+CC24_366,Governor preference,98,skipped
+CC24_366,Governor preference,99,not asked
+CC24_366_t,Governor preference - open,NA,NA
+CC24_367,House preference,1,$HouseCand1Name ($HouseCand1Party)
+CC24_367,House preference,2,$HouseCand2Name ($HouseCand2Party)
+CC24_367,House preference,3,$HouseCand3Name ($HouseCand3Party)
+CC24_367,House preference,4,$HouseCand4Name ($HouseCand4Party)
+CC24_367,House preference,5,$HouseCand5Name ($HouseCand5Party)
+CC24_367,House preference,10,Other
+CC24_367,House preference,98,I'm not sure
+CC24_367,House preference,99,No one
+CC24_367,House preference,998,skipped
+CC24_367,House preference,999,not asked
+CC24_367_t,House preference - open,NA,NA
+CC24_367a,House second choice,1,$HouseCand1Name ($HouseCand1Party)
+CC24_367a,House second choice,2,$HouseCand2Name ($HouseCand2Party)
+CC24_367a,House second choice,3,$HouseCand3Name ($HouseCand3Party)
+CC24_367a,House second choice,4,$HouseCand4Name ($HouseCand4Party)
+CC24_367a,House second choice,5,$HouseCand5Name ($HouseCand5Party)
+CC24_367a,House second choice,10,Other
+CC24_367a,House second choice,98,I'm not sure
+CC24_367a,House second choice,99,No one
+CC24_367a,House second choice,998,skipped
+CC24_367a,House second choice,999,not asked
+CC24_367a_t,House second choice - open,NA,NA
+CC24_368,Residency,1,Less than 1 month
+CC24_368,Residency,2,2 to 6 months
+CC24_368,Residency,3,7 to 11 months
+CC24_368,Residency,4,1 to 2 years
+CC24_368,Residency,5,3 to 4 years
+CC24_368,Residency,6,5 or more years
+CC24_368,Residency,8,skipped
+CC24_368,Residency,9,not asked
+urbancity,Type of Area Living In,1,City
+urbancity,Type of Area Living In,2,Suburb
+urbancity,Type of Area Living In,3,Town
+urbancity,Type of Area Living In,4,Rural area
+urbancity,Type of Area Living In,5,Other
+urbancity,Type of Area Living In,8,skipped
+urbancity,Type of Area Living In,9,not asked
+urbancity_t,Type of Area Living In - open,NA,NA
+ideo5,Ideology,1,Very liberal
+ideo5,Ideology,2,Liberal
+ideo5,Ideology,3,Moderate
+ideo5,Ideology,4,Conservative
+ideo5,Ideology,5,Very conservative
+ideo5,Ideology,6,Not sure
+ideo5,Ideology,8,skipped
+ideo5,Ideology,9,not asked
+parent_1,"Yes, of at least one child younger than 18 years old",1,selected
+parent_1,"Yes, of at least one child younger than 18 years old",2,not selected
+parent_1,"Yes, of at least one child younger than 18 years old",8,skipped
+parent_1,"Yes, of at least one child younger than 18 years old",9,not asked
+parent_2,"Yes, of at least one child 18 years old or older",1,selected
+parent_2,"Yes, of at least one child 18 years old or older",2,not selected
+parent_2,"Yes, of at least one child 18 years old or older",8,skipped
+parent_2,"Yes, of at least one child 18 years old or older",9,not asked
+parent_97,"No, I am neither a parent or guardian",1,selected
+parent_97,"No, I am neither a parent or guardian",2,not selected
+parent_97,"No, I am neither a parent or guardian",8,skipped
+parent_97,"No, I am neither a parent or guardian",9,not asked
+child18,Children under age 18 in household,1,Yes
+child18,Children under age 18 in household,2,No
+child18,Children under age 18 in household,8,skipped
+child18,Children under age 18 in household,9,not asked
+employ,Employment Status,1,Full-time
+employ,Employment Status,2,Part-time
+employ,Employment Status,3,Temporarily laid off
+employ,Employment Status,4,Unemployed
+employ,Employment Status,5,Retired
+employ,Employment Status,6,Permanently disabled
+employ,Employment Status,7,Homemaker
+employ,Employment Status,8,Student
+employ,Employment Status,9,Other
+employ,Employment Status,98,skipped
+employ,Employment Status,99,not asked
+employ_t,Employment Status - open,NA,NA
+hadjob,Had job in past 5 years,1,Yes
+hadjob,Had job in past 5 years,2,No
+hadjob,Had job in past 5 years,8,skipped
+hadjob,Had job in past 5 years,9,not asked
+investor,Stock ownership,1,Yes
+investor,Stock ownership,2,No
+investor,Stock ownership,99,Not asked
+investor,Stock ownership,998,skipped
+investor,Stock ownership,999,not asked
+pew_bornagain,Born Again (Pew version),1,Yes
+pew_bornagain,Born Again (Pew version),2,No
+pew_bornagain,Born Again (Pew version),8,skipped
+pew_bornagain,Born Again (Pew version),9,not asked
+pew_religimp,Importance of religion (Pew version),1,Very important
+pew_religimp,Importance of religion (Pew version),2,Somewhat important
+pew_religimp,Importance of religion (Pew version),3,Not too important
+pew_religimp,Importance of religion (Pew version),4,Not at all important
+pew_religimp,Importance of religion (Pew version),8,skipped
+pew_religimp,Importance of religion (Pew version),9,not asked
+pew_churatd,Church attendance (Pew version),1,More than once a week
+pew_churatd,Church attendance (Pew version),2,Once a week
+pew_churatd,Church attendance (Pew version),3,Once or twice a month
+pew_churatd,Church attendance (Pew version),4,A few times a year
+pew_churatd,Church attendance (Pew version),5,Seldom
+pew_churatd,Church attendance (Pew version),6,Never
+pew_churatd,Church attendance (Pew version),7,Don't know
+pew_churatd,Church attendance (Pew version),98,skipped
+pew_churatd,Church attendance (Pew version),99,not asked
+pew_prayer,Frequency of Prayer (Pew version),1,Several times a day
+pew_prayer,Frequency of Prayer (Pew version),2,Once a day
+pew_prayer,Frequency of Prayer (Pew version),3,A few times a week
+pew_prayer,Frequency of Prayer (Pew version),4,Once a week
+pew_prayer,Frequency of Prayer (Pew version),5,A few times a month
+pew_prayer,Frequency of Prayer (Pew version),6,Seldom
+pew_prayer,Frequency of Prayer (Pew version),7,Never
+pew_prayer,Frequency of Prayer (Pew version),8,Don't know
+pew_prayer,Frequency of Prayer (Pew version),98,skipped
+pew_prayer,Frequency of Prayer (Pew version),99,not asked
+religpew,Religion,1,Protestant
+religpew,Religion,2,Roman Catholic
+religpew,Religion,3,Mormon
+religpew,Religion,4,Eastern or Greek Orthodox
+religpew,Religion,5,Jewish
+religpew,Religion,6,Muslim
+religpew,Religion,7,Buddhist
+religpew,Religion,8,Hindu
+religpew,Religion,9,Atheist
+religpew,Religion,10,Agnostic
+religpew,Religion,11,Nothing in particular
+religpew,Religion,12,Something else
+religpew,Religion,98,skipped
+religpew,Religion,99,not asked
+religpew_t,Pew religion - open,NA,NA
+religpew_protestant,Protestant Church,1,Baptist
+religpew_protestant,Protestant Church,2,Methodist
+religpew_protestant,Protestant Church,3,Nondenominational or Independent Church
+religpew_protestant,Protestant Church,4,Lutheran
+religpew_protestant,Protestant Church,5,Presbyterian
+religpew_protestant,Protestant Church,6,Pentecostal
+religpew_protestant,Protestant Church,7,Episcopalian
+religpew_protestant,Protestant Church,8,Church of Christ or Disciples of Christ
+religpew_protestant,Protestant Church,9,Congregational or United Church of Christ
+religpew_protestant,Protestant Church,10,Holiness
+religpew_protestant,Protestant Church,11,Reformed
+religpew_protestant,Protestant Church,12,Adventist
+religpew_protestant,Protestant Church,13,Jehovah's Witness
+religpew_protestant,Protestant Church,90,Something else
+religpew_protestant,Protestant Church,98,skipped
+religpew_protestant,Protestant Church,99,not asked
+religpew_protestant_t,Protestant Church - open,NA,NA
+religpew_baptist,Baptist Church,1,Southern Baptist Convention
+religpew_baptist,Baptist Church,2,American Baptist Churches in USA
+religpew_baptist,Baptist Church,3,National Baptist Convention
+religpew_baptist,Baptist Church,4,Progressive Baptist Convention
+religpew_baptist,Baptist Church,5,Independent Baptist
+religpew_baptist,Baptist Church,6,Baptist General Conference
+religpew_baptist,Baptist Church,7,Baptist Missionary Association
+religpew_baptist,Baptist Church,8,Conservative Baptist Assoc. of America
+religpew_baptist,Baptist Church,9,Free Will Baptist
+religpew_baptist,Baptist Church,10,General Association of Regular Baptists
+religpew_baptist,Baptist Church,90,Other Baptist
+religpew_baptist,Baptist Church,98,skipped
+religpew_baptist,Baptist Church,99,not asked
+religpew_baptist_t,Baptist Church - open,NA,NA
+religpew_methodist,Methodist Church,1,United Methodist Church
+religpew_methodist,Methodist Church,2,Free Methodist Church
+religpew_methodist,Methodist Church,3,African Methodist Episcopal
+religpew_methodist,Methodist Church,4,African Methodist Episcopal Zion
+religpew_methodist,Methodist Church,5,Christian Methodist Episcopal Church
+religpew_methodist,Methodist Church,90,Other Methodist Church
+religpew_methodist,Methodist Church,98,skipped
+religpew_methodist,Methodist Church,99,not asked
+religpew_methodist_t,Methodist Church - open,NA,NA
+religpew_nondenom,Nondenominational or Independent Church,1,Nondenominational evangelical
+religpew_nondenom,Nondenominational or Independent Church,2,Nondenominational fundamentalist
+religpew_nondenom,Nondenominational or Independent Church,3,Nondenominational charismatic
+religpew_nondenom,Nondenominational or Independent Church,4,Interdenominational
+religpew_nondenom,Nondenominational or Independent Church,5,Community church
+religpew_nondenom,Nondenominational or Independent Church,90,Other
+religpew_nondenom,Nondenominational or Independent Church,98,skipped
+religpew_nondenom,Nondenominational or Independent Church,99,not asked
+religpew_nondenom_t,Nondenominational or Independent Church - open,NA,NA
+religpew_lutheran,Lutheran Church,1,Evangelical Lutheran Church in America (ELCA)
+religpew_lutheran,Lutheran Church,2,"Lutheran Church, Missouri Synod"
+religpew_lutheran,Lutheran Church,3,"Lutheran Church, Wisconsin Synod"
+religpew_lutheran,Lutheran Church,4,Other Lutheran Church
+religpew_lutheran,Lutheran Church,8,skipped
+religpew_lutheran,Lutheran Church,9,not asked
+religpew_lutheran_t,Lutheran Church - open,NA,NA
+religpew_presby,Presbyterian Church,1,Presbyterian Church USA
+religpew_presby,Presbyterian Church,2,Presbyterian Church in America
+religpew_presby,Presbyterian Church,3,Associate Reformed Presbyterian
+religpew_presby,Presbyterian Church,4,Cumberland Presbyterian Church
+religpew_presby,Presbyterian Church,5,Orthodox Presbyterian
+religpew_presby,Presbyterian Church,6,Evangelical Presbyterian Church
+religpew_presby,Presbyterian Church,90,Other Presbyterian Church
+religpew_presby,Presbyterian Church,98,skipped
+religpew_presby,Presbyterian Church,99,not asked
+religpew_presby_t,Presbyterian Church - open,NA,NA
+religpew_pentecost,Pentecostal Church,1,Assemblies of God
+religpew_pentecost,Pentecostal Church,2,Church of God Cleveland TN
+religpew_pentecost,Pentecostal Church,3,Four Square Gospel
+religpew_pentecost,Pentecostal Church,4,Pentecostal Church of God
+religpew_pentecost,Pentecostal Church,5,Pentecostal Holiness Church
+religpew_pentecost,Pentecostal Church,6,Church of God in Christ
+religpew_pentecost,Pentecostal Church,7,Church of God of the Apostolic Faith
+religpew_pentecost,Pentecostal Church,8,Assembly of Christian Churches
+religpew_pentecost,Pentecostal Church,9,Apostolic Christian
+religpew_pentecost,Pentecostal Church,90,Other Pentecostal Church
+religpew_pentecost,Pentecostal Church,98,skipped
+religpew_pentecost,Pentecostal Church,99,not asked
+religpew_pentecost_t,Pentecostal Church - open,NA,NA
+religpew_episcop,Episcopal Church,1,Episcopal Church in the USA
+religpew_episcop,Episcopal Church,2,Anglican Church (Church of England)
+religpew_episcop,Episcopal Church,3,Anglican Orthodox Church
+religpew_episcop,Episcopal Church,4,Reformed Episcopal Church
+religpew_episcop,Episcopal Church,90,Other Episcopalian or Anglican Church
+religpew_episcop,Episcopal Church,98,skipped
+religpew_episcop,Episcopal Church,99,not asked
+religpew_episcop_t,Episcopal Church - open,NA,NA
+religpew_christian,Christian Church,1,Church of Christ
+religpew_christian,Christian Church,2,Disciples of Christ
+religpew_christian,Christian Church,3,Christian Churches and Churches of Christ
+religpew_christian,Christian Church,90,Other Christian church
+religpew_christian,Christian Church,98,skipped
+religpew_christian,Christian Church,99,not asked
+religpew_christian_t,Christian Church - open,NA,NA
+religpew_congreg,Congregational Church,1,United Church of Christ
+religpew_congreg,Congregational Church,2,Conservative Congregational Christian
+religpew_congreg,Congregational Church,3,National Association of Congregational Christians
+religpew_congreg,Congregational Church,90,Other Congregational
+religpew_congreg,Congregational Church,98,skipped
+religpew_congreg,Congregational Church,99,not asked
+religpew_congreg_t,Congregational Church - open,NA,NA
+religpew_holiness,Holiness Church,1,Church of the Nazarene
+religpew_holiness,Holiness Church,2,Wesleyan Church
+religpew_holiness,Holiness Church,3,Free Methodist Church
+religpew_holiness,Holiness Church,4,Christian and Missionary Alliance
+religpew_holiness,Holiness Church,5,"Church of God (Anderson, Indiana)"
+religpew_holiness,Holiness Church,6,"Salvation Army, American Rescue workers"
+religpew_holiness,Holiness Church,90,Other Holiness
+religpew_holiness,Holiness Church,98,skipped
+religpew_holiness,Holiness Church,99,not asked
+religpew_holiness_t,Holiness Church - open,NA,NA
+religpew_reformed,Reformed Church,1,Reformed Church in America
+religpew_reformed,Reformed Church,2,Christian Reformed Church
+religpew_reformed,Reformed Church,90,Other Reformed
+religpew_reformed,Reformed Church,98,skipped
+religpew_reformed,Reformed Church,99,not asked
+religpew_reformed_t,Reformed Church - open,NA,NA
+religpew_advent,Adventist Church,1,Seventh Day Adventist
+religpew_advent,Adventist Church,2,"Church of God, General Conference"
+religpew_advent,Adventist Church,3,Advent Christian
+religpew_advent,Adventist Church,90,Other Adventist
+religpew_advent,Adventist Church,98,skipped
+religpew_advent,Adventist Church,99,not asked
+religpew_advent_t,Adventist Church - open,NA,NA
+religpew_catholic,Catholic Church,1,Roman Catholic Church
+religpew_catholic,Catholic Church,2,National Polish Catholic Church
+religpew_catholic,Catholic Church,3,Greek-rite Catholic
+religpew_catholic,Catholic Church,4,Armenian Catholic
+religpew_catholic,Catholic Church,5,Old Catholic
+religpew_catholic,Catholic Church,90,Other Catholic
+religpew_catholic,Catholic Church,98,skipped
+religpew_catholic,Catholic Church,99,not asked
+religpew_catholic_t,Catholic Church - open,NA,NA
+religpew_mormon,Mormon Church,1,The Church of Jesus Christ of Latter-day Saints
+religpew_mormon,Mormon Church,2,Community of Christ
+religpew_mormon,Mormon Church,90,Other Mormon
+religpew_mormon,Mormon Church,98,skipped
+religpew_mormon,Mormon Church,99,not asked
+religpew_mormon_t,Mormon Church - open,NA,NA
+religpew_orthodox,Orthodox Church,1,Greek Orthodox
+religpew_orthodox,Orthodox Church,2,Russian Orthodox
+religpew_orthodox,Orthodox Church,3,Orthodox Church in America
+religpew_orthodox,Orthodox Church,4,Armenian Orthodox
+religpew_orthodox,Orthodox Church,5,Eastern Orthodox
+religpew_orthodox,Orthodox Church,6,Serbian Orthodox
+religpew_orthodox,Orthodox Church,90,Other Orthodox
+religpew_orthodox,Orthodox Church,98,skipped
+religpew_orthodox,Orthodox Church,99,not asked
+religpew_orthodox_t,Orthodox Church - open,NA,NA
+religpew_jewish,Jewish Group,1,Reform
+religpew_jewish,Jewish Group,2,Conservative
+religpew_jewish,Jewish Group,3,Orthodox
+religpew_jewish,Jewish Group,4,Reconstructionist
+religpew_jewish,Jewish Group,90,Other
+religpew_jewish,Jewish Group,98,skipped
+religpew_jewish,Jewish Group,99,not asked
+religpew_jewish_t,Jewish Group - open,NA,NA
+religpew_muslim,Muslim Group,1,Sunni
+religpew_muslim,Muslim Group,2,Shia
+religpew_muslim,Muslim Group,3,Nation of Islam (Black Muslim)
+religpew_muslim,Muslim Group,90,Other Muslim
+religpew_muslim,Muslim Group,98,skipped
+religpew_muslim,Muslim Group,99,not asked
+religpew_muslim_t,Muslim Group - open,NA,NA
+religpew_buddhist,Buddhist group,1,Theravada (Vipassana) Buddhism
+religpew_buddhist,Buddhist group,2,Mahayana (Zen) Buddhism
+religpew_buddhist,Buddhist group,3,Vajrayana (Tibetan) Buddhism
+religpew_buddhist,Buddhist group,90,Other Buddhist
+religpew_buddhist,Buddhist group,98,skipped
+religpew_buddhist,Buddhist group,99,not asked
+religpew_buddhist_t,Buddhist group - open,NA,NA
+religpew_hindu,Hindu Group,1,Vaishnava Hinduism
+religpew_hindu,Hindu Group,2,Shaivite Hinduism
+religpew_hindu,Hindu Group,3,Shaktism Hinduism
+religpew_hindu,Hindu Group,90,Other Hindu
+religpew_hindu,Hindu Group,98,skipped
+religpew_hindu,Hindu Group,99,not asked
+religpew_hindu_t,Hindu Group - open,NA,NA
+marstat,Marital Status,1,Married
+marstat,Marital Status,2,Separated
+marstat,Marital Status,3,Divorced
+marstat,Marital Status,4,Widowed
+marstat,Marital Status,5,Never married
+marstat,Marital Status,6,Domestic / civil partnership
+marstat,Marital Status,8,skipped
+marstat,Marital Status,9,not asked
+union,Labor union member,1,"Yes, I am currently a member of a labor union"
+union,Labor union member,2,I formerly was a member of a labor union
+union,Labor union member,3,"I am not now, nor have I been, a member of a labor union"
+union,Labor union member,8,skipped
+union,Labor union member,9,not asked
+union_coverage,Covered by union contract,1,Yes
+union_coverage,Covered by union contract,2,No
+union_coverage,Covered by union contract,3,Not sure
+union_coverage,Covered by union contract,8,skipped
+union_coverage,Covered by union contract,9,not asked
+unionhh,Family labor union member,1,"Yes, a member of my household is currently a union member"
+unionhh,Family labor union member,2,"A member of my household was formerly a member of a labor union, but is not now"
+unionhh,Family labor union member,3,"No, no one in my household has ever been a member of a labor union"
+unionhh,Family labor union member,4,Not sure
+unionhh,Family labor union member,8,skipped
+unionhh,Family labor union member,9,not asked
+ownhome,Home ownership,1,Own
+ownhome,Home ownership,2,Rent
+ownhome,Home ownership,3,Other
+ownhome,Home ownership,8,skipped
+ownhome,Home ownership,9,not asked
+ownhome_t,Home ownership - open,NA,NA
+newsint,Political Interest,1,Most of the time
+newsint,Political Interest,2,Some of the time
+newsint,Political Interest,3,Only now and then
+newsint,Political Interest,4,Hardly at all
+newsint,Political Interest,7,Don't know
+newsint,Political Interest,98,skipped
+newsint,Political Interest,99,not asked
+faminc_new,Family income,1,"Less than $10,000"
+faminc_new,Family income,2,"$10,000 - $19,999"
+faminc_new,Family income,3,"$20,000 - $29,999"
+faminc_new,Family income,4,"$30,000 - $39,999"
+faminc_new,Family income,5,"$40,000 - $49,999"
+faminc_new,Family income,6,"$50,000 - $59,999"
+faminc_new,Family income,7,"$60,000 - $69,999"
+faminc_new,Family income,8,"$70,000 - $79,999"
+faminc_new,Family income,9,"$80,000 - $99,999"
+faminc_new,Family income,10,"$100,000 - $119,999"
+faminc_new,Family income,11,"$120,000 - $149,999"
+faminc_new,Family income,12,"$150,000 - $199,999"
+faminc_new,Family income,13,"$200,000 - $249,999"
+faminc_new,Family income,14,"$250,000 - $349,999"
+faminc_new,Family income,15,"$350,000 - $499,999"
+faminc_new,Family income,16,"$500,000 or more"
+faminc_new,Family income,97,Prefer not to say
+faminc_new,Family income,998,skipped
+faminc_new,Family income,999,not asked
+milstat_1,Military Household - I am,1,selected
+milstat_1,Military Household - I am,2,not selected
+milstat_1,Military Household - I am,8,skipped
+milstat_1,Military Household - I am,9,not asked
+milstat_2,Military Household - Family,1,selected
+milstat_2,Military Household - Family,2,not selected
+milstat_2,Military Household - Family,8,skipped
+milstat_2,Military Household - Family,9,not asked
+milstat_3,Military Household - I served previously,1,selected
+milstat_3,Military Household - I served previously,2,not selected
+milstat_3,Military Household - I served previously,8,skipped
+milstat_3,Military Household - I served previously,9,not asked
+milstat_4,Military Household - Family served previously,1,selected
+milstat_4,Military Household - Family served previously,2,not selected
+milstat_4,Military Household - Family served previously,8,skipped
+milstat_4,Military Household - Family served previously,9,not asked
+milstat_5,Military Household - None,1,selected
+milstat_5,Military Household - None,2,not selected
+milstat_5,Military Household - None,8,skipped
+milstat_5,Military Household - None,9,not asked
+healthins_1,Health insurance - Through job,1,selected
+healthins_1,Health insurance - Through job,2,not selected
+healthins_1,Health insurance - Through job,8,skipped
+healthins_1,Health insurance - Through job,9,not asked
+healthins_2,Health insurance - Govt program,1,selected
+healthins_2,Health insurance - Govt program,2,not selected
+healthins_2,Health insurance - Govt program,8,skipped
+healthins_2,Health insurance - Govt program,9,not asked
+healthins_3,Health insurance - Through school,1,selected
+healthins_3,Health insurance - Through school,2,not selected
+healthins_3,Health insurance - Through school,8,skipped
+healthins_3,Health insurance - Through school,9,not asked
+healthins_4,Health insurance - Purchase on own,1,selected
+healthins_4,Health insurance - Purchase on own,2,not selected
+healthins_4,Health insurance - Purchase on own,8,skipped
+healthins_4,Health insurance - Purchase on own,9,not asked
+healthins_5,Health insurance - Not sure,1,selected
+healthins_5,Health insurance - Not sure,2,not selected
+healthins_5,Health insurance - Not sure,8,skipped
+healthins_5,Health insurance - Not sure,9,not asked
+healthins_6,Health insurance - No,1,selected
+healthins_6,Health insurance - No,2,not selected
+healthins_6,Health insurance - No,8,skipped
+healthins_6,Health insurance - No,9,not asked
+mena,Middle Eastern or North African,1,Yes
+mena,Middle Eastern or North African,2,No
+mena,Middle Eastern or North African,8,skipped
+mena,Middle Eastern or North African,9,not asked
+mena_origin_1,Middle Eastern or Northern African heritage - Afghan,1,selected
+mena_origin_1,Middle Eastern or Northern African heritage - Afghan,2,not selected
+mena_origin_1,Middle Eastern or Northern African heritage - Afghan,8,skipped
+mena_origin_1,Middle Eastern or Northern African heritage - Afghan,9,not asked
+mena_origin_2,Middle Eastern or Northern African heritage - Egyptian,1,selected
+mena_origin_2,Middle Eastern or Northern African heritage - Egyptian,2,not selected
+mena_origin_2,Middle Eastern or Northern African heritage - Egyptian,8,skipped
+mena_origin_2,Middle Eastern or Northern African heritage - Egyptian,9,not asked
+mena_origin_3,Middle Eastern or Northern African heritage - Iranian,1,selected
+mena_origin_3,Middle Eastern or Northern African heritage - Iranian,2,not selected
+mena_origin_3,Middle Eastern or Northern African heritage - Iranian,8,skipped
+mena_origin_3,Middle Eastern or Northern African heritage - Iranian,9,not asked
+mena_origin_4,Middle Eastern or Northern African heritage - Iraqi,1,selected
+mena_origin_4,Middle Eastern or Northern African heritage - Iraqi,2,not selected
+mena_origin_4,Middle Eastern or Northern African heritage - Iraqi,8,skipped
+mena_origin_4,Middle Eastern or Northern African heritage - Iraqi,9,not asked
+mena_origin_5,Middle Eastern or Northern African heritage - Israeli,1,selected
+mena_origin_5,Middle Eastern or Northern African heritage - Israeli,2,not selected
+mena_origin_5,Middle Eastern or Northern African heritage - Israeli,8,skipped
+mena_origin_5,Middle Eastern or Northern African heritage - Israeli,9,not asked
+mena_origin_6,Middle Eastern or Northern African heritage - Lebanese,1,selected
+mena_origin_6,Middle Eastern or Northern African heritage - Lebanese,2,not selected
+mena_origin_6,Middle Eastern or Northern African heritage - Lebanese,8,skipped
+mena_origin_6,Middle Eastern or Northern African heritage - Lebanese,9,not asked
+mena_origin_7,Middle Eastern or Northern African heritage - Moroccan,1,selected
+mena_origin_7,Middle Eastern or Northern African heritage - Moroccan,2,not selected
+mena_origin_7,Middle Eastern or Northern African heritage - Moroccan,8,skipped
+mena_origin_7,Middle Eastern or Northern African heritage - Moroccan,9,not asked
+mena_origin_8,Middle Eastern or Northern African heritage - Palestinian,1,selected
+mena_origin_8,Middle Eastern or Northern African heritage - Palestinian,2,not selected
+mena_origin_8,Middle Eastern or Northern African heritage - Palestinian,8,skipped
+mena_origin_8,Middle Eastern or Northern African heritage - Palestinian,9,not asked
+mena_origin_9,Middle Eastern or Northern African heritage - Somali,1,selected
+mena_origin_9,Middle Eastern or Northern African heritage - Somali,2,not selected
+mena_origin_9,Middle Eastern or Northern African heritage - Somali,8,skipped
+mena_origin_9,Middle Eastern or Northern African heritage - Somali,9,not asked
+mena_origin_10,Middle Eastern or Northern African heritage - Syrian,1,selected
+mena_origin_10,Middle Eastern or Northern African heritage - Syrian,2,not selected
+mena_origin_10,Middle Eastern or Northern African heritage - Syrian,8,skipped
+mena_origin_10,Middle Eastern or Northern African heritage - Syrian,9,not asked
+mena_origin_11,Middle Eastern or Northern African heritage - Turkish,1,selected
+mena_origin_11,Middle Eastern or Northern African heritage - Turkish,2,not selected
+mena_origin_11,Middle Eastern or Northern African heritage - Turkish,8,skipped
+mena_origin_11,Middle Eastern or Northern African heritage - Turkish,9,not asked
+mena_origin_12,Middle Eastern or Northern African heritage - Other,1,selected
+mena_origin_12,Middle Eastern or Northern African heritage - Other,2,not selected
+mena_origin_12,Middle Eastern or Northern African heritage - Other,8,skipped
+mena_origin_12,Middle Eastern or Northern African heritage - Other,9,not asked
+mena_origin_t,Middle Eastern or Northern African Country of Origin,NA,NA
+CC24_hisp_1,Latin Heritage - No Country in Particular,1,selected
+CC24_hisp_1,Latin Heritage - No Country in Particular,2,not selected
+CC24_hisp_1,Latin Heritage - No Country in Particular,8,skipped
+CC24_hisp_1,Latin Heritage - No Country in Particular,9,not asked
+CC24_hisp_2,Latin Heritage - United States,1,selected
+CC24_hisp_2,Latin Heritage - United States,2,not selected
+CC24_hisp_2,Latin Heritage - United States,8,skipped
+CC24_hisp_2,Latin Heritage - United States,9,not asked
+CC24_hisp_3,Latin Heritage - Mexico,1,selected
+CC24_hisp_3,Latin Heritage - Mexico,2,not selected
+CC24_hisp_3,Latin Heritage - Mexico,8,skipped
+CC24_hisp_3,Latin Heritage - Mexico,9,not asked
+CC24_hisp_4,Latin Heritage - Puerto Rico,1,selected
+CC24_hisp_4,Latin Heritage - Puerto Rico,2,not selected
+CC24_hisp_4,Latin Heritage - Puerto Rico,8,skipped
+CC24_hisp_4,Latin Heritage - Puerto Rico,9,not asked
+CC24_hisp_5,Latin Heritage - Cuba,1,selected
+CC24_hisp_5,Latin Heritage - Cuba,2,not selected
+CC24_hisp_5,Latin Heritage - Cuba,8,skipped
+CC24_hisp_5,Latin Heritage - Cuba,9,not asked
+CC24_hisp_6,Latin Heritage - Dominican Republic,1,selected
+CC24_hisp_6,Latin Heritage - Dominican Republic,2,not selected
+CC24_hisp_6,Latin Heritage - Dominican Republic,8,skipped
+CC24_hisp_6,Latin Heritage - Dominican Republic,9,not asked
+CC24_hisp_7,Latin Heritage - South America,1,selected
+CC24_hisp_7,Latin Heritage - South America,2,not selected
+CC24_hisp_7,Latin Heritage - South America,8,skipped
+CC24_hisp_7,Latin Heritage - South America,9,not asked
+CC24_hisp_8,Latin Heritage - Central America,1,selected
+CC24_hisp_8,Latin Heritage - Central America,2,not selected
+CC24_hisp_8,Latin Heritage - Central America,8,skipped
+CC24_hisp_8,Latin Heritage - Central America,9,not asked
+CC24_hisp_9,Latin Heritage - Caribbean,1,selected
+CC24_hisp_9,Latin Heritage - Caribbean,2,not selected
+CC24_hisp_9,Latin Heritage - Caribbean,8,skipped
+CC24_hisp_9,Latin Heritage - Caribbean,9,not asked
+CC24_hisp_10,Latin Heritage - Spain,1,selected
+CC24_hisp_10,Latin Heritage - Spain,2,not selected
+CC24_hisp_10,Latin Heritage - Spain,8,skipped
+CC24_hisp_10,Latin Heritage - Spain,9,not asked
+CC24_hisp_11,Latin Heritage - Other,1,selected
+CC24_hisp_11,Latin Heritage - Other,2,not selected
+CC24_hisp_11,Latin Heritage - Other,8,skipped
+CC24_hisp_11,Latin Heritage - Other,9,not asked
+CC24_hisp_12,"Latin heritage - I am not of Latino, Hispanic or Spanish heritage",1,selected
+CC24_hisp_12,"Latin heritage - I am not of Latino, Hispanic or Spanish heritage",2,not selected
+CC24_hisp_12,"Latin heritage - I am not of Latino, Hispanic or Spanish heritage",8,skipped
+CC24_hisp_12,"Latin heritage - I am not of Latino, Hispanic or Spanish heritage",9,not asked
+CC24_hisp_t,Latin Heritage - open,NA,NA
+CC24_asian_1,Asian Heritage - No Country in Particular,1,selected
+CC24_asian_1,Asian Heritage - No Country in Particular,2,not selected
+CC24_asian_1,Asian Heritage - No Country in Particular,8,skipped
+CC24_asian_1,Asian Heritage - No Country in Particular,9,not asked
+CC24_asian_2,Asian Heritage - United States,1,selected
+CC24_asian_2,Asian Heritage - United States,2,not selected
+CC24_asian_2,Asian Heritage - United States,8,skipped
+CC24_asian_2,Asian Heritage - United States,9,not asked
+CC24_asian_3,Asian Heritage - China,1,selected
+CC24_asian_3,Asian Heritage - China,2,not selected
+CC24_asian_3,Asian Heritage - China,8,skipped
+CC24_asian_3,Asian Heritage - China,9,not asked
+CC24_asian_4,Asian Heritage - Japan,1,selected
+CC24_asian_4,Asian Heritage - Japan,2,not selected
+CC24_asian_4,Asian Heritage - Japan,8,skipped
+CC24_asian_4,Asian Heritage - Japan,9,not asked
+CC24_asian_5,Asian Heritage - India,1,selected
+CC24_asian_5,Asian Heritage - India,2,not selected
+CC24_asian_5,Asian Heritage - India,8,skipped
+CC24_asian_5,Asian Heritage - India,9,not asked
+CC24_asian_6,Asian Heritage - Philippines,1,selected
+CC24_asian_6,Asian Heritage - Philippines,2,not selected
+CC24_asian_6,Asian Heritage - Philippines,8,skipped
+CC24_asian_6,Asian Heritage - Philippines,9,not asked
+CC24_asian_7,Asian Heritage - Taiwan,1,selected
+CC24_asian_7,Asian Heritage - Taiwan,2,not selected
+CC24_asian_7,Asian Heritage - Taiwan,8,skipped
+CC24_asian_7,Asian Heritage - Taiwan,9,not asked
+CC24_asian_8,Asian Heritage - Korea,1,selected
+CC24_asian_8,Asian Heritage - Korea,2,not selected
+CC24_asian_8,Asian Heritage - Korea,8,skipped
+CC24_asian_8,Asian Heritage - Korea,9,not asked
+CC24_asian_9,Asian Heritage - Vietnam,1,selected
+CC24_asian_9,Asian Heritage - Vietnam,2,not selected
+CC24_asian_9,Asian Heritage - Vietnam,8,skipped
+CC24_asian_9,Asian Heritage - Vietnam,9,not asked
+CC24_asian_10,Asian Heritage - Pakistan,1,selected
+CC24_asian_10,Asian Heritage - Pakistan,2,not selected
+CC24_asian_10,Asian Heritage - Pakistan,8,skipped
+CC24_asian_10,Asian Heritage - Pakistan,9,not asked
+CC24_asian_11,Asian Heritage - Hmong,1,selected
+CC24_asian_11,Asian Heritage - Hmong,2,not selected
+CC24_asian_11,Asian Heritage - Hmong,8,skipped
+CC24_asian_11,Asian Heritage - Hmong,9,not asked
+CC24_asian_12,Asian Heritage - Cambodia,1,selected
+CC24_asian_12,Asian Heritage - Cambodia,2,not selected
+CC24_asian_12,Asian Heritage - Cambodia,8,skipped
+CC24_asian_12,Asian Heritage - Cambodia,9,not asked
+CC24_asian_13,Asian Heritage - Thailand,1,selected
+CC24_asian_13,Asian Heritage - Thailand,2,not selected
+CC24_asian_13,Asian Heritage - Thailand,8,skipped
+CC24_asian_13,Asian Heritage - Thailand,9,not asked
+CC24_asian_14,Asian Heritage - Other,1,selected
+CC24_asian_14,Asian Heritage - Other,2,not selected
+CC24_asian_14,Asian Heritage - Other,8,skipped
+CC24_asian_14,Asian Heritage - Other,9,not asked
+CC24_asian_15,Asian Heritage - I am not of Asian Heritage,1,selected
+CC24_asian_15,Asian Heritage - I am not of Asian Heritage,2,not selected
+CC24_asian_15,Asian Heritage - I am not of Asian Heritage,8,skipped
+CC24_asian_15,Asian Heritage - I am not of Asian Heritage,9,not asked
+CC24_asian_t,Asian Heritage - open,NA,NA
+CC24_native,Native America heritage,NA,NA
+presvote16post,2016 President Vote Post Election,1,Hillary Clinton
+presvote16post,2016 President Vote Post Election,2,Donald Trump
+presvote16post,2016 President Vote Post Election,3,Gary Johnson
+presvote16post,2016 President Vote Post Election,4,Jill Stein
+presvote16post,2016 President Vote Post Election,5,Evan McMullin
+presvote16post,2016 President Vote Post Election,6,Other
+presvote16post,2016 President Vote Post Election,7,Did not vote for President
+presvote16post,2016 President Vote Post Election,98,skipped
+presvote16post,2016 President Vote Post Election,99,not asked
+presvote16post_t,2016 President Vote Post Election - open,NA,NA
+industry,Industry,1,"Agriculture, forestry, fishing, and hunting"
+industry,Industry,2,Mining
+industry,Industry,3,Utilities
+industry,Industry,4,Construction
+industry,Industry,5,Manufacturing
+industry,Industry,6,Professional and business services
+industry,Industry,7,Educational services
+industry,Industry,8,Health care and social assistance
+industry,Industry,9,Leisure and hospitality
+industry,Industry,10,Other services
+industry,Industry,11,Wholesale trade
+industry,Industry,12,Retail trade
+industry,Industry,13,Transportation and warehousing
+industry,Industry,14,Information
+industry,Industry,15,Financial activities
+industry,Industry,16,Federal government
+industry,Industry,17,State and local government
+industry,Industry,98,skipped
+industry,Industry,99,not asked
+jobnum,Number of jobs,1,1
+jobnum,Number of jobs,2,2
+jobnum,Number of jobs,3,3 or more
+jobnum,Number of jobs,8,skipped
+jobnum,Number of jobs,9,not asked
+sexuality,Sexual Orientation,1,Heterosexual / straight
+sexuality,Sexual Orientation,2,Lesbian / gay woman
+sexuality,Sexual Orientation,3,Gay man
+sexuality,Sexual Orientation,4,Bisexual
+sexuality,Sexual Orientation,5,Other
+sexuality,Sexual Orientation,6,Prefer not to say
+sexuality,Sexual Orientation,8,skipped
+sexuality,Sexual Orientation,9,not asked
+transgender,Transgender,1,Yes
+transgender,Transgender,2,No
+transgender,Transgender,3,Prefer not to say
+transgender,Transgender,8,skipped
+transgender,Transgender,9,not asked
+cdid118,cdid118,NA,NA
+cdid119,cdid119,NA,NA
+lookupzip,Zip code used for CD mapping,NA,NA
+countyfips,County FIPS code,NA,NA
+countyname,County Name,NA,NA
+LegName,Legislature name,NA,NA
+LowerChamberName,Lower chamber name,NA,NA
+UpperChamberName,UpperChamberName,NA,NA
+CurrentGovName,Current Governor Name,NA,NA
+CurrentGovParty,Current Governor Party,NA,NA
+CurrentHouseName,Current House Name,NA,NA
+CurrentHouseParty,Current House Party,NA,NA
+CurrentSen1Name,Current Senate 1 Name,NA,NA
+CurrentSen1Party,Current Senate 1 Party,NA,NA
+CurrentSen2Name,Current Senate 2 Name,NA,NA
+CurrentSen2Party,Current Senate 2 Party,NA,NA
+GovCand1Name,Governor Candidate 1 Name,NA,NA
+GovCand1Party,Governor Candidate 1 Party,NA,NA
+GovCand2Name,Governor Candidate 2 Name,NA,NA
+GovCand2Party,Governor Candidate 2 Party,NA,NA
+GovCand3Name,Governor Candidate 3 Name,NA,NA
+GovCand3Party,Governor Candidate 3 Party,NA,NA
+HouseCand1Name,House Candidate 1 Name,NA,NA
+HouseCand1Party,House Candidate 1 Party,NA,NA
+HouseCand2Name,House Candidate 2 Name,NA,NA
+HouseCand2Party,House Candidate 2 Party,NA,NA
+HouseCand3Name,House Candidate 3 Name,NA,NA
+HouseCand3Party,House Candidate 3 Party,NA,NA
+HouseCand4Name,House Candidate 4 Name,NA,NA
+HouseCand4Party,House Candidate 4 Party,NA,NA
+HouseCand5Name,House Candidate 5 Name,NA,NA
+HouseCand5Party,House Candidate 5 Party,NA,NA
+SenCand1Name,Senate Candidate 1 Name,NA,NA
+SenCand1Party,Senate Candidate 1 Party,NA,NA
+SenCand2Name,Senate Candidate 2 Name,NA,NA
+SenCand2Party,Senate Candidate 2 Party,NA,NA
+SenCand3Name,Senate Candidate 3 Name,NA,NA
+SenCand3Party,Senate Candidate 3 Party,NA,NA
+SenCand1Name2,Senate Candidate 1 Name - 2nd race,NA,NA
+SenCand1Party2,Senate Candidate 1 Party - 2nd race,NA,NA
+SenCand2Name2,Senate Candidate 2 Name - 2nd race,NA,NA
+SenCand2Party2,Senate Candidate 2 Party - 2nd race,NA,NA
+page_CC24_300_timing,Timing Data for Page CC24_300,NA,NA
+page_CC24_300b_timing,Timing Data for Page CC24_300b,NA,NA
+page_CC24_300d_timing,Timing Data for Page CC24_300d,NA,NA
+page_CC24_301_timing,Timing Data for Page CC24_301,NA,NA
+page_CC24_302_timing,Timing Data for Page CC24_302,NA,NA
+page_CC24_303_timing,Timing Data for Page CC24_303,NA,NA
+page_employ_timing,Timing Data for Page employ,NA,NA
+page_CC24_305_timing,Timing Data for Page CC24_305,NA,NA
+page_CC24_309e_timing,Timing Data for Page CC24_309e,NA,NA
+page_CC24_308a_timing,Timing Data for Page CC24_308a,NA,NA
+page_CC24_308b_timing,Timing Data for Page CC24_308b,NA,NA
+page_CC24_309d_timing,Timing Data for Page CC24_309d,NA,NA
+page_CC24_310grid_timing,Timing Data for Page CC24_310grid,NA,NA
+page_pageCC24_311grid_timing,Timing Data for Page pageCC24_311grid,NA,NA
+page_CC24_312grid_timing,Timing Data for Page CC24_312grid,NA,NA
+page_cit1_timing,Timing Data for Page cit1,NA,NA
+page_immstat_timing,Timing Data for Page immstat,NA,NA
+page_CC24_321grid_timing,Timing Data for Page CC24_321grid,NA,NA
+page_CC24_323grid_timing,Timing Data for Page CC24_323grid,NA,NA
+page_CC24_324grid_timing,Timing Data for Page CC24_324grid,NA,NA
+page_CC24_325_timing,Timing Data for Page CC24_325,NA,NA
+page_CC24_326grid_timing,Timing Data for Page CC24_326grid,NA,NA
+page_CC24_328grid_timing,Timing Data for Page CC24_328grid,NA,NA
+page_CC24_330grid_timing,Timing Data for Page CC24_330grid,NA,NA
+page_CC24_340grid_timing,Timing Data for Page CC24_340grid,NA,NA
+page_CC24_341grid_timing,Timing Data for Page CC24_341grid,NA,NA
+page_CC24_361b_timing,Timing Data for Page CC24_361b,NA,NA
+page_presvote20post_timing,Timing Data for Page presvote20post,NA,NA
+page_CC24_363_timing,Timing Data for Page CC24_363,NA,NA
+page_CC24_364a_timing,Timing Data for Page CC24_364a,NA,NA
+page_CC24_365_voted_timing,Timing Data for Page CC24_365_voted,NA,NA
+page_CC24_365b_voted_timing,Timing Data for Page CC24_365b_voted,NA,NA
+page_CC24_366_voted_timing,Timing Data for Page CC24_366_voted,NA,NA
+page_CC24_367_voted_timing,Timing Data for Page CC24_367_voted,NA,NA
+page_CC24_364b_timing,Timing Data for Page CC24_364b,NA,NA
+page_CC24_365_timing,Timing Data for Page CC24_365,NA,NA
+page_CC24_365a_timing,Timing Data for Page CC24_365a,NA,NA
+page_CC24_365b_timing,Timing Data for Page CC24_365b,NA,NA
+page_CC24_365c_timing,Timing Data for Page CC24_365c,NA,NA
+page_CC24_366_timing,Timing Data for Page CC24_366,NA,NA
+page_CC24_367_timing,Timing Data for Page CC24_367,NA,NA
+page_CC24_367a_timing,Timing Data for Page CC24_367a,NA,NA
+page_CC24_368_timing,Timing Data for Page CC24_368,NA,NA
+page_urbancity_timing,Timing Data for Page urbancity,NA,NA
+page_ideo5_timing,Timing Data for Page ideo5,NA,NA
+page_parent_timing,Timing Data for Page parent,NA,NA
+page_child18_timing,Timing Data for Page child18,NA,NA
+page_hadjob_timing,Timing Data for Page hadjob,NA,NA
+page_investor_timing,Timing Data for Page investor,NA,NA
+page_pew_bornagain_timing,Timing Data for Page pew_bornagain,NA,NA
+page_pew_religimp_timing,Timing Data for Page pew_religimp,NA,NA
+page_pew_churatd_timing,Timing Data for Page pew_churatd,NA,NA
+page_pew_prayer_timing,Timing Data for Page pew_prayer,NA,NA
+page_religpew_timing,Timing Data for Page religpew,NA,NA
+page_religpew_protestant_timing,Timing Data for Page religpew_protestant,NA,NA
+page_religion_denom_timing,Timing Data for Page religion_denom,NA,NA
+page_marstat_timing,Timing Data for Page marstat,NA,NA
+page_union_timing,Timing Data for Page union,NA,NA
+page_union_coverage_timing,Timing Data for Page union_coverage,NA,NA
+page_unionhh_timing,Timing Data for Page unionhh,NA,NA
+page_ownhome_timing,Timing Data for Page ownhome,NA,NA
+page_demos2c_timing,Timing Data for Page demos2c,NA,NA
+page_milstat_timing,Timing Data for Page milstat,NA,NA
+page_healthins_timing,Timing Data for Page healthins,NA,NA
+page_mena_timing,Timing Data for Page mena,NA,NA
+page_mena_origin_timing,Timing Data for Page mena_origin,NA,NA
+page_CC24_hisp_timing,Timing Data for Page CC24_hisp,NA,NA
+page_CC24_asian_timing,Timing Data for Page CC24_asian,NA,NA
+page_CC24_native_timing,Timing Data for Page CC24_native,NA,NA
+page_presvote16post_timing,Timing Data for Page presvote16post,NA,NA
+page_industry_timing,Timing Data for Page industry,NA,NA
+page_jobnum_timing,Timing Data for Page jobnum,NA,NA
+page_sex_timing,Timing Data for Page sex,NA,NA
+regzip_confirm_post,Confirm registered zip code post,1,Yes
+regzip_confirm_post,Confirm registered zip code post,2,No
+regzip_confirm_post,Confirm registered zip code post,8,skipped
+regzip_confirm_post,Confirm registered zip code post,9,not asked
+reszip_confirm_post,Confirm zip code post,1,Yes
+reszip_confirm_post,Confirm zip code post,2,No
+reszip_confirm_post,Confirm zip code post,8,skipped
+reszip_confirm_post,Confirm zip code post,9,not asked
+inputzip_post,Zip code post,999999,not asked
+votereg_post,Voter Registration Status post,1,Yes
+votereg_post,Voter Registration Status post,2,No
+votereg_post,Voter Registration Status post,3,Don't know
+votereg_post,Voter Registration Status post,8,skipped
+votereg_post,Voter Registration Status post,9,not asked
+votereg_f_post,Registered to vote post,1,Yes
+votereg_f_post,Registered to vote post,2,No
+votereg_f_post,Registered to vote post,8,skipped
+votereg_f_post,Registered to vote post,9,not asked
+regzip_post,Zip code where registered post,999999,not asked
+inputstate_post,State post,1,Alabama
+inputstate_post,State post,2,Alaska
+inputstate_post,State post,4,Arizona
+inputstate_post,State post,5,Arkansas
+inputstate_post,State post,6,California
+inputstate_post,State post,8,Colorado
+inputstate_post,State post,9,Connecticut
+inputstate_post,State post,10,Delaware
+inputstate_post,State post,11,District of Columbia
+inputstate_post,State post,12,Florida
+inputstate_post,State post,13,Georgia
+inputstate_post,State post,15,Hawaii
+inputstate_post,State post,16,Idaho
+inputstate_post,State post,17,Illinois
+inputstate_post,State post,18,Indiana
+inputstate_post,State post,19,Iowa
+inputstate_post,State post,20,Kansas
+inputstate_post,State post,21,Kentucky
+inputstate_post,State post,22,Louisiana
+inputstate_post,State post,23,Maine
+inputstate_post,State post,24,Maryland
+inputstate_post,State post,25,Massachusetts
+inputstate_post,State post,26,Michigan
+inputstate_post,State post,27,Minnesota
+inputstate_post,State post,28,Mississippi
+inputstate_post,State post,29,Missouri
+inputstate_post,State post,30,Montana
+inputstate_post,State post,31,Nebraska
+inputstate_post,State post,32,Nevada
+inputstate_post,State post,33,New Hampshire
+inputstate_post,State post,34,New Jersey
+inputstate_post,State post,35,New Mexico
+inputstate_post,State post,36,New York
+inputstate_post,State post,37,North Carolina
+inputstate_post,State post,38,North Dakota
+inputstate_post,State post,39,Ohio
+inputstate_post,State post,40,Oklahoma
+inputstate_post,State post,41,Oregon
+inputstate_post,State post,42,Pennsylvania
+inputstate_post,State post,44,Rhode Island
+inputstate_post,State post,45,South Carolina
+inputstate_post,State post,46,South Dakota
+inputstate_post,State post,47,Tennessee
+inputstate_post,State post,48,Texas
+inputstate_post,State post,49,Utah
+inputstate_post,State post,50,Vermont
+inputstate_post,State post,51,Virginia
+inputstate_post,State post,53,Washington
+inputstate_post,State post,54,West Virginia
+inputstate_post,State post,55,Wisconsin
+inputstate_post,State post,56,Wyoming
+inputstate_post,State post,98,skipped
+inputstate_post,State post,99,not asked
+birthyr_post,Birth year - post,NA,NA
+gender4_post,Gender - post,1,Man
+gender4_post,Gender - post,2,Woman
+gender4_post,Gender - post,3,Non-binary
+gender4_post,Gender - post,4,Other
+gender4_post,Gender - post,8,skipped
+gender4_post,Gender - post,9,not asked
+CC24_433a,3 pt party ID,1,Democrat
+CC24_433a,3 pt party ID,2,Republican
+CC24_433a,3 pt party ID,3,Independent
+CC24_433a,3 pt party ID,4,Other
+CC24_433a,3 pt party ID,8,skipped
+CC24_433a,3 pt party ID,9,not asked
+CC24_433_t,3 pt party ID - open,NA,NA
+CC24_433_dem,Party ID Dem strength,1,Strong Democrat
+CC24_433_dem,Party ID Dem strength,2,Not so strong Democrat
+CC24_433_dem,Party ID Dem strength,8,skipped
+CC24_433_dem,Party ID Dem strength,9,not asked
+CC24_433_rep,Party ID Rep strength,1,Strong Republican
+CC24_433_rep,Party ID Rep strength,2,Not so strong Republican
+CC24_433_rep,Party ID Rep strength,8,skipped
+CC24_433_rep,Party ID Rep strength,9,not asked
+CC24_433b,Party ID lean,1,The Democratic Party
+CC24_433b,Party ID lean,2,The Republican Party
+CC24_433b,Party ID lean,3,Neither
+CC24_433b,Party ID lean,8,Not sure
+CC24_433b,Party ID lean,98,skipped
+CC24_433b,Party ID lean,99,not asked
+CC24_pid7,7 point Party ID,1,Strong Democrat
+CC24_pid7,7 point Party ID,2,Not very strong Democrat
+CC24_pid7,7 point Party ID,3,Lean Democrat
+CC24_pid7,7 point Party ID,4,Independent
+CC24_pid7,7 point Party ID,5,Lean Republican
+CC24_pid7,7 point Party ID,6,Not very strong Republican
+CC24_pid7,7 point Party ID,7,Strong Republican
+CC24_pid7,7 point Party ID,8,Not sure
+CC24_pid7,7 point Party ID,98,skipped
+CC24_pid7,7 point Party ID,99,not asked
+CC24_401,Voted in 2024 General election,1,I did not vote in the election this November.
+CC24_401,Voted in 2024 General election,2,I thought about voting this time – but didn't.
+CC24_401,Voted in 2024 General election,3,"I usually vote, but didn't this time."
+CC24_401,Voted in 2024 General election,4,I attempted to vote but did not or could not.
+CC24_401,Voted in 2024 General election,5,I definitely voted in the November 2024 General Election.
+CC24_401,Voted in 2024 General election,8,skipped
+CC24_401,Voted in 2024 General election,9,not asked
+CC24_402a,Main reason didn't vote,1,I forgot
+CC24_402a,Main reason didn't vote,2,I'm not interested
+CC24_402a,Main reason didn't vote,3,Too busy
+CC24_402a,Main reason didn't vote,4,Did not like the candidates
+CC24_402a,Main reason didn't vote,5,I am not registered
+CC24_402a,Main reason didn't vote,6,I did not have the correct form of identification
+CC24_402a,Main reason didn't vote,7,Out of town
+CC24_402a,Main reason didn't vote,8,Sick or disabled
+CC24_402a,Main reason didn't vote,9,Transportation
+CC24_402a,Main reason didn't vote,10,Bad weather
+CC24_402a,Main reason didn't vote,11,The line at the polls was too long
+CC24_402a,Main reason didn't vote,12,"I was not allowed to vote at the polls, even though I tried"
+CC24_402a,Main reason didn't vote,13,I requested but did not receive an absentee ballot
+CC24_402a,Main reason didn't vote,14,I did not know where to vote
+CC24_402a,Main reason didn't vote,15,I did not feel that I knew enough about the choices
+CC24_402a,Main reason didn't vote,16,I was afraid I might expose myself to the coronavirus
+CC24_402a,Main reason didn't vote,17,Other
+CC24_402a,Main reason didn't vote,55,Don't know
+CC24_402a,Main reason didn't vote,98,skipped
+CC24_402a,Main reason didn't vote,99,not asked
+CC24_402a_t,Main reason didn't vote - open,NA,NA
+CC24_402b,Second reason didn't vote,1,I forgot
+CC24_402b,Second reason didn't vote,2,I'm not interested
+CC24_402b,Second reason didn't vote,3,Too busy
+CC24_402b,Second reason didn't vote,4,Did not like the candidates
+CC24_402b,Second reason didn't vote,5,I am not registered
+CC24_402b,Second reason didn't vote,6,I did not have the correct form of identification
+CC24_402b,Second reason didn't vote,7,Out of town
+CC24_402b,Second reason didn't vote,8,Sick or disabled
+CC24_402b,Second reason didn't vote,9,Transportation
+CC24_402b,Second reason didn't vote,10,Bad weather
+CC24_402b,Second reason didn't vote,11,The line at the polls was too long
+CC24_402b,Second reason didn't vote,12,"I was not allowed to vote at the polls, even though I tried"
+CC24_402b,Second reason didn't vote,13,I requested but did not receive an absentee ballot
+CC24_402b,Second reason didn't vote,14,I did not know where to vote
+CC24_402b,Second reason didn't vote,15,I did not feel that I knew enough about the choices
+CC24_402b,Second reason didn't vote,16,I was afraid I might expose myself to the coronavirus
+CC24_402b,Second reason didn't vote,17,Other
+CC24_402b,Second reason didn't vote,55,Don't know
+CC24_402b,Second reason didn't vote,98,skipped
+CC24_402b,Second reason didn't vote,99,not asked
+CC24_402b_t,Second reason didn't vote - open,NA,NA
+CC24_402c,Main reason no past vote,1,I forgot
+CC24_402c,Main reason no past vote,2,I was not interested
+CC24_402c,Main reason no past vote,3,Too busy
+CC24_402c,Main reason no past vote,4,Did not like the candidates
+CC24_402c,Main reason no past vote,5,I was not registered
+CC24_402c,Main reason no past vote,6,I did not have the correct form of identification
+CC24_402c,Main reason no past vote,7,Out of town
+CC24_402c,Main reason no past vote,8,Sick or disabled
+CC24_402c,Main reason no past vote,9,Transportation
+CC24_402c,Main reason no past vote,10,Bad weather
+CC24_402c,Main reason no past vote,11,The line at the polls was too long
+CC24_402c,Main reason no past vote,12,"I was not allowed to vote at the polls, even though I tried"
+CC24_402c,Main reason no past vote,13,I requested but did not receive an absentee ballot
+CC24_402c,Main reason no past vote,14,I did not know where to vote
+CC24_402c,Main reason no past vote,15,I did not feel that I knew enough about the choices
+CC24_402c,Main reason no past vote,16,I was afraid I might expose myself to the coronavirus
+CC24_402c,Main reason no past vote,17,I was not eligible to vote
+CC24_402c,Main reason no past vote,18,Other
+CC24_402c,Main reason no past vote,55,Don't know
+CC24_402c,Main reason no past vote,98,skipped
+CC24_402c,Main reason no past vote,99,not asked
+CC24_402c_t,Main reason no past vote - open,NA,NA
+CC24_403,Vote in person or by mail,1,In person on election day
+CC24_403,Vote in person or by mail,2,In person before election day (early)
+CC24_403,Vote in person or by mail,3,Voted by mail (or absentee)
+CC24_403,Vote in person or by mail,4,Don't know
+CC24_403,Vote in person or by mail,8,skipped
+CC24_403,Vote in person or by mail,9,not asked
+CC24_403b,Vote at precinct polling place or vote center,1,At a precinct polling place
+CC24_403b,Vote at precinct polling place or vote center,2,At a vote center
+CC24_403b,Vote at precinct polling place or vote center,8,skipped
+CC24_403b,Vote at precinct polling place or vote center,9,not asked
+CC24_403c,Where absentee ballot returned,1,Post office box at a U.S. Postal Service location
+CC24_403c,Where absentee ballot returned,2,Official post office box not at a U.S. Postal Service location
+CC24_403c,Where absentee ballot returned,3,Picked up by the postal worker who delivers mail to my home
+CC24_403c,Where absentee ballot returned,4,"Drop box used only for ballots, not located at an election office or polling place"
+CC24_403c,Where absentee ballot returned,5,Main election office
+CC24_403c,Where absentee ballot returned,6,Neighborhood polling place
+CC24_403c,Where absentee ballot returned,7,"Voting center, not a neighborhood polling place"
+CC24_403c,Where absentee ballot returned,8,Other
+CC24_403c,Where absentee ballot returned,9,I don't know
+CC24_403c,Where absentee ballot returned,98,skipped
+CC24_403c,Where absentee ballot returned,99,not asked
+CC24_403c_t,Where absentee ballot returned - open,NA,NA
+CC24_403d,How long it took to return mail ballot,1,Not at all
+CC24_403d,How long it took to return mail ballot,2,Less than 10 minutes
+CC24_403d,How long it took to return mail ballot,3,10 - 30 minutes
+CC24_403d,How long it took to return mail ballot,4,31 minutes – 1 hour
+CC24_403d,How long it took to return mail ballot,5,More than 1 hour
+CC24_403d,How long it took to return mail ballot,9,I don't know
+CC24_403d,How long it took to return mail ballot,98,skipped
+CC24_403d,How long it took to return mail ballot,99,not asked
+CC24_403d_t,How long it took to return mail ballot - open,NA,NA
+CC24_404,Voting length wait time,1,Not at all
+CC24_404,Voting length wait time,2,Less than 10 minutes
+CC24_404,Voting length wait time,3,10 - 30 minutes
+CC24_404,Voting length wait time,4,31 minutes - 1 hour
+CC24_404,Voting length wait time,5,More than 1 hour
+CC24_404,Voting length wait time,6,Don't know
+CC24_404,Voting length wait time,8,skipped
+CC24_404,Voting length wait time,9,not asked
+CC24_404_t,Voting length wait time - open,NA,NA
+CC24_405,Registered to vote on Election Day,1,Yes
+CC24_405,Registered to vote on Election Day,2,No
+CC24_405,Registered to vote on Election Day,8,skipped
+CC24_405,Registered to vote on Election Day,9,not asked
+CC24_406a,Problem with voter registration or ID when trying to vote,1,No
+CC24_406a,Problem with voter registration or ID when trying to vote,2,Yes
+CC24_406a,Problem with voter registration or ID when trying to vote,8,skipped
+CC24_406a,Problem with voter registration or ID when trying to vote,9,not asked
+CC24_406b_1,Problem with voting - ID,1,selected
+CC24_406b_1,Problem with voting - ID,2,not selected
+CC24_406b_1,Problem with voting - ID,8,skipped
+CC24_406b_1,Problem with voting - ID,9,not asked
+CC24_406b_2,Problem with voting - Registration,1,selected
+CC24_406b_2,Problem with voting - Registration,2,not selected
+CC24_406b_2,Problem with voting - Registration,8,skipped
+CC24_406b_2,Problem with voting - Registration,9,not asked
+CC24_406b_3,Problem with voting - Wrong place,1,selected
+CC24_406b_3,Problem with voting - Wrong place,2,not selected
+CC24_406b_3,Problem with voting - Wrong place,8,skipped
+CC24_406b_3,Problem with voting - Wrong place,9,not asked
+CC24_406b_4,Problem with voting - Other,1,selected
+CC24_406b_4,Problem with voting - Other,2,not selected
+CC24_406b_4,Problem with voting - Other,8,skipped
+CC24_406b_4,Problem with voting - Other,9,not asked
+CC24_406b_t,Problem with voting - open,NA,NA
+CC24_406c,Allowed to vote,1,"No, I was not allowed to vote"
+CC24_406c,Allowed to vote,2,I was allowed to vote using a provisional ballot
+CC24_406c,Allowed to vote,3,I voted
+CC24_406c,Allowed to vote,8,skipped
+CC24_406c,Allowed to vote,9,not asked
+CC24_410,Pres vote post,1,Kamala Harris
+CC24_410,Pres vote post,2,Donald Trump
+CC24_410,Pres vote post,3,"Robert F. Kennedy, Jr."
+CC24_410,Pres vote post,4,Jill Stein
+CC24_410,Pres vote post,5,Cornel West
+CC24_410,Pres vote post,6,Chase Oliver
+CC24_410,Pres vote post,8,Other
+CC24_410,Pres vote post,9,Did not vote for President
+CC24_410,Pres vote post,98,skipped
+CC24_410,Pres vote post,99,not asked
+CC24_410_t,Pres vote post - open,NA,NA
+CC24_411,Senate vote post,1,$SenCand1Name ($SenCand1Party)
+CC24_411,Senate vote post,2,$SenCand2Name ($SenCand2Party)
+CC24_411,Senate vote post,3,$SenCand3Name ($SenCand3Party)
+CC24_411,Senate vote post,5,Other
+CC24_411,Senate vote post,6,I did not vote in this race
+CC24_411,Senate vote post,8,Not sure
+CC24_411,Senate vote post,98,skipped
+CC24_411,Senate vote post,99,not asked
+CC24_411_t,Senate vote post - open,NA,NA
+CC24_411b,Senate vote 2nd race post,1,$SenCand1Name2 ($SenCand1Party2)
+CC24_411b,Senate vote 2nd race post,2,$SenCand2Name2 ($SenCand2Party2)
+CC24_411b,Senate vote 2nd race post,7,Other
+CC24_411b,Senate vote 2nd race post,8,I did not vote in this race
+CC24_411b,Senate vote 2nd race post,10,Not sure
+CC24_411b,Senate vote 2nd race post,98,skipped
+CC24_411b,Senate vote 2nd race post,99,not asked
+CC24_411b_t,Senate vote 2nd race post - open,NA,NA
+CC24_412,House vote post,1,$HouseCand1Name ($HouseCand1Party)
+CC24_412,House vote post,2,$HouseCand2Name ($HouseCand2Party)
+CC24_412,House vote post,3,$HouseCand3Name ($HouseCand3Party)
+CC24_412,House vote post,4,$HouseCand4Name ($HouseCand4Party)
+CC24_412,House vote post,5,$HouseCand5Name ($HouseCand5Party)
+CC24_412,House vote post,10,Other
+CC24_412,House vote post,11,I did not vote in this race
+CC24_412,House vote post,13,Not sure
+CC24_412,House vote post,98,skipped
+CC24_412,House vote post,99,not asked
+CC24_412_t,House vote post - open,NA,NA
+CC24_413,Governor vote post,1,$GovCand1Name ($GovCand1Party)
+CC24_413,Governor vote post,2,$GovCand2Name ($GovCand2Party)
+CC24_413,Governor vote post,3,$GovCand3Name ($GovCand3Party)
+CC24_413,Governor vote post,4,Other
+CC24_413,Governor vote post,5,I did not vote in this race
+CC24_413,Governor vote post,7,Not sure
+CC24_413,Governor vote post,98,skipped
+CC24_413,Governor vote post,99,not asked
+CC24_413_t,Governor vote post - open,NA,NA
+CC24_410_nv,President prefer,1,Kamala Harris
+CC24_410_nv,President prefer,2,Donald Trump
+CC24_410_nv,President prefer,3,"Robert F. Kennedy, Jr."
+CC24_410_nv,President prefer,4,Jill Stein
+CC24_410_nv,President prefer,5,Cornel West
+CC24_410_nv,President prefer,6,Chase Oliver
+CC24_410_nv,President prefer,8,Other
+CC24_410_nv,President prefer,9,Not sure
+CC24_410_nv,President prefer,98,skipped
+CC24_410_nv,President prefer,99,not asked
+CC24_410_nv_t,President prefer - open,NA,NA
+CC24_411_nv,Senator prefer,1,$SenCand1Name ($SenCand1Party)
+CC24_411_nv,Senator prefer,2,$SenCand2Name ($SenCand2Party)
+CC24_411_nv,Senator prefer,3,$SenCand3Name ($SenCand3Party)
+CC24_411_nv,Senator prefer,5,Other
+CC24_411_nv,Senator prefer,7,Not sure
+CC24_411_nv,Senator prefer,98,skipped
+CC24_411_nv,Senator prefer,99,not asked
+CC24_411_nv_t,Senator prefer - open,NA,NA
+CC24_411b_nv,Senator prefer 2nd race,1,$SenCand1Name2 ($SenCand1Party2)
+CC24_411b_nv,Senator prefer 2nd race,2,$SenCand2Name2 ($SenCand2Party2)
+CC24_411b_nv,Senator prefer 2nd race,7,Other
+CC24_411b_nv,Senator prefer 2nd race,8,I did not vote in this race
+CC24_411b_nv,Senator prefer 2nd race,9,I did not vote
+CC24_411b_nv,Senator prefer 2nd race,10,Not sure
+CC24_411b_nv,Senator prefer 2nd race,98,skipped
+CC24_411b_nv,Senator prefer 2nd race,99,not asked
+CC24_411b_nv_t,Senator prefer 2nd race - open,NA,NA
+CC24_412_nv,House prefer,1,$HouseCand1Name ($HouseCand1Party)
+CC24_412_nv,House prefer,2,$HouseCand2Name ($HouseCand2Party)
+CC24_412_nv,House prefer,3,$HouseCand3Name ($HouseCand3Party)
+CC24_412_nv,House prefer,4,$HouseCand4Name ($HouseCand4Party)
+CC24_412_nv,House prefer,5,$HouseCand5Name ($HouseCand5Party)
+CC24_412_nv,House prefer,10,Other
+CC24_412_nv,House prefer,11,Not sure
+CC24_412_nv,House prefer,98,skipped
+CC24_412_nv,House prefer,99,not asked
+CC24_412_nv_t,House prefer - open,NA,NA
+CC24_413_nv,Governor prefer,1,$GovCand1Name ($GovCand1Party)
+CC24_413_nv,Governor prefer,2,$GovCand2Name ($GovCand2Party)
+CC24_413_nv,Governor prefer,3,$GovCand3Name ($GovCand3Party)
+CC24_413_nv,Governor prefer,7,Other
+CC24_413_nv,Governor prefer,9,Not sure
+CC24_413_nv,Governor prefer,98,skipped
+CC24_413_nv,Governor prefer,99,not asked
+CC24_413_nv_t,Governor prefer - open,NA,NA
+CC24_414a,State Vote - AG,1,$AttCand1Name ($AttCand1Party)
+CC24_414a,State Vote - AG,2,$AttCand2Name ($AttCand2Party)
+CC24_414a,State Vote - AG,3,$AttCand3Name ($AttCand3Party)
+CC24_414a,State Vote - AG,4,Other
+CC24_414a,State Vote - AG,5,Not sure
+CC24_414a,State Vote - AG,8,skipped
+CC24_414a,State Vote - AG,9,not asked
+CC24_414b,State Vote - SOS,1,$SecCand1Name ($SecCand1Party)
+CC24_414b,State Vote - SOS,2,$SecCand2Name ($SecCand2Party)
+CC24_414b,State Vote - SOS,3,$SecCand3Name ($SecCand3Party)
+CC24_414b,State Vote - SOS,4,Other
+CC24_414b,State Vote - SOS,5,Not sure
+CC24_414b,State Vote - SOS,8,skipped
+CC24_414b,State Vote - SOS,9,not asked
+CC24_415c,Vote State legislature -- $inputstate State Senate,1,Democratic candidate
+CC24_415c,Vote State legislature -- $inputstate State Senate,2,Republican candidate
+CC24_415c,Vote State legislature -- $inputstate State Senate,3,Other candidate
+CC24_415c,Vote State legislature -- $inputstate State Senate,4,Did not vote in this race
+CC24_415c,Vote State legislature -- $inputstate State Senate,5,There was no race for this office
+CC24_415c,Vote State legislature -- $inputstate State Senate,8,skipped
+CC24_415c,Vote State legislature -- $inputstate State Senate,9,not asked
+CC24_415d,Vote State legislature -- $LowerChamberName,1,Democratic candidate
+CC24_415d,Vote State legislature -- $LowerChamberName,2,Republican candidate
+CC24_415d,Vote State legislature -- $LowerChamberName,3,Other candidate
+CC24_415d,Vote State legislature -- $LowerChamberName,4,Did not vote in this race
+CC24_415d,Vote State legislature -- $LowerChamberName,5,There was no race for this office
+CC24_415d,Vote State legislature -- $LowerChamberName,8,skipped
+CC24_415d,Vote State legislature -- $LowerChamberName,9,not asked
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,1,White
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,2,Black
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,3,Hispanic
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,4,Asian
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,5,Other
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,6,Not sure
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,8,skipped
+CC24_416a,Race/ethnicity politicians -- $HouseCand1Name,9,not asked
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,1,White
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,2,Black
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,3,Hispanic
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,4,Asian
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,5,Other
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,6,Not sure
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,8,skipped
+CC24_416b,Race/ethnicity politicians -- $HouseCand2Name,9,not asked
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,1,White
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,2,Black
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,3,Hispanic
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,4,Asian
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,5,Other
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,6,Not sure
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,8,skipped
+CC24_416c,Race/ethnicity politicians -- $CurrentHouseName,9,not asked
+CC24_416a_other,Race/ethnicity politicians - HouseCand1Name - open,NA,NA
+CC24_416b_other,Race/ethnicity politicians - HouseCand2Name - open,NA,NA
+CC24_416c_other,Race/ethnicity politicians - CurrentHouseName - open,NA,NA
+CC24_420_1,Use U.S. military troops - Ensure the supply of oil,1,selected
+CC24_420_1,Use U.S. military troops - Ensure the supply of oil,2,not selected
+CC24_420_1,Use U.S. military troops - Ensure the supply of oil,8,skipped
+CC24_420_1,Use U.S. military troops - Ensure the supply of oil,9,not asked
+CC24_420_2,Use U.S. military troops - Destroy a terrorist camp,1,selected
+CC24_420_2,Use U.S. military troops - Destroy a terrorist camp,2,not selected
+CC24_420_2,Use U.S. military troops - Destroy a terrorist camp,8,skipped
+CC24_420_2,Use U.S. military troops - Destroy a terrorist camp,9,not asked
+CC24_420_3,Use U.S. military troops - Intervene in a region where there is genocide or a civil war,1,selected
+CC24_420_3,Use U.S. military troops - Intervene in a region where there is genocide or a civil war,2,not selected
+CC24_420_3,Use U.S. military troops - Intervene in a region where there is genocide or a civil war,8,skipped
+CC24_420_3,Use U.S. military troops - Intervene in a region where there is genocide or a civil war,9,not asked
+CC24_420_4,Use U.S. military troops - Assist the spread of democracy,1,selected
+CC24_420_4,Use U.S. military troops - Assist the spread of democracy,2,not selected
+CC24_420_4,Use U.S. military troops - Assist the spread of democracy,8,skipped
+CC24_420_4,Use U.S. military troops - Assist the spread of democracy,9,not asked
+CC24_420_5,Use U.S. military troops - Protect American allies under attack by foreign nations,1,selected
+CC24_420_5,Use U.S. military troops - Protect American allies under attack by foreign nations,2,not selected
+CC24_420_5,Use U.S. military troops - Protect American allies under attack by foreign nations,8,skipped
+CC24_420_5,Use U.S. military troops - Protect American allies under attack by foreign nations,9,not asked
+CC24_420_6,Use U.S. military troops - Help the United Nations uphold international law,1,selected
+CC24_420_6,Use U.S. military troops - Help the United Nations uphold international law,2,not selected
+CC24_420_6,Use U.S. military troops - Help the United Nations uphold international law,8,skipped
+CC24_420_6,Use U.S. military troops - Help the United Nations uphold international law,9,not asked
+CC24_420_7,Use U.S. military troops - None of the above,1,selected
+CC24_420_7,Use U.S. military troops - None of the above,2,not selected
+CC24_420_7,Use U.S. military troops - None of the above,8,skipped
+CC24_420_7,Use U.S. military troops - None of the above,9,not asked
+CC24_421_1,Election fair -- Elections in the U.S. are fair,1,Strongly agree
+CC24_421_1,Election fair -- Elections in the U.S. are fair,2,Somewhat agree
+CC24_421_1,Election fair -- Elections in the U.S. are fair,3,Neither agree nor disagree
+CC24_421_1,Election fair -- Elections in the U.S. are fair,4,Somewhat disagree
+CC24_421_1,Election fair -- Elections in the U.S. are fair,5,Strongly disagree
+CC24_421_1,Election fair -- Elections in the U.S. are fair,8,skipped
+CC24_421_1,Election fair -- Elections in the U.S. are fair,9,not asked
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,1,Strongly agree
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,2,Somewhat agree
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,3,Neither agree nor disagree
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,4,Somewhat disagree
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,5,Strongly disagree
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,8,skipped
+CC24_421_2,Election fair -- Your state or local government conducted a fair and accurate election in 2024,9,not asked
+CC24_423,trustfed,1,A great deal
+CC24_423,trustfed,2,A fair amount
+CC24_423,trustfed,3,Not very much
+CC24_423,trustfed,8,None at all
+CC24_423,trustfed,98,skipped
+CC24_423,trustfed,99,not asked
+CC24_424,truststate,1,A great deal
+CC24_424,truststate,2,A fair amount
+CC24_424,truststate,3,Not very much
+CC24_424,truststate,8,None at all
+CC24_424,truststate,98,skipped
+CC24_424,truststate,99,not asked
+CC24_430a_1,Past year - Attend local political meetings,1,selected
+CC24_430a_1,Past year - Attend local political meetings,2,not selected
+CC24_430a_1,Past year - Attend local political meetings,8,skipped
+CC24_430a_1,Past year - Attend local political meetings,9,not asked
+CC24_430a_2,Past year - Put up a political sign,1,selected
+CC24_430a_2,Past year - Put up a political sign,2,not selected
+CC24_430a_2,Past year - Put up a political sign,8,skipped
+CC24_430a_2,Past year - Put up a political sign,9,not asked
+CC24_430a_3,Past year - Work for a candidate or campaign,1,selected
+CC24_430a_3,Past year - Work for a candidate or campaign,2,not selected
+CC24_430a_3,Past year - Work for a candidate or campaign,8,skipped
+CC24_430a_3,Past year - Work for a candidate or campaign,9,not asked
+CC24_430a_4,"Past year - Attend a political protest, march or demonstration",1,selected
+CC24_430a_4,"Past year - Attend a political protest, march or demonstration",2,not selected
+CC24_430a_4,"Past year - Attend a political protest, march or demonstration",8,skipped
+CC24_430a_4,"Past year - Attend a political protest, march or demonstration",9,not asked
+CC24_430a_5,Past year - Contact a public official,1,selected
+CC24_430a_5,Past year - Contact a public official,2,not selected
+CC24_430a_5,Past year - Contact a public official,8,skipped
+CC24_430a_5,Past year - Contact a public official,9,not asked
+CC24_430a_6,"Past year - Donate money to a candidate, campaign, or political organization",1,selected
+CC24_430a_6,"Past year - Donate money to a candidate, campaign, or political organization",2,not selected
+CC24_430a_6,"Past year - Donate money to a candidate, campaign, or political organization",8,skipped
+CC24_430a_6,"Past year - Donate money to a candidate, campaign, or political organization",9,not asked
+CC24_430a_7,Past year - Donate blood,1,selected
+CC24_430a_7,Past year - Donate blood,2,not selected
+CC24_430a_7,Past year - Donate blood,8,skipped
+CC24_430a_7,Past year - Donate blood,9,not asked
+CC24_430a_8,Past year - None of these,1,selected
+CC24_430a_8,Past year - None of these,2,not selected
+CC24_430a_8,Past year - None of these,8,skipped
+CC24_430a_8,Past year - None of these,9,not asked
+CC24_430b_1,Donate money - Candidate for President,1,selected
+CC24_430b_1,Donate money - Candidate for President,2,not selected
+CC24_430b_1,Donate money - Candidate for President,8,skipped
+CC24_430b_1,Donate money - Candidate for President,9,not asked
+CC24_430b_2,Donate money - Candidate for U.S. Senate in my state,1,selected
+CC24_430b_2,Donate money - Candidate for U.S. Senate in my state,2,not selected
+CC24_430b_2,Donate money - Candidate for U.S. Senate in my state,8,skipped
+CC24_430b_2,Donate money - Candidate for U.S. Senate in my state,9,not asked
+CC24_430b_3,Donate money - Candidate for U.S. Senate in another state,1,selected
+CC24_430b_3,Donate money - Candidate for U.S. Senate in another state,2,not selected
+CC24_430b_3,Donate money - Candidate for U.S. Senate in another state,8,skipped
+CC24_430b_3,Donate money - Candidate for U.S. Senate in another state,9,not asked
+CC24_430b_4,Donate money - Candidate for U.S. House in my state,1,selected
+CC24_430b_4,Donate money - Candidate for U.S. House in my state,2,not selected
+CC24_430b_4,Donate money - Candidate for U.S. House in my state,8,skipped
+CC24_430b_4,Donate money - Candidate for U.S. House in my state,9,not asked
+CC24_430b_5,Donate money - Candidate for U.S. House in another state,1,selected
+CC24_430b_5,Donate money - Candidate for U.S. House in another state,2,not selected
+CC24_430b_5,Donate money - Candidate for U.S. House in another state,8,skipped
+CC24_430b_5,Donate money - Candidate for U.S. House in another state,9,not asked
+CC24_430b_6,Donate money - Candidate for state office,1,selected
+CC24_430b_6,Donate money - Candidate for state office,2,not selected
+CC24_430b_6,Donate money - Candidate for state office,8,skipped
+CC24_430b_6,Donate money - Candidate for state office,9,not asked
+CC24_430b_7,Donate money - Political party committee,1,selected
+CC24_430b_7,Donate money - Political party committee,2,not selected
+CC24_430b_7,Donate money - Political party committee,8,skipped
+CC24_430b_7,Donate money - Political party committee,9,not asked
+CC24_430b_8,Donate money - Political action committee at work,1,selected
+CC24_430b_8,Donate money - Political action committee at work,2,not selected
+CC24_430b_8,Donate money - Political action committee at work,8,skipped
+CC24_430b_8,Donate money - Political action committee at work,9,not asked
+CC24_430b_9,Donate money - Political group,1,selected
+CC24_430b_9,Donate money - Political group,2,not selected
+CC24_430b_9,Donate money - Political group,8,skipped
+CC24_430b_9,Donate money - Political group,9,not asked
+CC24_430b_10,Donate money - Other,1,selected
+CC24_430b_10,Donate money - Other,2,not selected
+CC24_430b_10,Donate money - Other,8,skipped
+CC24_430b_10,Donate money - Other,9,not asked
+CC24_430b_t,Donate money - open,NA,NA
+CC24_430c,Amount contribute to all candidates/committees,9999998,skipped
+CC24_430c,Amount contribute to all candidates/committees,9999999,not asked
+CC24_431a,Contacted by candidate or political campaign,1,Yes
+CC24_431a,Contacted by candidate or political campaign,2,No
+CC24_431a,Contacted by candidate or political campaign,8,skipped
+CC24_431a,Contacted by candidate or political campaign,9,not asked
+CC24_431b_1,Candidate contact method - In person,1,selected
+CC24_431b_1,Candidate contact method - In person,2,not selected
+CC24_431b_1,Candidate contact method - In person,8,skipped
+CC24_431b_1,Candidate contact method - In person,9,not asked
+CC24_431b_2,Candidate contact method - Phone call,1,selected
+CC24_431b_2,Candidate contact method - Phone call,2,not selected
+CC24_431b_2,Candidate contact method - Phone call,8,skipped
+CC24_431b_2,Candidate contact method - Phone call,9,not asked
+CC24_431b_3,Candidate contact method - Email or text message,1,selected
+CC24_431b_3,Candidate contact method - Email or text message,2,not selected
+CC24_431b_3,Candidate contact method - Email or text message,8,skipped
+CC24_431b_3,Candidate contact method - Email or text message,9,not asked
+CC24_431b_4,Candidate contact method - Letter or post card,1,selected
+CC24_431b_4,Candidate contact method - Letter or post card,2,not selected
+CC24_431b_4,Candidate contact method - Letter or post card,8,skipped
+CC24_431b_4,Candidate contact method - Letter or post card,9,not asked
+CC24_432a,Ever run for elective office,1,Yes
+CC24_432a,Ever run for elective office,2,No
+CC24_432a,Ever run for elective office,8,skipped
+CC24_432a,Ever run for elective office,9,not asked
+CC24_432b_1,Run for office - School Board,1,selected
+CC24_432b_1,Run for office - School Board,2,not selected
+CC24_432b_1,Run for office - School Board,8,skipped
+CC24_432b_1,Run for office - School Board,9,not asked
+CC24_432b_2,Run for office - Other local board or commission,1,selected
+CC24_432b_2,Run for office - Other local board or commission,2,not selected
+CC24_432b_2,Run for office - Other local board or commission,8,skipped
+CC24_432b_2,Run for office - Other local board or commission,9,not asked
+CC24_432b_3,Run for office - City Council,1,selected
+CC24_432b_3,Run for office - City Council,2,not selected
+CC24_432b_3,Run for office - City Council,8,skipped
+CC24_432b_3,Run for office - City Council,9,not asked
+CC24_432b_4,Run for office - Mayor,1,selected
+CC24_432b_4,Run for office - Mayor,2,not selected
+CC24_432b_4,Run for office - Mayor,8,skipped
+CC24_432b_4,Run for office - Mayor,9,not asked
+CC24_432b_5,Run for office - City or District Attorney,1,selected
+CC24_432b_5,Run for office - City or District Attorney,2,not selected
+CC24_432b_5,Run for office - City or District Attorney,8,skipped
+CC24_432b_5,Run for office - City or District Attorney,9,not asked
+CC24_432b_6,Run for office - Countywide office,1,selected
+CC24_432b_6,Run for office - Countywide office,2,not selected
+CC24_432b_6,Run for office - Countywide office,8,skipped
+CC24_432b_6,Run for office - Countywide office,9,not asked
+CC24_432b_7,Run for office - State legislature,1,selected
+CC24_432b_7,Run for office - State legislature,2,not selected
+CC24_432b_7,Run for office - State legislature,8,skipped
+CC24_432b_7,Run for office - State legislature,9,not asked
+CC24_432b_8,Run for office - Statewide office,1,selected
+CC24_432b_8,Run for office - Statewide office,2,not selected
+CC24_432b_8,Run for office - Statewide office,8,skipped
+CC24_432b_8,Run for office - Statewide office,9,not asked
+CC24_432b_9,Run for office - Federal legislature,1,selected
+CC24_432b_9,Run for office - Federal legislature,2,not selected
+CC24_432b_9,Run for office - Federal legislature,8,skipped
+CC24_432b_9,Run for office - Federal legislature,9,not asked
+CC24_432b_10,Run for office - Judge,1,selected
+CC24_432b_10,Run for office - Judge,2,not selected
+CC24_432b_10,Run for office - Judge,8,skipped
+CC24_432b_10,Run for office - Judge,9,not asked
+CC24_432b_11,Run for office - Other,1,selected
+CC24_432b_11,Run for office - Other,2,not selected
+CC24_432b_11,Run for office - Other,8,skipped
+CC24_432b_11,Run for office - Other,9,not asked
+CC24_432b_t,Run for office - open,NA,NA
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,1,Strongly agree
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,2,Somewhat agree
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,3,Neither agree nor disagree
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,4,Somewhat disagree
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,5,Strongly disagree
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,8,skipped
+CC24_440a,Racial/Sexual agreement -- White people in the U.S. have certain advantages because of the color of their skin.,9,not asked
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",1,Strongly agree
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",2,Somewhat agree
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",3,Neither agree nor disagree
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",4,Somewhat disagree
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",5,Strongly disagree
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",8,skipped
+CC24_440b,"Racial/Sexual agreement -- Racial problems in the U.S. are rare, isolated situations.",9,not asked
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,1,Strongly agree
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,2,Somewhat agree
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,3,Neither agree nor disagree
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,4,Somewhat disagree
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,5,Strongly disagree
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,8,skipped
+CC24_440c,Racial/Sexual agreement -- Women seek to gain power by getting control over men.,9,not asked
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,1,Strongly agree
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,2,Somewhat agree
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,3,Neither agree nor disagree
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,4,Somewhat disagree
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,5,Strongly disagree
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,8,skipped
+CC24_440d,Racial/Sexual agreement -- Women are too easily offended.,9,not asked
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",1,Strongly agree
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",2,Somewhat agree
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",3,Neither agree nor disagree
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",4,Somewhat disagree
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",5,Strongly disagree
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",8,skipped
+CC24_441a,"Racial Resentment -- Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",9,not asked
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,1,Strongly agree
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,2,Somewhat agree
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,3,Neither agree nor disagree
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,4,Somewhat disagree
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,5,Strongly disagree
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,8,skipped
+CC24_441b,Racial Resentment -- Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.,9,not asked
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,1,Strongly agree
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,2,Somewhat agree
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,3,Neither agree nor disagree
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,4,Somewhat disagree
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,5,Strongly disagree
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,8,skipped
+CC24_441e,Racial Resentment -- I resent when Whites deny the existence of racial discrimination.,9,not asked
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,1,Strongly agree
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,2,Somewhat agree
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,3,Neither agree nor disagree
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,4,Somewhat disagree
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,5,Strongly disagree
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,8,skipped
+CC24_441f,Racial Resentment -- Whites get away with offenses that African Americans would never get away with.,9,not asked
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,1,Strongly agree
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,2,Somewhat agree
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,3,Neither agree nor disagree
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,4,Somewhat disagree
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,5,Strongly disagree
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,8,skipped
+CC24_441g,Racial Resentment -- Whites do not go to great lengths to understand the problems African Americans face.,9,not asked
+CC24_443_1,State legislature spending -- Welfare,1,Greatly increase
+CC24_443_1,State legislature spending -- Welfare,2,Slightly increase
+CC24_443_1,State legislature spending -- Welfare,3,Maintain
+CC24_443_1,State legislature spending -- Welfare,4,Slightly decrease
+CC24_443_1,State legislature spending -- Welfare,5,Greatly decrease
+CC24_443_1,State legislature spending -- Welfare,8,skipped
+CC24_443_1,State legislature spending -- Welfare,9,not asked
+CC24_443_2,State legislature spending -- Health Care,1,Greatly increase
+CC24_443_2,State legislature spending -- Health Care,2,Slightly increase
+CC24_443_2,State legislature spending -- Health Care,3,Maintain
+CC24_443_2,State legislature spending -- Health Care,4,Slightly decrease
+CC24_443_2,State legislature spending -- Health Care,5,Greatly decrease
+CC24_443_2,State legislature spending -- Health Care,8,skipped
+CC24_443_2,State legislature spending -- Health Care,9,not asked
+CC24_443_3,State legislature spending -- Education,1,Greatly increase
+CC24_443_3,State legislature spending -- Education,2,Slightly increase
+CC24_443_3,State legislature spending -- Education,3,Maintain
+CC24_443_3,State legislature spending -- Education,4,Slightly decrease
+CC24_443_3,State legislature spending -- Education,5,Greatly decrease
+CC24_443_3,State legislature spending -- Education,8,skipped
+CC24_443_3,State legislature spending -- Education,9,not asked
+CC24_443_4,State legislature spending -- Law Enforcement,1,Greatly increase
+CC24_443_4,State legislature spending -- Law Enforcement,2,Slightly increase
+CC24_443_4,State legislature spending -- Law Enforcement,3,Maintain
+CC24_443_4,State legislature spending -- Law Enforcement,4,Slightly decrease
+CC24_443_4,State legislature spending -- Law Enforcement,5,Greatly decrease
+CC24_443_4,State legislature spending -- Law Enforcement,8,skipped
+CC24_443_4,State legislature spending -- Law Enforcement,9,not asked
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,1,Greatly increase
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,2,Slightly increase
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,3,Maintain
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,4,Slightly decrease
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,5,Greatly decrease
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,8,skipped
+CC24_443_5,State legislature spending -- Transportation/Infrastructure,9,not asked
+CC24_444a,State policies -- Preventing gender transition surgery for minors experiencing gender dysphoria.,1,Support
+CC24_444a,State policies -- Preventing gender transition surgery for minors experiencing gender dysphoria.,2,Oppose
+CC24_444a,State policies -- Preventing gender transition surgery for minors experiencing gender dysphoria.,8,skipped
+CC24_444a,State policies -- Preventing gender transition surgery for minors experiencing gender dysphoria.,9,not asked
+CC24_444b,State policies -- Requiring parental consent before teachers could address their child using a name or pronoun other than the name or gender under which they are enrolled in school.,1,Support
+CC24_444b,State policies -- Requiring parental consent before teachers could address their child using a name or pronoun other than the name or gender under which they are enrolled in school.,2,Oppose
+CC24_444b,State policies -- Requiring parental consent before teachers could address their child using a name or pronoun other than the name or gender under which they are enrolled in school.,8,skipped
+CC24_444b,State policies -- Requiring parental consent before teachers could address their child using a name or pronoun other than the name or gender under which they are enrolled in school.,9,not asked
+CC24_444c,State policies -- Prohibiting receiving abortion-inducing drugs through the mail.,1,Support
+CC24_444c,State policies -- Prohibiting receiving abortion-inducing drugs through the mail.,2,Oppose
+CC24_444c,State policies -- Prohibiting receiving abortion-inducing drugs through the mail.,8,skipped
+CC24_444c,State policies -- Prohibiting receiving abortion-inducing drugs through the mail.,9,not asked
+CC24_444d,State policies -- Prohibiting women from traveling to another state to receive an abortion when such services are not legal in their state.,1,Support
+CC24_444d,State policies -- Prohibiting women from traveling to another state to receive an abortion when such services are not legal in their state.,2,Oppose
+CC24_444d,State policies -- Prohibiting women from traveling to another state to receive an abortion when such services are not legal in their state.,8,skipped
+CC24_444d,State policies -- Prohibiting women from traveling to another state to receive an abortion when such services are not legal in their state.,9,not asked
+CC24_444e,"State policies -- Instituting age verification laws that require users to verify their age to access adult content on the web, particularly pornography.",1,Support
+CC24_444e,"State policies -- Instituting age verification laws that require users to verify their age to access adult content on the web, particularly pornography.",2,Oppose
+CC24_444e,"State policies -- Instituting age verification laws that require users to verify their age to access adult content on the web, particularly pornography.",8,skipped
+CC24_444e,"State policies -- Instituting age verification laws that require users to verify their age to access adult content on the web, particularly pornography.",9,not asked
+CC24_444f,State policies -- School voucher subsidies for families to send their children to private or charter schools other than their local public school.,1,Support
+CC24_444f,State policies -- School voucher subsidies for families to send their children to private or charter schools other than their local public school.,2,Oppose
+CC24_444f,State policies -- School voucher subsidies for families to send their children to private or charter schools other than their local public school.,8,skipped
+CC24_444f,State policies -- School voucher subsidies for families to send their children to private or charter schools other than their local public school.,9,not asked
+CC24_445a,Supreme Court decisions -- The use of race in university admissions violates Equal Protection under the Constitution and is illegal.,1,Agree
+CC24_445a,Supreme Court decisions -- The use of race in university admissions violates Equal Protection under the Constitution and is illegal.,2,Disagree
+CC24_445a,Supreme Court decisions -- The use of race in university admissions violates Equal Protection under the Constitution and is illegal.,8,skipped
+CC24_445a,Supreme Court decisions -- The use of race in university admissions violates Equal Protection under the Constitution and is illegal.,9,not asked
+CC24_445b,"Supreme Court decisions -- The United States Constitution does not protect a woman’s right to have an abortion.  Roe v. Wade is overruled, and individual states can make their own laws governing abortion, including outlawing abortion.",1,Agree
+CC24_445b,"Supreme Court decisions -- The United States Constitution does not protect a woman’s right to have an abortion.  Roe v. Wade is overruled, and individual states can make their own laws governing abortion, including outlawing abortion.",2,Disagree
+CC24_445b,"Supreme Court decisions -- The United States Constitution does not protect a woman’s right to have an abortion.  Roe v. Wade is overruled, and individual states can make their own laws governing abortion, including outlawing abortion.",8,skipped
+CC24_445b,"Supreme Court decisions -- The United States Constitution does not protect a woman’s right to have an abortion.  Roe v. Wade is overruled, and individual states can make their own laws governing abortion, including outlawing abortion.",9,not asked
+gunown,Personal gun ownership,1,Personally own a gun
+gunown,Personal gun ownership,2,"Don't personally own a gun, but someone in the household owns a gun"
+gunown,Personal gun ownership,3,No one in the household owns a gun
+gunown,Personal gun ownership,8,Not sure
+gunown,Personal gun ownership,98,skipped
+gunown,Personal gun ownership,99,not asked
+numchildren,Number children,998,skipped
+gigwork,Gig work,1,Yes
+gigwork,Gig work,2,No
+gigwork,Gig work,8,skipped
+gigwork,Gig work,9,not asked
+edloan,Student debtor,1,Yes
+edloan,Student debtor,2,No
+edloan,Student debtor,97,Other
+edloan,Student debtor,98,Don't know
+edloan,Student debtor,99,None of these
+edloan,Student debtor,998,skipped
+edloan,Student debtor,999,not asked
+student,Student Full or Part-time,1,Full-time
+student,Student Full or Part-time,2,Part-time
+student,Student Full or Part-time,3,I am not enrolled in school
+student,Student Full or Part-time,8,skipped
+student,Student Full or Part-time,9,not asked
+lookupzip_post,Zip code for mapping CD - post,NA,NA
+cdid118_post,CD 118th Congress - post,NA,NA
+cdid119_post,CD 119th Congress - post,NA,NA
+LegName_post,Legislature name - post,NA,NA
+LowerChamberName_post,Lower chamber name - post,NA,NA
+CurrentGovName_post,Current Governor Name - post,NA,NA
+CurrentGovParty_post,Current Governor Party - post,NA,NA
+CurrentHouseName_post,Current House Name - post,NA,NA
+CurrentHouseParty_post,Current House Party - post,NA,NA
+CurrentSen1Name_post,Current Senate 1 Name - post,NA,NA
+CurrentSen1Party_post,Current Senate 1 Party - post,NA,NA
+CurrentSen2Name_post,Current Senate 2 Name - post,NA,NA
+CurrentSen2Party_post,Current Senate 2 Party - post,NA,NA
+GovCand1Name_post,Governor Candidate 1 Name - post,NA,NA
+GovCand1Party_post,Governor Candidate 1 Party - post,NA,NA
+GovCand2Name_post,Governor Candidate 2 Name - post,NA,NA
+GovCand2Party_post,Governor Candidate 2 Party - post,NA,NA
+GovCand3Name_post,Governor Candidate 3 Name - post,NA,NA
+GovCand3Party_post,Governor Candidate 3 Party - post,NA,NA
+HouseCand1Name_post,House Candidate 1 Name - post,NA,NA
+HouseCand1Party_post,House Candidate 1 Party - post,NA,NA
+HouseCand2Name_post,House Candidate 2 Name - post,NA,NA
+HouseCand2Party_post,House Candidate 2 Party - post,NA,NA
+HouseCand3Name_post,House Candidate 3 Name - post,NA,NA
+HouseCand3Party_post,House Candidate 3 Party - post,NA,NA
+HouseCand4Name_post,House Candidate 4 Name - post,NA,NA
+HouseCand4Party_post,House Candidate 4 Party - post,NA,NA
+HouseCand5Name_post,House Candidate 5 Name - post,NA,NA
+HouseCand5Party_post,House Candidate 5 Party - post,NA,NA
+SenCand1Name_post,Senate Candidate 1 Name - post,NA,NA
+SenCand1Party_post,Senate Candidate 1 Party - post,NA,NA
+SenCand2Name_post,Senate Candidate 2 Name - post,NA,NA
+SenCand2Party_post,Senate Candidate 2 Party - post,NA,NA
+SenCand3Name_post,Senate Candidate 3 Name - post,NA,NA
+SenCand3Party_post,Senate Candidate 3 Party - post,NA,NA
+SenCand1Name2_post,Senate Candidate 1 Name - 2nd race - post,NA,NA
+SenCand1Party2_post,Senate Candidate 1 Party - 2nd race - post,NA,NA
+SenCand2Name2_post,Senate Candidate 2 Name - 2nd race - post,NA,NA
+SenCand2Party2_post,Senate Candidate 2 Party - 2nd race - post,NA,NA
+AttCand1Name,Attorney General Candidate 1 Name - post,NA,NA
+AttCand2Name,Attorney General Candidate 2 Name - post,NA,NA
+AttCand3Name,Attorney General Candidate 3 Name - post,NA,NA
+AttCand1Party,Attorney General Candidate 1 Party - post,NA,NA
+AttCand2Party,Attorney General Candidate 2 Party - post,NA,NA
+AttCand3Party,Attorney General Candidate 3 Party - post,NA,NA
+SecCand1Name,Secretary of State Candidate 1 Name - post,NA,NA
+SecCand2Name,Secretary of State Candidate 2 Name - post,NA,NA
+SecCand3Name,Secretary of State Candidate 3 Name - post,NA,NA
+SecCand1Party,Secretary of State Candidate 1 Party - post,NA,NA
+SecCand2Party,Secretary of State Candidate 2 Party - post,NA,NA
+SecCand3Party,Secretary of State Candidate 3 Party - post,NA,NA
+page_CC24_401_timing,Timing Data for Page CC24_401,NA,NA
+page_CC24_402a_timing,Timing Data for Page CC24_402a,NA,NA
+page_CC24_402b_timing,Timing Data for Page CC24_402b,NA,NA
+page_CC24_402c_timing,Timing Data for Page CC24_402c,NA,NA
+page_CC24_403_timing,Timing Data for Page CC24_403,NA,NA
+page_CC24_403c_timing,Timing Data for Page CC24_403c,NA,NA
+page_CC24_403d_timing,Timing Data for Page CC24_403d,NA,NA
+page_CC24_404_timing,Timing Data for Page CC24_404,NA,NA
+page_CC24_405_timing,Timing Data for Page CC24_405,NA,NA
+page_CC24_406a_timing,Timing Data for Page CC24_406a,NA,NA
+page_CC24_406b_timing,Timing Data for Page CC24_406b,NA,NA
+page_CC24_406c_timing,Timing Data for Page CC24_406c,NA,NA
+page_CC24_410_timing,Timing Data for Page CC24_410,NA,NA
+page_CC24_411_timing,Timing Data for Page CC24_411,NA,NA
+page_CC24_411b_timing,Timing Data for Page CC24_411b,NA,NA
+page_CC24_412_timing,Timing Data for Page CC24_412,NA,NA
+page_CC24_413_timing,Timing Data for Page CC24_413,NA,NA
+page_CC24_410_nv_timing,Timing Data for Page CC24_410_nv,NA,NA
+page_CC24_411_nv_timing,Timing Data for Page CC24_411_nv,NA,NA
+page_CC24_411b_nv_timing,Timing Data for Page CC24_411b_nv,NA,NA
+page_CC24_412_nv_timing,Timing Data for Page CC24_412_nv,NA,NA
+page_CC24_413_nv_timing,Timing Data for Page CC24_413_nv,NA,NA
+page_CC24_414a_timing,Timing Data for Page CC24_414a,NA,NA
+page_CC24_414b_timing,Timing Data for Page CC24_414b,NA,NA
+page_CC24_415_grid_timing,Timing Data for Page CC24_415_grid,NA,NA
+page_CC24_416_grid_timing,Timing Data for Page CC24_416_grid,NA,NA
+page_CC24_416a_other_timing,Timing Data for Page CC24_416a_other,NA,NA
+page_CC24_416b_other_timing,Timing Data for Page CC24_416b_other,NA,NA
+page_CC24_416c_other_timing,Timing Data for Page CC24_416c_other,NA,NA
+page_CC24_420_timing,Timing Data for Page CC24_420,NA,NA
+page_CC24_421_grid_timing,Timing Data for Page CC24_421_grid,NA,NA
+page_CC24_423_timing,Timing Data for Page CC24_423,NA,NA
+page_CC24_424_timing,Timing Data for Page CC24_424,NA,NA
+page_CC24_430a_timing,Timing Data for Page CC24_430a,NA,NA
+page_CC24_430b_timing,Timing Data for Page CC24_430b,NA,NA
+page_CC24_430c_timing,Timing Data for Page CC24_430c,NA,NA
+page_CC24_431a_timing,Timing Data for Page CC24_431a,NA,NA
+page_CC24_431b_timing,Timing Data for Page CC24_431b,NA,NA
+page_CC24_432a_timing,Timing Data for Page CC24_432a,NA,NA
+page_CC24_432b_timing,Timing Data for Page CC24_432b,NA,NA
+page_CC24_440_grid_timing,Timing Data for Page CC24_440_grid,NA,NA
+page_CC24_441_grid_timing,Timing Data for Page CC24_441_grid,NA,NA
+page_CC24_443_timing,Timing Data for Page CC24_443,NA,NA
+page_CC24_444_timing,Timing Data for Page CC24_444,NA,NA
+page_CC24_445_timing,Timing Data for Page CC24_445,NA,NA
+page_gunown_timing,Timing Data for Page gunown,NA,NA
+page_numchildren_timing,Timing Data for Page numchildren,NA,NA
+page_gigwork_timing,Timing Data for Page gigwork,NA,NA
+page_edloan_timing,Timing Data for Page edloan,NA,NA
+page_student_timing,Timing Data for Page student,NA,NA
+starttime,Questionnaire Start Time,NA,NA
+endtime,Questionnaire End Time,NA,NA
+starttime_post,Questionnaire Start Time - post,NA,NA
+endtime_post,Questionnaire End Time - post,NA,NA
+TS_g2024,NA,NA,NA
+TS_voterstatus,Voter Status,1,Active
+TS_p2024,NA,NA,NA
+TS_p2024_party,NA,NA,NA
+TS_pp2024,NA,NA,NA
+TS_pp2024_party,NA,NA,NA
+TS_state,NA,NA,NA
+TS_partyreg,Registered Party,1,cons
+TS_partyreg,Registered Party,2,dem
+TS_partyreg,Registered Party,3,green
+TS_partyreg,Registered Party,4,ind
+TS_partyreg,Registered Party,5,libertarian
+TS_partyreg,Registered Party,6,other
+TS_partyreg,Registered Party,7,peace and freedom
+TS_partyreg,Registered Party,8,rep
+TS_partyreg,Registered Party,9,working fam
