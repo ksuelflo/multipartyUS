@@ -1,7 +1,7 @@
 
 // LEFT PANEL FUNCTIONS-------------------------------------------------------------------
 
-const csvData = await d3.csv("../../../data/dem_data_by_party.csv", d => ({
+const csvData = await d3.csv("../../data/dem_data_by_party.csv", d => ({
     party: d.party,
     variable: d.variable,
     value: d.value,
@@ -11,7 +11,7 @@ const csvData = await d3.csv("../../../data/dem_data_by_party.csv", d => ({
     pct: +d.pct
 }));
 
-const densityData = await d3.csv("../../../data/age_density.csv", d => ({
+const densityData = await d3.csv("../../data/age_density.csv", d => ({
     party: d.party,
     density: +d.density,
     age: +d.age
@@ -257,7 +257,7 @@ function bucketAge(age) {
     return "75+";
 }
 
-const rawData = await d3.csv("../../../data/raw_dem_data.csv", d => ({
+const rawData = await d3.csv("../../data/raw_dem_data.csv", d => ({
     party: d.party,
     commonweight: +d.commonweight,
     age: bucketAge(+d.age),

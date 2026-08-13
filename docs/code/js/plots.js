@@ -27,7 +27,7 @@ const politicalColorScale = subgroups => {
   return key => diverging(+key.replace('pct_', ''));
 };
 
-const horzbar = function(variable, data, svg, colors, codebook = "../../../data/codebook.csv"){
+const horzbar = function(variable, data, svg, colors, codebook = "../../data/codebook.csv"){
 
   // Read the outer svg dimensions (set via .attr in your setup code)
   const totalWidth = +svg.attr("width");
@@ -174,7 +174,7 @@ const horzbar = function(variable, data, svg, colors, codebook = "../../../data/
   });
 };
 
-const partyplot = function(data, svg, party, codebook = "../../../data/codebook.csv"){
+const partyplot = function(data, svg, party, codebook = "../../data/codebook.csv"){
 
   const variable = "pid7";
 
@@ -409,7 +409,7 @@ const PARTY_TAB_VARIABLES = {
 };
 
 Object.entries(PARTY_TAB_VARIABLES).forEach(([panelId, { party, variables }]) => {
-  partyplot("../../../data/long_clustered.csv", makeChartSvg(`#${panelId}-chart-0`), party);
+  partyplot("../../data/long_clustered.csv", makeChartSvg(`#${panelId}-chart-0`), party);
   variables.forEach((variable, i) => {
     horzbar(variable, "../../data/clustered_parties_qs.csv", makeChartSvg(`#${panelId}-chart-${i + 1}`));
   });
@@ -418,5 +418,5 @@ Object.entries(PARTY_TAB_VARIABLES).forEach(([panelId, { party, variables }]) =>
 //------------------------------------------per-party KPI grids
 
 Object.entries(PARTY_TAB_VARIABLES).forEach(([panelId, { party }]) => {
-  kpiGrid("../../../data/kpi_style_data.csv", `#${panelId}-kpi`, party);
+  kpiGrid("../../data/kpi_style_data.csv", `#${panelId}-kpi`, party);
 });

@@ -14,7 +14,7 @@ const g = svg.append('g')
 const projection = d3.geoAlbersUsa();
 const path = d3.geoPath(projection);
 
-const csvData = await d3.csv("../../../data/map_data.csv", d => ({
+const csvData = await d3.csv("../../data/map_data.csv", d => ({
     state: d.state_name,
     party: d.party,
     pct: +d.pct,
