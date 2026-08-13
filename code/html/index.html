@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>NBA Shot Charts</title>
+        <title>Multi-party Clustering Dashboard</title>
 
         <!-- The following line references an external css file -->
         <link href="../css/navbar.css" rel="stylesheet">
@@ -14,6 +14,7 @@
     <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src = "../js/parties.js" type = "module"></script>
+    <script src = "../js/plots.js" type = "module"></script>
     <div class="nav-wrapper">
         <a href="index.html" class="nav-tab active">
         <i class="ti ti-users"></i>Parties
@@ -21,55 +22,487 @@
         <a href="geography.html" class="nav-tab">
         <i class="ti ti-map"></i>Geography
         </a>
-        <a href="demographics.html" class="nav-tab" >
+        <a href="questions.html" class="nav-tab" >
         <i class="ti ti-chart-bar"></i>Demographics
         </a>
     </div>
-    <div class="subnav-wrapper">
-        <a class="subnav-tab active" onclick="switchParty(event, 'overview')">Party Overview</a>
-        <a class="subnav-tab tab-progressive-left" onclick="switchParty(event, 'progressive-left')">Progressive Left</a>
-        <a class="subnav-tab tab-religious-progressives" onclick="switchParty(event, 'religious-progressives')">Religious Progressives</a>
-        <a class="subnav-tab tab-moderate-democrats" onclick="switchParty(event, 'moderate-democrats')">Moderate Dems</a>
-        <a class="subnav-tab tab-low-information-center-left" onclick="switchParty(event, 'low-information-center-left')">Disengaged Center-Left</a>
-        <a class="subnav-tab tab-disengaged-middle" onclick="switchParty(event, 'disengaged-middle')">Political Bystanders</a>
-        <a class="subnav-tab tab-racial-justice-conservatives" onclick="switchParty(event, 'racial-justice-conservatives')">Racial Justice Conservatives</a>
-        <a class="subnav-tab tab-secular-moderates" onclick="switchParty(event, 'secular-moderates')">Secular Moderates</a>
-        <a class="subnav-tab tab-traditional-conservatives" onclick="switchParty(event, 'traditional-conservatives')">Traditional Right</a>
-        <a class="subnav-tab tab-maga-right" onclick="switchParty(event, 'maga-right')">MAGA Right</a>
-    </div>
+<div class="subnav-wrapper">
+    <a class="subnav-tab tab-overview active" onclick="switchParty(event, 'overview')">Party Overview</a>
+    <a class="subnav-tab tab-progressive-left" onclick="switchParty(event, 'progressive-left')">Progressive Left</a>
+    <a class="subnav-tab tab-religious-moderates" onclick="switchParty(event, 'religious-moderates')">Religious Moderates</a>
+    <a class="subnav-tab tab-moderate-left" onclick="switchParty(event, 'moderate-left')">Moderate Left</a>
+    <a class="subnav-tab tab-disillusioned-left" onclick="switchParty(event, 'disillusioned-left')">Disillusioned Left</a>
+    <a class="subnav-tab tab-secular-moderates" onclick="switchParty(event, 'secular-moderates')">Secular Moderates</a>
+    <a class="subnav-tab tab-maga-right" onclick="switchParty(event, 'maga-right')">MAGA Right</a>
+    <a class="subnav-tab tab-traditional-right" onclick="switchParty(event, 'traditional-right')">Traditional Right</a>
+    <a class="subnav-tab tab-faith-based-conservatives" onclick="switchParty(event, 'faith-based-conservatives')">Faith-Based Conservatives</a>
+    <a class="subnav-tab tab-nationalist-right" onclick="switchParty(event, 'nationalist-right')">Nationalist Right</a>
+</div>
 
-  <!-- Party panels -->
-    <div id="overview" class="party-panel active">
-        <div id="tree_map">
+<!-- Party panels -->
+<div id="overview" class="party-panel active">
+    <div class="party-intros">
+
+        <div class="panel progressive-left">
+            <h3 style="color: #0a3d6b">Progressive Left</h3>
+            <p>The most liberal group in the electorate. Strongly supports climate action, gun control, immigration reform, and racial justice. Secular, highly engaged, and deeply skeptical of electoral fairness.</p>
+        </div>
+
+        <div class="panel religious-moderates">
+            <h3 style="color: #1a5fa0">Religious Moderates</h3>
+            <p>Broadly liberal on policy but with a meaningful faith identity. More institutionally trusting than the Progressive Left and moderate on racial attitudes. Likely rooted in mainstream religious traditions.</p>
+        </div>
+
+        <div class="panel moderate-left">
+            <h3 style="color: #2e86c1">Moderate Left</h3>
+            <p>The pragmatic center-left. Progressive-leaning but not ideologically driven. Moderate on racial attitudes, engaged, and broadly supportive of environmental and economic reform.</p>
+        </div>
+
+        <div class="panel disillusioned-left">
+            <h3 style="color: #7ab8e8">Disillusioned Left</h3>
+            <p>Left on policy but with zero trust in federal government. Alienated from institutions despite holding progressive views. May represent younger voters who feel the system has failed them.</p>
+        </div>
+
+        <div class="panel title-map">
+            <h1>Clustering the US into a Multi-party system</h1>
+            <h2>
+                By: <a href="YOUR_WEBSITE_URL" target="_blank">Kyle Suelflow</a>
+                <a href="YOUR_LINKEDIN_URL" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="YOUR_GITHUB_URL" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:YOUR_EMAIL" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </h2>
+        </div>
+
+        <div class="treemap" id="tree_map"></div>
+
+        <div class="panel secular-moderates">
+            <h3 style="color: #e8d44d">Secular Moderates</h3>
+            <p>Genuinely centrist on policy with a secular identity. Moderate self-identification and moderate institutional trust. The pragmatic center that doesn't fit cleanly into either coalition.</p>
+        </div>
+
+        <div class="panel maga-right">
+            <h3 style="color: #f4a043">MAGA Right</h3>
+            <p>Hard conservative across all dimensions with near-zero trust in government at every level. Skeptical of elections, strongly anti-immigration, and deeply opposed to progressive cultural policy.</p>
+        </div>
+
+        <div class="panel traditional-right">
+            <h3 style="color: #e05c2a">Traditional Right</h3>
+            <p>Classic establishment conservatism. Right on policy with moderate institutional trust. The Reagan Republican who is skeptical of government but not fully alienated from it.</p>
+        </div>
+
+        <div class="panel faith-based-conservatives">
+            <h3 style="color: #c02020">Faith-Based Conservatives</h3>
+            <p>Hard conservative on policy with a defining religious identity. Weekly churchgoers with high born-again rates. Zero federal trust but more faith in state government than other right-leaning groups.</p>
+        </div>
+
+        <div class="panel nationalist-right">
+            <h3 style="color: #6b0000">Nationalist Right</h3>
+            <p>The most conservative self-identified group in the electorate. Anti-immigration and anti-regulation but uniquely progressive on racial attitudes. Low religiosity and high political engagement.</p>
+        </div>
+
+    </div>
+</div>
+
+<div id="progressive-left" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Progressive Left</h2>
+            <p class="party-description">The most liberal group in the electorate. Strongly supports climate action, gun control, immigration reform, and racial justice. Secular, highly engaged, and deeply skeptical of electoral fairness.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="progressive-left-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="progressive-left-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="progressive-left-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="progressive-left-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'progressive-left', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'progressive-left', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'progressive-left', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'progressive-left', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Progressive Left is almost uniformly Democratic, with barely any meaningful Republican presence. This is the least internally divided group on the left, and one of the most ideologically consistent clusters in the entire electorate.</p>
+                <p class="caption-slide">Compared to the other eight clusters, the Progressive Left places itself furthest toward "Very Liberal" on the self-reported ideology scale. Almost no one in this group identifies as conservative, underscoring how ideologically distinct it is from even other left-leaning clusters like the Moderate Left.</p>
+                <p class="caption-slide">Church attendance is low across the board, but the Progressive Left is among the most secular clusters, with a large majority saying they seldom or never attend religious services. This sets it apart from groups like the Religious Moderates and Faith-Based Conservatives, for whom faith identity plays a much bigger role.</p>
+                <p class="caption-slide">Asked whether racial problems in the U.S. are "rare, isolated situations," the Progressive Left disagrees more strongly and more uniformly than any other cluster. This reflects the group's broader emphasis on structural explanations for racial inequality rather than viewing such problems as one-off incidents.</p>
+            </div>
         </div>
     </div>
- 
-    <div id="progressive-left" class="party-panel">
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="progressive-left-kpi"></div>
     </div>
- 
-    <div id="religious-progressives" class="party-panel">
-    </div>
- 
-    <div id="moderate-democrats" class="party-panel">
-    </div>
- 
-    <div id="low-information-center-left" class="party-panel">
-    </div>
- 
-    <div id="disengaged-middle" class="party-panel">
-    </div>
- 
-    <div id="racial-justice-conservatives" class="party-panel">
-    </div>
- 
-    <div id="secular-moderates" class="party-panel">
-    </div>
- 
-    <div id="traditional-conservatives" class="party-panel">
-    </div>
- 
-    <div id="maga-right" class="party-panel">
+</div>
+
+<div id="religious-moderates" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Religious Moderates</h2>
+            <p class="party-description">Broadly liberal on policy but with a meaningful faith identity. More institutionally trusting than the Progressive Left and moderate on racial attitudes. Likely rooted in mainstream religious traditions.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="religious-moderates-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="religious-moderates-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="religious-moderates-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="religious-moderates-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'religious-moderates', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'religious-moderates', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'religious-moderates', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'religious-moderates', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Religious Moderates leans clearly Democratic, though with a somewhat larger Republican-identifying minority than the more secular left-leaning clusters. This fits a group that is left of center but less uniformly partisan than the Progressive Left.</p>
+                <p class="caption-slide">Church attendance among Religious Moderates runs close to weekly, the highest of any left-leaning cluster. This sets the group apart from the more secular Progressive Left and Secular Moderates, reflecting a left-of-center politics built on a meaningful faith identity.</p>
+                <p class="caption-slide">Religious Moderates are the most institutionally trusting cluster on the left, largely agreeing that U.S. elections are fair. That confidence in the electoral system sets them apart from the more skeptical Progressive Left and Disillusioned Left.</p>
+                <p class="caption-slide">Trust in the federal government among Religious Moderates is moderate rather than enthusiastic, distinguishing the group from the near-total institutional alienation seen in the Disillusioned Left.</p>
+            </div>
+        </div>
     </div>
 
+    <div class="party-right-half">
+        <div class="kpi-grid" id="religious-moderates-kpi"></div>
+    </div>
+</div>
+
+<div id="moderate-left" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Moderate Left</h2>
+            <p class="party-description">The pragmatic center-left. Progressive-leaning but not ideologically driven. Moderate on racial attitudes, engaged, and broadly supportive of environmental and economic reform.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="moderate-left-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="moderate-left-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="moderate-left-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="moderate-left-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'moderate-left', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'moderate-left', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'moderate-left', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'moderate-left', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Moderate Left is solidly Democratic, though slightly less overwhelming than in the more ideologically driven left-leaning clusters. This fits a group that leans left on policy without the intensity of the Progressive Left or Disillusioned Left.</p>
+                <p class="caption-slide">The Moderate Left places itself just left of center on the ideology scale, describing itself as slightly left of moderate rather than strongly liberal. This genuinely center-left self-placement sets it apart from the more strongly liberal Progressive Left.</p>
+                <p class="caption-slide">On the legacy of slavery and racial inequality, the Moderate Left holds the softest racial attitudes of any left-leaning cluster, agreeing only moderately that historical discrimination still shapes outcomes today.</p>
+                <p class="caption-slide">Despite its moderate positioning, the Moderate Left reports high political engagement, following political news about as closely as more ideologically intense clusters on the left.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="moderate-left-kpi"></div>
+    </div>
+</div>
+
+<div id="disillusioned-left" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Disillusioned Left</h2>
+            <p class="party-description">Left on policy but with zero trust in federal government. Alienated from institutions despite holding progressive views. May represent younger voters who feel the system has failed them.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="disillusioned-left-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="disillusioned-left-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="disillusioned-left-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="disillusioned-left-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'disillusioned-left', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'disillusioned-left', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'disillusioned-left', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'disillusioned-left', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Disillusioned Left runs heavily Democratic, consistent with its left-leaning policy views, even as the group expresses little faith in the institutions Democrats currently control.</p>
+                <p class="caption-slide">The Disillusioned Left expresses essentially zero trust in the federal government, the most institutionally alienated of any left-leaning cluster. This distrust exists side by side with policy views that are otherwise solidly progressive.</p>
+                <p class="caption-slide">Ideologically, the Disillusioned Left identifies as somewhat liberal rather than strongly so, showing that its defining trait is institutional distrust rather than ideological intensity.</p>
+                <p class="caption-slide">Asked whether U.S. elections are fair, the Disillusioned Left lands squarely in the middle, neither agreeing nor disagreeing. That ambivalence reflects a group defined more by distrust of government generally than by a specific belief that elections themselves are broken.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="disillusioned-left-kpi"></div>
+    </div>
+</div>
+
+<div id="secular-moderates" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Secular Moderates</h2>
+            <p class="party-description">Genuinely centrist on policy with a secular identity. Moderate self-identification and moderate institutional trust. The pragmatic center that doesn't fit cleanly into either coalition.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="secular-moderates-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="secular-moderates-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="secular-moderates-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="secular-moderates-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'secular-moderates', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'secular-moderates', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'secular-moderates', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'secular-moderates', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Secular Moderates splits more evenly than in any other left-leaning cluster, reflecting its position as the electorate's genuine ideological center rather than a reliable partisan bloc.</p>
+                <p class="caption-slide">Secular Moderates place themselves squarely in the middle of the ideology scale, describing their views as "middle of the road" more than any other cluster. This is the clearest centrist self-placement in the entire electorate.</p>
+                <p class="caption-slide">Church attendance among Secular Moderates is low, with most saying they seldom attend religious services. Combined with its centrist ideology, this makes the group the most secular of the moderate clusters.</p>
+                <p class="caption-slide">Secular Moderates show moderate agreement that U.S. elections are fair, reflecting a group with centrist views and correspondingly measured trust in democratic institutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="secular-moderates-kpi"></div>
+    </div>
+</div>
+
+<div id="maga-right" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">MAGA Right</h2>
+            <p class="party-description">Hard conservative across all dimensions with near-zero trust in government at every level. Skeptical of elections, strongly anti-immigration, and deeply opposed to progressive cultural policy.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="maga-right-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="maga-right-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="maga-right-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="maga-right-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'maga-right', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'maga-right', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'maga-right', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'maga-right', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the MAGA Right is overwhelmingly Republican, with almost no Democratic presence. This is one of the most partisan clusters in the electorate, mirroring its hard-line conservative issue positions.</p>
+                <p class="caption-slide">The MAGA Right expresses near-zero trust in the federal government, the most anti-institutional cluster on the right and one of the most distrustful in the entire electorate.</p>
+                <p class="caption-slide">MAGA Right shows the strongest skepticism of any cluster that U.S. elections are conducted fairly, underscoring the group's broader rejection of current political institutions.</p>
+                <p class="caption-slide">Ideologically, the MAGA Right identifies as very conservative, placing it firmly at the right end of the self-reported ideology scale.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="maga-right-kpi"></div>
+    </div>
+</div>
+
+<div id="traditional-right" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Traditional Right</h2>
+            <p class="party-description">Classic establishment conservatism. Right on policy with moderate institutional trust. The Reagan Republican who is skeptical of government but not fully alienated from it.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="traditional-right-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="traditional-right-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="traditional-right-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="traditional-right-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'traditional-right', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'traditional-right', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'traditional-right', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'traditional-right', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Traditional Right runs strongly Republican, though with a slightly larger moderate/independent presence than the MAGA Right. This fits a group that is conservative but less combative in its partisanship.</p>
+                <p class="caption-slide">The Traditional Right is skeptical of the federal government but retains a moderate degree of institutional trust, a meaningful contrast with the near-total alienation of the MAGA Right.</p>
+                <p class="caption-slide">Traditional Right identifies as conservative on the ideology scale, without the intensity or anti-institutional anger that defines the MAGA Right.</p>
+                <p class="caption-slide">Religiosity within the Traditional Right is moderate, with no strong faith-based identity distinguishing the group the way it does for Faith-Based Conservatives.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="traditional-right-kpi"></div>
+    </div>
+</div>
+
+<div id="faith-based-conservatives" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Faith-Based Conservatives</h2>
+            <p class="party-description">Hard conservative on policy with a defining religious identity. Weekly churchgoers with high born-again rates. Zero federal trust but more faith in state government than other right-leaning groups.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="faith-based-conservatives-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="faith-based-conservatives-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="faith-based-conservatives-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="faith-based-conservatives-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'faith-based-conservatives', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'faith-based-conservatives', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'faith-based-conservatives', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'faith-based-conservatives', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Faith-Based Conservatives is heavily Republican, consistent with the group's hard-conservative policy views anchored in religious identity.</p>
+                <p class="caption-slide">Faith-Based Conservatives report the highest church attendance of any cluster, with attendance running close to weekly for most respondents.</p>
+                <p class="caption-slide">This is also the cluster with the highest born-again identification in the entire dataset, underscoring how central evangelical Christian identity is to the group.</p>
+                <p class="caption-slide">Nearly all Faith-Based Conservatives say religion is "very important" in their lives, making this the most faith-defined cluster in the electorate.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="faith-based-conservatives-kpi"></div>
+    </div>
+</div>
+
+<div id="nationalist-right" class="party-panel">
+    <div class="party-left-half">
+        <div class="party-header">
+            <h2 class="party-title">Nationalist Right</h2>
+            <p class="party-description">The most conservative self-identified group in the electorate. Anti-immigration and anti-regulation but uniquely progressive on racial attitudes. Low religiosity and high political engagement.</p>
+        </div>
+
+        <div class="party-carousel">
+            <div class="carousel-charts">
+                <div class="chart-slide active">
+                    <div id="nationalist-right-chart-0" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="nationalist-right-chart-1" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="nationalist-right-chart-2" class="chart-container"></div>
+                </div>
+                <div class="chart-slide">
+                    <div id="nationalist-right-chart-3" class="chart-container"></div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="switchSlide(event, 'nationalist-right', 0)"></span>
+                <span class="dot" onclick="switchSlide(event, 'nationalist-right', 1)"></span>
+                <span class="dot" onclick="switchSlide(event, 'nationalist-right', 2)"></span>
+                <span class="dot" onclick="switchSlide(event, 'nationalist-right', 3)"></span>
+            </div>
+
+            <div class="carousel-captions">
+                <p class="caption-slide active">Party identification within the Nationalist Right is strongly Republican, though the group's unique combination of anti-immigration views and progressive racial attitudes sets it apart from other Republican-leaning clusters.</p>
+                <p class="caption-slide">The Nationalist Right reports the most conservative self-identification of any cluster, placing itself even further right than the Faith-Based Conservatives.</p>
+                <p class="caption-slide">Unusually for a right-leaning cluster, the Nationalist Right is comparatively progressive on racial attitudes, more often acknowledging that white Americans hold certain advantages because of their race.</p>
+                <p class="caption-slide">Religiosity within the Nationalist Right is low, setting it apart from the more faith-driven clusters on the right like the Faith-Based Conservatives.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="party-right-half">
+        <div class="kpi-grid" id="nationalist-right-kpi"></div>
+    </div>
+</div>
     </body>
 </html>

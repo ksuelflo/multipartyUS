@@ -71,7 +71,7 @@ ces_issue_vars <- c(
   # LGBT / gender
   "CC24_340c", "CC24_444a", "CC24_444b",
   # Race
-  "CC24_440a", "CC24_440b", "CC24_441a", "CC24_441b",
+  "CC24_440a", "CC24_440b", "CC24_440c", "CC24_440d", "CC24_441a", "CC24_441b",
   # Government size / welfare
   "CC24_328c", "CC24_328d", "CC24_328e", "CC24_443_1",
   # Taxes
@@ -80,11 +80,89 @@ ces_issue_vars <- c(
   "CC24_420_5", "CC24_420_6",
   # Political engagement
   "newsint",
-  #Importance of religion, church attendance
-  "pew_religimp", 
+  # Importance of religion, church attendance
+  "pew_religimp",
   "pew_churatd",
-  #Christian nationality
-  "pew_bornagain"
+  # Christian nationality
+  "pew_bornagain",
+  # Self-reported ideology
+  "CC24_330a",
+  # Election fairness
+  "CC24_421_1",
+  # Trust in government
+  "CC24_423", "CC24_424",
+  # Affirmative action / Supreme Court
+  "CC24_445a"
+)
+
+library(tibble)
+
+question_text <- tribble(
+  ~variable,      ~question,
+
+  # Environment
+  "CC24_326a",    "Do you support or oppose each of the following proposals? Give the Environmental Protection Agency power to regulate carbon dioxide emissions.",
+  "CC24_326b",    "Do you support or oppose each of the following proposals? Require that at least 20 percent of electricity be generated with renewable sources such as wind, solar, or hydroelectric power.",
+  "CC24_326c",    "Do you support or oppose each of the following proposals? Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs.",
+  "CC24_326d",    "Do you support or oppose each of the following proposals? Increase fossil fuel production in the U.S.",
+
+  # Guns
+  "CC24_321a",    "On the issue of gun regulation, do you support or oppose a proposal that would do the following? Ban assault rifles.",
+  "CC24_321b",    "On the issue of gun regulation, do you support or oppose a proposal that would do the following? Make it easier for people to obtain concealed-carry permit.",
+  "CC24_321c",    "On the issue of gun regulation, do you support or oppose a proposal that would do the following? Require criminal background checks on all gun sales.",
+
+  # Immigration
+  "CC24_323a",    "What do you think the U.S. government should do about immigration? Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes.",
+  "CC24_323b",    "What do you think the U.S. government should do about immigration? Increase the number of border patrols on the US-Mexican border.",
+  "CC24_323c",    "What do you think the U.S. government should do about immigration? Build a wall between the U.S. and Mexico.",
+  "CC24_323d",    "What do you think the U.S. government should do about immigration? Provide permanent resident status to children of immigrants who were brought to the United States by their parents (also known as Dreamers).",
+  "CC24_340f",    "Do you support or oppose each of the following bills before Congress? Deny access to asylum for immigrants who cross the US-Mexico border illegally.",
+
+  # Abortion
+  "CC24_324a",    "On the topic of abortion, do you support or oppose each of the following proposals? Always allow a woman the right to obtain an abortion as a matter of choice.",
+  "CC24_324c",    "On the topic of abortion, do you support or oppose each of the following proposals? Make abortions illegal in all circumstances.",
+
+  # LGBT / Gender
+  "CC24_340c",    "Do you support or oppose each of the following bills before Congress? Require that all federal agencies recognize same-sex marriages and interracial marriages.",
+  "CC24_444a",    "Some states are considering the following policies. If this came up in your state, would you support or oppose the proposal? Preventing gender transition surgery for minors experiencing gender dysphoria.",
+  "CC24_444b",    "Some states are considering the following policies. If this came up in your state, would you support or oppose the proposal? Requiring parental consent before teachers could address their child using a name or pronoun other than the name or gender under which they are enrolled in school.",
+
+  # Race
+  "CC24_440a",    "Do you agree or disagree with the following statements? White people in the U.S. have certain advantages because of the color of their skin.",
+  "CC24_440b",    "Do you agree or disagree with the following statements? Racial problems in the U.S. are rare, isolated situations.",
+  "CC24_440c",    "Do you agree or disagree with the following statements? Women seek to gain power by getting control over men.",
+  "CC24_440d",    "Do you agree or disagree with the following statements? Women are too easily offended.",
+  "CC24_441a",    "How much do you agree or disagree with the following statements? Irish, Italians, Jewish and many other minorities overcame prejudice and worked their way up. Blacks should do the same without any special favors.",
+  "CC24_441b",    "How much do you agree or disagree with the following statements? Generations of slavery and discrimination have created conditions that make it difficult for Blacks to work their way out of the lower class.",
+
+  # Government / Welfare
+  "CC24_328c",    "Do you support or oppose each of the following proposals? Require able-bodied adults under 64 years of age who do not have dependents to have a job in order to receive Medicaid.",
+  "CC24_328d",    "Do you support or oppose each of the following proposals? Repeal the Affordable Care Act.",
+  "CC24_328e",    "Do you support or oppose each of the following proposals? Expand Medicaid to cover individuals making less than $25,000 and families making less than $40,000 a year.",
+  "CC24_443_1",   "State legislatures must make choices when making spending decisions on important state programs. How would you like your legislature to spend money on each of the five areas below? Welfare.",
+
+  # Taxes
+  "CC24_341b",    "Do you support or oppose each of the following proposals? Raise the corporate income tax rate from 21 percent to 28 percent.",
+  "CC24_341c",    "Do you support or oppose each of the following proposals? Allow tax rates on those earning $400,000 or more a year to rise to 35 percent.",
+
+  # Foreign Policy
+  "CC24_420_5",   "Would you approve of the use of U.S. military troops in order to protect American allies under attack by foreign nations?",
+  "CC24_420_6",   "Would you approve of the use of U.S. military troops in order to help the United Nations uphold international law?",
+
+  # Political Engagement
+  "newsint",      "Some people seem to follow what's going on in government and public affairs most of the time, whether there's an election going on or not. Others aren't that interested. Would you say you follow what's going on in government and public affairs...",
+
+  # Religion
+  "pew_religimp", "How important is religion in your life?",
+  "pew_churatd",  "Aside from weddings and funerals, how often do you attend religious services?",
+  "pew_bornagain","Would you describe yourself as a 'born-again' or evangelical Christian, or not?",
+
+  # New variables
+  "CC24_330a",    "How would you rate each of the following individuals and groups? Yourself.",
+  "CC24_421_1",   "Do you agree or disagree with the following statements? Elections in the U.S. are fair.",
+  "CC24_423",     "How much trust do you have in the federal government in Washington when it comes to handling the nation's problems?",
+  "CC24_424",     "How much trust do you have in the government of the state where you live when it comes to handling the state's problems?",
+  "CC24_445a",    "Do you agree or disagree with each of the following decisions of the Supreme Court of the United States? The use of race in university admissions violates Equal Protection under the Constitution and is illegal."
 )
 
 codebook_full%>%
@@ -95,22 +173,25 @@ codebook_full%>%
 
 - To account for the missingness in the measures, multiple imputation (via the mice package version 3.18.0) using predictive mean matching was used.
 
+NA variables: 444a, 444b, 440a, 440b, 441a, 441b, 443_1, 420_5, 420_6
+
 
 ```{r}
+
 #Getting only the variables used in the clustering
 clustering_vars <- data%>%
-  select(ces_issue_vars)
+  select(ces_issue_vars)%>%
+  mutate(newsint = case_when(newsint == 7 ~ NA,
+                   newsint != 7 ~ newsint),
+         CC24_423 = case_when(CC24_423 == 8 ~ 4,
+                             CC24_423 != 8 ~ CC24_423),
+         CC24_424 = case_when(CC24_424 == 8 ~ 4,
+                             CC24_424 != 8 ~ CC24_424))
 
 #Multiple imputation
 imputation <- mice(clustering_vars, m = 1, method = "pmm")
-
-#Standardize variables
-standardize <- function(dat){
-  dat%>%
-    mutate(across(everything(), ~ (. - mean(., na.rm = TRUE)) / sd(., na.rm = TRUE)))
-}
-
 imp <- complete(imputation, 1)
+
 ```
 
 ### Clustering
@@ -128,29 +209,50 @@ cluster_aggregate <- imp%>%
   group_by(group)%>%
   summarize(across(everything(), ~ mean(.)))
 
-# write_csv(cluster_aggregate, "../data/cluster_aggregate.csv")
+write_csv(cluster_aggregate, "../data/cluster_aggregate.csv")
 
 write_csv(codebook_full, "../data/codebook.csv")
-
 ```
 
 ### Finalize cluster csv
 
 ```{r}
-export_cluster <- data%>%
-  mutate(group = cluster$clustering)%>%
+export_cluster <- imp %>%
+  mutate(group = cluster$clustering) %>%
   mutate(party = case_when(
     group == 1 ~ "Progressive Left",
-    group == 9 ~ "Religious Progressives",
-    group == 2 ~ "Moderate Dems",
-    group == 6 ~ "Disengaged Center-Left",
-    group == 5 ~ "Political Bystanders",
-    group == 4 ~ "Racial Justice Conservatives",
-    group == 3 ~ "Secular Moderates",
-    group == 7 ~ "Traditional Right",
-    group == 8 ~ "MAGA Right"
+    group == 2 ~ "Religious Moderates",
+    group == 3 ~ "Disillusioned Left",
+    group == 4 ~ "Moderate Left",
+    group == 5 ~ "MAGA Right",
+    group == 6 ~ "Traditional Right",
+    group == 7 ~ "Faith-Based Conservatives",
+    group == 8 ~ "Secular Moderates",
+    group == 9 ~ "Nationalist Right"
   ))%>%
-  select(commonweight, birthyr, gender4, educ, race, hispanic, multrace_1, multrace_2, multrace_3, multrace_4, multrace_5, multrace_8, multrace_97, multrace_98,comptype, votereg, pid3, pid7, inputstate, region, ces_issue_vars, party)
+  mutate(
+    commonweight = data$commonweight,
+    birthyr = data$birthyr,
+    gender4 = data$gender4,
+    educ = data$educ,
+    race = data$race,
+    hispanic = data$hispanic,
+    multrace_1 = data$multrace_1,
+    multrace_2 = data$multrace_2,
+    multrace_3 = data$multrace_3,
+    multrace_4 = data$multrace_4,
+    multrace_5 = data$multrace_5,
+    multrace_8 = data$multrace_8,
+    multrace_97 = data$multrace_97,
+    multrace_98 = data$multrace_98,
+    comptype = data$comptype,
+    votereg = data$votereg,
+    pid3 = data$pid3,
+    pid7 = data$pid7,
+    inputstate = data$inputstate,
+    region = data$region,
+  ) %>%
+    select(commonweight, birthyr, gender4, educ, race, hispanic, multrace_1, multrace_2, multrace_3, multrace_4, multrace_5, multrace_8, multrace_97, multrace_98, comptype, votereg, pid3, pid7, inputstate, region, ces_issue_vars, party)
 
 write_csv(export_cluster, "../data/export_cluster.csv")
 
@@ -163,6 +265,100 @@ export_cluster%>%
 
 ```
 
+### Aggregating for data viz
+
+```{r}
+clustered <- read_csv("../data/export_cluster.csv")
+
+clustered_parties_qs <- clustered %>%
+  select(-birthyr)%>%
+  pivot_longer(
+    cols = -c(party, commonweight),
+    names_to = "variable",
+    values_to = "value"
+  ) %>%
+  group_by(party, variable, value) %>%
+  summarize(people = sum(commonweight, na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(party, variable) %>%
+  mutate(pct = people / sum(people)) %>%
+  ungroup()%>%
+  left_join(question_text, by = join_by(variable == variable))
+
+write_csv(clustered_parties_qs, "../data/clustered_parties_qs.csv")
+
+# Getting a density curve for the age plot.
+
+density_data <- clustered %>%
+  mutate(age = 2024 - birthyr) %>%
+  filter(age >= 18, age <= 100) %>%
+  group_by(party) %>%
+  group_modify(~ {
+    d <- density(.x$age, weights = .x$commonweight / sum(.x$commonweight), 
+                 n = 512, from = 18, to = 100)
+    tibble(age = d$x, density = d$y)
+  }) %>%
+  ungroup()
+
+write_csv(density_data, "../data/age_density.csv")
+```
+
+
+```{r}
+dat <- read_csv("../data/clustered_parties_qs.csv")
+
+updated_qs <- dat%>%
+  filter(variable != "inputstate")%>%
+  pivot_wider(
+    id_cols = c(party, variable),
+    names_from = value,
+    values_from = c(people, pct),
+    names_sep = "_"
+  )
+
+codebook_full
+
+write_csv(updated_qs, "../data/clustered_parties_qs.csv")
+write_csv(dat, "../data/long_clustered.csv")
+
+dat <- read_csv("../data/clustered_parties_qs.csv")
+dat%>%
+  filter(variable == "CC24_321a")%>%
+  
+
+
+codebook_full%>%
+  filter(variable %in% ces_issue_vars)
+```
+
+
+```{r}
+dat <- read_csv("../data/long_clustered.csv")
+imp_vars <- c("CC24_321a", "CC24_323c", "CC24_324a", "CC24_326d", "CC24_340c", "pew_religimp", "CC24_420_5", "CC24_341c")
+kpi_style_data <- dat %>%
+  filter(variable %in% imp_vars) %>%
+  mutate(topic = case_when(
+    variable == "CC24_321a"    ~ "Guns",
+    variable == "CC24_323c"    ~ "Immigration",
+    variable == "CC24_324a"    ~ "Abortion",
+    variable == "CC24_326d"    ~ "Environment",
+    variable == "CC24_340c"    ~ "LGBT",
+    variable == "pew_religimp" ~ "Religion",
+    variable == "CC24_420_5"   ~ "Foreign Policy",
+    variable == "CC24_341c"    ~ "Taxes"
+  ))%>%
+  filter(value == 1)%>%
+  left_join(codebook_full, by = join_by(variable == variable, value == value))%>%
+  arrange(variable, desc(pct))%>%
+  mutate(rank = rep(1:9, 8))
+
+write_csv(kpi_style_data, "../data/kpi_style_data.csv")
+```
+
+
+## Methodological problems
+
+`newsint` has a 7 category: "Don't know". These values have not been imputed yet
 
 
 ## Visualizations
@@ -174,5 +370,175 @@ Dashboard!!
   - Question page
   - Party page
 
+```{r}
+clustered_parties_qs%>%
+  filter(variable == "CC24_321c")
+```
+
+
+### Party page
+
+#### Progressive Left
+CC24_330a: Self-identifies as "very liberal" — the furthest left of any cluster.
+pew_churatd: Most secular cluster — church attendance is "seldom to never."
+CC24_440b: Strongest disagreement that racial problems are rare, paired with rejection of the bootstrapping narrative.
+
+#### Religious Moderates
+pew_churatd: Church attendance close to weekly — the most religiously practicing left-leaning cluster.
+CC24_421_1: Most institutionally trusting cluster on the left — believes elections are fair.
+CC24_423: Moderate trust in federal government, distinguishing it from the disillusioned left clusters.
+
+#### Moderate Left
+CC24_330a: Genuinely center-left self-identification — "slightly left of moderate."
+CC24_441b: Moderately progressive on slavery legacy — softest racial attitudes on the left.
+newsint: High political engagement despite moderate positioning.
+
+#### Disillusioned Left
+CC24_423: Zero trust in federal government — the most institutionally alienated left-leaning cluster.
+CC24_330a: Self-identifies as somewhat liberal despite deep institutional skepticism.
+CC24_421_1: Neutral on whether elections are fair — neither agrees nor disagrees.
+
+#### Secular Moderates
+CC24_330a: Squarely centrist self-identification — "middle of the road."
+pew_churatd: Seldom attends church — the most secular centrist group.
+CC24_421_1: Moderate agreement that elections are fair.
+
+#### MAGA Right
+CC24_423: Near-zero trust in federal government — most anti-institutional cluster on the right.
+CC24_421_1: Strongest skepticism that elections are fair of any cluster.
+CC24_330a: Very conservative self-identification.
+
+#### Traditional Right
+CC24_423: Skeptical of government but retains moderate institutional trust — distinguishes it from MAGA Right.
+CC24_330a: Conservative self-identification without the extreme anti-institutional anger.
+pew_churatd: Moderate religiosity with no strong faith-based identity.
+
+#### Faith-Based Conservatives
+pew_churatd: Highest church attendance of any cluster — close to weekly.
+pew_bornagain: Highest born-again identification in the entire dataset.
+pew_religimp: Religion is "very important" — the most faith-defined cluster.
+
+#### Nationalist Right
+CC24_330a: Most conservative self-identification of any cluster — even more so than Faith-Based Conservatives.
+CC24_440a: Uniquely progressive on racial attitudes for a right-leaning group — acknowledges white advantages.
+pew_churatd: Low religiosity — distinguishes it from the faith-driven right.
+
+
+## Geography page
+
+```{r}
+state_fips <- read_csv("../data/state_fips_master.csv")
+
+
+map_data <- clustered%>%
+  group_by(inputstate, party)%>%
+  summarize(weighted_n = sum(commonweight),
+            n = n())%>%
+  ungroup()%>%
+  group_by(inputstate)%>%
+  mutate(weighted_total = sum(weighted_n),
+         total = sum(n),
+         pct = weighted_n/weighted_total)%>%
+  left_join(state_fips, by = join_by(inputstate == fips))%>%
+  select(state_name, party, weighted_n, n, pct, total, weighted_total)%>%
+  mutate(moe = 1.96 * sqrt(pct*(1-pct)/total))%>%
+  group_by(state_name)%>%
+  mutate(majority = if_else(pct == max(pct), "yes", "no"))
+
+write_csv(map_data, "../data/map_data.csv")
+```
+
+
+## Demography page
+
+```{r}
+dem_dat <- read_csv("../data/export_cluster.csv")
+codebook <- read_csv("../data/codebook.csv")
+data
+dem_dat <- dem_dat%>%
+  mutate(fam_inc = data$faminc_new)
+
+write_csv(dem_dat, "../data/export_cluster.csv")
+codebook%>%
+  filter(str_detect(question, "income"))
+
+codebook_dem <- codebook%>%
+  filter(variable %in% c("gender4", "educ", "race", "faminc_new"))
+
+codebook%>%
+  filter(variable == "faminc_new")
+dem_data_by_party <- dem_dat%>%
+  select(commonweight,gender4, educ, race, fam_inc, party)%>%
+  rename(faminc_new = fam_inc)%>%
+  pivot_longer(cols = c(gender4, educ, race, faminc_new), names_to = "variable")%>%
+  left_join(codebook_dem, by=join_by(variable == variable, value == value))%>%
+  group_by(party, variable, value, value_label)%>%
+  summarize(respondents = sum(commonweight))%>%
+  group_by(party, variable)%>%
+  mutate(total = sum(respondents),
+         pct = respondents/total)%>%
+  ungroup()%>%
+  filter(!is.na(value))
+
+fix_inc <- function(value){
+  value <- str_remove_all(value, "[:punct:]")
+  if (str_detect(value, "Less")){
+    return ("<10K")
+  }
+  else if (str_detect(value, "more")){
+    return (">500K")
+  }
+  else if (str_detect(value, "Prefer")){
+    return (value)
+  }
+  else{
+    lower <- as.numeric(str_extract(value, "(?<=[:symbol:])\\d*"))
+    upper <- str_extract_all(value, "(?<=[:space:][:symbol:]).*")
+    upper_number <- round(as.numeric(str_remove(upper, "[:punct:]")), -4)
+    full_string <- str_c("$", lower/1000, "-", upper_number/1000, "K")
+    return (full_string)
+  }
+}
+
+dem_data_by_party <- dem_data_by_party %>%
+  mutate(
+    value_label = if_else(
+      variable == "faminc_new",
+      map_chr(value_label, fix_inc),
+      value_label
+    )
+  )%>%
+  mutate(value_label = if_else(value_label == "Two or more races", "2+ races", value_label),
+         value_label = if_else(value_label == "High school graduate", "HS grad", value_label))
+
+write_csv(dem_data_by_party, "../data/dem_data_by_party.csv")
+
+
+
+```
+
+
+```{r}
+  
+data%>%
+  filter(is.na(faminc_new))
+raw_dem_data <- dem_dat%>%
+  mutate(age = 2026 - birthyr) %>%
+  mutate(faminc_new = data$faminc_new) %>%
+  mutate(row_id = row_number()) %>% 
+  select(row_id, commonweight, age, gender4, educ, race, faminc_new, party) %>%
+  pivot_longer(cols = c(gender4, educ, race, faminc_new), names_to = "variable") %>%
+  left_join(codebook_dem, by = join_by(variable == variable, value == value)) %>%
+  select(-question, -value) %>%
+  pivot_wider(names_from = variable, values_from = value_label) %>%
+  select(-row_id)%>%
+  filter(!is.na(faminc_new))%>%
+  mutate(faminc_new = map_chr(faminc_new, fix_inc),
+         race = if_else(race == "Two or more races", "2+ races", race),
+         educ = if_else(educ == "High school graduate", "HS grad", educ))
+
+write_csv(raw_dem_data, "../data/raw_dem_data.csv")
+  
+```
 
 

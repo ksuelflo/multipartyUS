@@ -1,0 +1,160 @@
+/* Page level stuff */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f0;
+  color: #222222;
+  font-family: Georgia, serif; /* very journalistic */
+}
+
+/* PAGE------------------------------------------------------------------------------- */
+
+#page-content {
+    display: flex;
+    height: 95vh;
+}
+
+/* TABLE------------------------------------------------------------------------------- */
+
+
+#table {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/* MAP------------------------------------------------------------------------------- */
+
+
+#us-map {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:700px;
+    position:relative;
+}
+
+/* BARPLOT------------------------------------------------------------------------------- */
+
+#state_bar {
+    width: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
+/* DROPDOWN------------------------------------------------------------------------------- */
+
+#party-select-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#party-select-wrapper label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+#party-select {
+    /* remove position/top/left/z-index from here - now on the wrapper instead */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+
+    font-family: inherit;
+    font-size: 13px;
+    color: #222;
+    cursor: pointer;
+
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23666'><path d='M5.5 7l4.5 5 4.5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+#party-select:hover {
+    border-color: #999;
+}
+
+#party-select:focus {
+    outline: none;
+    border-color: #2e86c1;
+    box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.2);
+}
+
+
+/* TOOLTIP------------------------------------------------------------------------------- */
+#tooltip {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 13px;
+    line-height: 1.6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.tooltip-content {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* space between text and shape */
+}
+
+.tooltip-text {
+    white-space: nowrap; /* keeps stat lines from wrapping awkwardly */
+}
+
+.tooltip-shape {
+    flex-shrink: 0; /* prevents the shape from getting squeezed if text is long */
+}
+
+#tooltip strong {
+    font-size: 15px;
+    display: block; /* forces the state name onto its own line, with space below before the stats start */
+    margin-bottom: 4px;
+}
+
+/* TABLE------------------------------------------------------------------------------- */
+
+#table {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 600px;         /* explicit, smaller than the full panel - adjust to taste */
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    font-size: 11px;
+}
+
+#table table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
+}
+
+#table thead th {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}

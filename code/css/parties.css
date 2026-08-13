@@ -1,92 +1,398 @@
-    /* ── Subnav ── */
-      .subnav-wrapper {
-        width: 100%;
-        background: #fafafa;
-        border-bottom: 1px solid #e0e0e0;
-        display: flex;
-        overflow-x: auto;
-        position: sticky;
-        top: 49px;
-        z-index: 99;
-      }
- 
-      .subnav-tab {
-        text-decoration: none;
-        color: black;
-        white-space: nowrap;
-        padding: 10px 16px;
-        font-size: 13px;
-        font-weight: 500;
-        border-bottom: 2px solid transparent;
-        flex-shrink: 0;
-        cursor: pointer;
-      }
- 
-      .subnav-tab:hover {
-        color: #111;
-        background: #f0f0f0;
-      }
- 
-      .subnav-tab.active {
-        color: #111;
-        border-bottom: 2px solid #111;
-      }
+/* Page level stuff */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f0;
+  color: #222222;
+  font-family: Georgia, serif; /* very journalistic */
+}
 
-        .tab-progressive-left { background-color: #0a3d6b80; }
-        .tab-progressive-left:hover,
-        .tab-progressive-left.active { background-color: #0a3d6bff; color: #fff; }
+/* ── Subnav ──---------------------------------------------- */
+.subnav-wrapper {
+  width: 100%;
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  overflow-x: auto;
+  z-index: 99;
+}
 
-        .tab-religious-progressives { background-color: #1a5fa080; }
-        .tab-religious-progressives:hover,
-        .tab-religious-progressives.active { background-color: #1a5fa0ff; color: #fff; }
+.subnav-tab {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  padding: 1.4vh;
+  font-size: .7vw;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  flex:1;
+  cursor: pointer;
+  text-align:center;
+}
 
-        .tab-moderate-democrats { background-color: #2e86c180; }
-        .tab-moderate-democrats:hover,
-        .tab-moderate-democrats.active { background-color: #2e86c1ff; color: #fff; }
+.subnav-tab:hover {
+  color: #111;
+  background: #f0f0f0;
+}
 
-        .tab-low-information-center-left { background-color: #7ab8e880; }
-        .tab-low-information-center-left:hover,
-        .tab-low-information-center-left.active { background-color: #7ab8e8ff; color: black; }
+.subnav-tab.active {
+  color: #111;
+  border-bottom: 2px solid #111;
+}
 
-        .tab-disengaged-middle { background-color: #e8d44d80; }
-        .tab-disengaged-middle:hover,
-        .tab-disengaged-middle.active { background-color: #e8d44dff; color: #111; }
+.tab-party-overview {
+  background-color: #4a4a4a80;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
 
-        .tab-racial-justice-conservatives { background-color: #f4a04380; }
-        .tab-racial-justice-conservatives:hover,
-        .tab-racial-justice-conservatives.active { background-color: #f4a043ff; color: #fff; }
+.tab-overview:hover,
+.tab-overview.active {
+  background-color: #4a4a4aff;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.tab-progressive-left { background-color: #0a3d6b80; }
+  .tab-progressive-left:hover,
+  .tab-progressive-left.active { background-color: #0a3d6bff; color: #fff; }
 
-        .tab-secular-moderates { background-color: #e05c2a80; }
-        .tab-secular-moderates:hover,
-        .tab-secular-moderates.active { background-color: #e05c2aff; color: #fff; }
+  .tab-religious-moderates { background-color: #1a5fa080; }
+  .tab-religious-moderates:hover,
+  .tab-religious-moderates.active { background-color: #1a5fa0ff; color: #fff; }
 
-        .tab-traditional-conservatives { background-color: #c0202080; }
-        .tab-traditional-conservatives:hover,
-        .tab-traditional-conservatives.active { background-color: #c02020ff; color: #fff; }
+  .tab-moderate-left { background-color: #2e86c180; }
+  .tab-moderate-left:hover,
+  .tab-moderate-left.active { background-color: #2e86c1ff; color: #fff; }
 
-        .tab-maga-right { background-color: #6b000048; }
-        .tab-maga-right:hover,
-        .tab-maga-right.active { background-color: #6b0000ff; color: #fff; }
+  .tab-disillusioned-left { background-color: #7ab8e880; }
+  .tab-disillusioned-left:hover,
+  .tab-disillusioned-left.active { background-color: #7ab8e8ff; color: black; }
 
-     /* ── Party panels ── */
-      .party-panel {
-        display: none;
-        padding: 2rem 1.5rem;
-      }
- 
-      .party-panel.active {
-        display: block;
-      }
- 
-      .party-panel h1 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        color: #111;
-      }
- 
-      .party-panel p {
-        color: #666;
-        font-size: 15px;
-        line-height: 1.6;
-      }
+  .tab-secular-moderates { background-color: #e8d44d80; }
+  .tab-secular-moderates:hover,
+  .tab-secular-moderates.active { background-color: #e8d44dff; color: #111; }
+
+  .tab-maga-right { background-color: #f4a04380; }
+  .tab-maga-right:hover,
+  .tab-maga-right.active { background-color: #f4a043ff; color: #fff; }
+
+  .tab-traditional-right { background-color: #e05c2a80; }
+  .tab-traditional-right:hover,
+  .tab-traditional-right.active { background-color: #e05c2aff; color: #fff; }
+
+  .tab-faith-based-conservatives { background-color: #c0202080; }
+  .tab-faith-based-conservatives:hover,
+  .tab-faith-based-conservatives.active { background-color: #c02020ff; color: #fff; }
+
+  .tab-nationalist-right { background-color: #6b000048; }
+  .tab-nationalist-right:hover,
+  .tab-nationalist-right.active { background-color: #6b0000ff; color: #fff; }
+
+/* ── Party panels ──----------------------------------------- */
+.party-panel {
+  display: none;
+}
+
+.party-panel.active {
+  display: block;
+}
+
+/* Panels with a right-half KPI grid lay their two halves out side by side.
+   Scoped with :has() so panels without one (still most of them) keep the plain block layout. */
+.party-panel.active:has(.party-right-half) {
+  display: flex;
+}
+
+.party-panel h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.party-panel p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------------------PARTY INTROS----------------------------------------------------- */
+
+.party-intros {
+  display: grid;
+  height: calc(100vh - 9.1vh);
+
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 15% 35% 35% 15%;
+  grid-template-areas:
+    "progressive-left       title-map              nationalist-right"
+    "religious-moderates    treemap                faith-based-conservatives"
+    "moderate-left          treemap                traditional-right"
+    "disillusioned-left     secular-moderates      maga-right";
+
+  background: #e8e8e3;
+}
+
+.progressive-left          { grid-area: progressive-left; }
+.religious-moderates       { grid-area: religious-moderates; }
+.moderate-left             { grid-area: moderate-left; }
+.disillusioned-left        { grid-area: disillusioned-left; }
+.secular-moderates         { grid-area: secular-moderates; }
+.maga-right                { grid-area: maga-right; }
+.traditional-right         { grid-area: traditional-right; }
+.faith-based-conservatives { grid-area: faith-based-conservatives; }
+.nationalist-right         { grid-area: nationalist-right; }
+.treemap                   { grid-area: treemap; }
+.title-map                 { grid-area: title-map; }
+
+.panel {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 4px; /* smaller radius feels more editorial */
+  border: 1px solid #dddddd;
+}
+
+.panel h3 {
+    margin: 0 0 8px 0;
+    font-size: .9vw;
+}
+
+.panel p {
+    margin: 0;
+    font-size: .85vw;
+    line-height: 1.4;
+    color: #444444;
+}
+
+.panel h1 {
+    font-size: 1vw;
+    align-items: center;
+}
+
+.title-map a {
+    color: #444444;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.title-map a:hover {
+    color: #222222;
+}
+
+.title-map i {
+    font-size: 1vw;
+}
+.panel h2 {
+  font-size: .9vw;
+}
+
+
+/* ---------------------------------------------------------------------PARTY TABS----------------------------------------------------- */
+
+/* ---------------------------------------------------------------------PARTY TITLES----------------------------------------------------- */
+
+.party-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.6vw;
+  color: #000;
+  margin: 0;
+  padding: 2vh 1.5vw 0 1.5vw;
+}
+
+/* ---------------------------------------------------------------------CENTER DIVIDER----------------------------------------------------- */
+
+.party-panel:not(#overview) {
+  position: relative;
+  height: calc(100vh - 9.1vh);
+}
+
+.party-panel:not(#overview)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 5px;
+  background: #ccc;
+}
+
+/* ---------------------------------------------------------------------PARTY CAROUSEL----------------------------------------------------- */
+
+.party-left-half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.party-header {
+  flex: 0 0 15%;
+  box-sizing: border-box;
+}
+
+.party-description {
+  margin: 1vh 0 0 0;
+  padding: 0 1.5vw;
+  font-size: .95vw;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.party-carousel {
+  /* flex: 1 1 50%; */
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 1.5vw 1vh 1.5vw;
+  box-sizing: border-box;
+}
+
+/* The chart itself gets the bulk of the carousel's height; the dots and
+   caption below share what's left, and nothing here scrolls. */
+.carousel-charts {
+  flex: 0 0 85%;
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.chart-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-slide.active {
+  display: flex;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-dots {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
+  padding: 1vh 0;
+}
+
+.dot {
+  width: 0.6vw;
+  height: 0.6vw;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dot:hover {
+  background: #999;
+}
+
+.dot.active {
+  background: #333;
+}
+
+.carousel-captions {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.caption-slide {
+  display: none;
+  margin: 0;
+  font-size: .8vw;
+  line-height: 1.4;
+  color: #444444;
+  text-align: center;
+}
+
+.caption-slide.active {
+  display: block;
+}
+
+/* ---------------------------------------------------------------------KPI GRID----------------------------------------------------- */
+
+.party-right-half {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2vh 1.5vw;
+}
+
+.kpi-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.5vh 1.5vw;
+}
+
+.kpi-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 0;
+  padding: 0.5vh 0.5vw;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.kpi-topic {
+  font-size: .75vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666666;
+}
+
+.kpi-question {
+  margin-top: 0.3vh;
+  font-size: .68vw;
+  line-height: 1.25;
+  color: #444444;
+}
+
+.kpi-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4vw;
+  margin-top: 0.4vh;
+}
+
+.kpi-value {
+  font-size: 2.1vw;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1;
+}
+
+.kpi-value-label {
+  font-size: .8vw;
+  font-weight: 600;
+  color: #555555;
+}
+
+.kpi-rank {
+  margin-top: 0.3vh;
+  font-size: .8vw;
+  color: #888888;
+}
+

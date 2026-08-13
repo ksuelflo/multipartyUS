@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Multi-party Clustering Dashboard</title>
+
+        <!-- The following line references an external css file -->
+        <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/geography.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    </head>
+    <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src = "../js/geography.js" type = "module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-svg-legend@2.25.6/d3-legend.min.js"></script>
+    <div class="nav-wrapper">
+        <a href="index.html" class="nav-tab">
+        <i class="ti ti-users"></i>Parties
+        </a>
+        <a href="geography.html" class="nav-tab active">
+        <i class="ti ti-map"></i>Geography
+        </a>
+        <a href="questions.html" class="nav-tab" >
+        <i class="ti ti-chart-bar"></i>Demographics
+        </a>
+    </div>
+    <div id="page-content">
+        <div id="table"></div>
+        <div id="us-map">
+            <div id="party-select-wrapper">
+                <label for="party-select">View by:</label>
+                <select id="party-select">
+                    <option value="majority">Majority Party</option>
+                    <option value="Progressive Left">Progressive Left</option>
+                    <option value="Religious Moderates">Religious Moderates</option>
+                    <option value="Moderate Left">Moderate Left</option>
+                    <option value="Disillusioned Left">Disillusioned Left</option>
+                    <option value="Secular Moderates">Secular Moderates</option>
+                    <option value="MAGA Right">MAGA Right</option>
+                    <option value="Traditional Right">Traditional Right</option>
+                    <option value="Faith-Based Conservatives">Faith-Based Conservatives</option>
+                    <option value="Nationalist Right">Nationalist Right</option>
+                </select>
+            </div>    
+            <div id="tooltip"></div>
+        </div>
+        <div id="state_bar"></div>
+    </div>
+
+
+    </body>
+</html>

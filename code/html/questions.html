@@ -1,9 +1,62 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <title>Multi-party Clustering Dashboard</title>
 
+        <!-- The following line references an external css file -->
+        <link href="../css/navbar.css" rel="stylesheet">
+        <link href="../css/questions.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     </head>
     <body>
-        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src = "../js/questions.js" type = "module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-svg-legend@2.25.6/d3-legend.min.js"></script>
+    <div class="nav-wrapper">
+        <a href="index.html" class="nav-tab">
+        <i class="ti ti-users"></i>Parties
+        </a>
+        <a href="geography.html" class="nav-tab">
+        <i class="ti ti-map"></i>Geography
+        </a>
+        <a href="demographics.html" class="nav-tab active" >
+        <i class="ti ti-chart-bar"></i>Demographics
+        </a>
+    </div>
+    <div id="page-content" class="dashboard-container">
+        <div id="left-panel" class="panel">
+            <div class="panel-header">
+                <div class="panel-header-text">
+                    <h2 class="panel-title">Demographics</h2>
+                    <p class="panel-subtitle">Breakdown by education, age, and more</p>
+                </div>
+                <div id="party-select-wrapper">
+                    <label for="party-select">Party</label>
+                    <select id="party-select">
+                        <option value="Progressive Left">Progressive Left</option>
+                        <option value="Religious Moderates">Religious Moderates</option>
+                        <option value="Moderate Left">Moderate Left</option>
+                        <option value="Disillusioned Left">Disillusioned Left</option>
+                        <option value="Secular Moderates">Secular Moderates</option>
+                        <option value="MAGA Right">MAGA Right</option>
+                        <option value="Traditional Right">Traditional Right</option>
+                        <option value="Faith-Based Conservatives">Faith-Based Conservatives</option>
+                        <option value="Nationalist Right">Nationalist Right</option>
+                    </select>
+                </div>
+                <div class="party-link-wrapper">
+                    <a class="party-page-link" id="party-page-link">View Party Page →</a>
+                </div>
+            </div>
+            <!-- chart-grid gets appended here by JS, as a sibling of panel-header -->
+        </div>
+        <div id="right-panel" class="panel"></div>
+    </div>
+
+
     </body>
 </html>

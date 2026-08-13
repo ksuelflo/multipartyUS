@@ -149,4 +149,66 @@
     - `vertical-align`: -2px; Shifting the icon down to be in line with the text. Apparently icons often sit 1-2px higher initially.
 
 
-## 
+## Party page
+
+### Global Setup
+
+- Colorblind friendly palette
+  - OKABE_ITO (8 hex colors): ['#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7', '#000000']
+- Fixed Array: Use square brackets []
+- Color scales
+  - d3.scaleSequential()
+    - For continuous values
+  - d3.scaleOrdinal()
+    - For discrete values
+
+### Horziontal bar chart
+
+- Getting the value of an attribute
+  - object.attr("attribute name")
+  - example: svg.attr("width")
+- Setting margin
+  - const margin = {top: 40, right: 160, bottom: 30, left: 110};
+  - To get the top margin value, use margin.top
+- Standard D3 plot convention
+  - Have an SVG
+  - Define margins
+  - create a new <g> element that gets translated by the margin
+    - example: const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+- How do you set the value of an attribute?
+  - .attr("width", value)
+- Loading data
+  - Simple
+    - d3.csv("file-path").then(function(data) {do stuff...} )
+  - Complex (if have multiple datasets you are using)
+    - Promise.all([d3.csv(file-path), d3.csv(file-path)]).then(function([data, codebookData]) {do stuff...} )
+    - `data` and `codebookData` are just variable names, could be called anything
+- Filter data
+  - const filtereddata = data.filter(d => d.variable_name == "thing you want to filter to")
+- Axis scales
+  - For categorical (like bar chart)
+    - use d3.scaleBand().domain(`categories`).range([bottom_height, top_height]).padding(0.2)
+  - For continuous axis
+    - use d3.scaleLinear().domain([bottom_range, top_range]).range([bottom_height, top_height])
+  - Put them on the page
+    - Append a new <g> to exisitng <g>
+      - g.append("g").call(d3.axisLeft(y_axis_var_name))
+      - For x axis, d3.axisBottom defaults to drawing a horizontal line at y=0 (the top of the chart)
+        - Sinc we want the bottom of the chart, translate it
+      - g.append("g")
+      .attr("transform", `translate(0, ${height})`)
+      .call(d3.axisBottom(x).tickSizeOuter(0).tickFormat(d3.format(".0%")));
+- For stacked bar chart, use d3.stack().keys(categories)(data);
+
+## Basics
+
+- JS Array
+  - var numbers = [1,2,3]
+  - numbers[2] = 3
+- JS Object
+  - var car = {make: "Ford", model: "Mustang"}
+  - car.make = "Ford"
+
+
+

@@ -2,37 +2,74 @@
 //-----------------------------------------sub-navbar functionality
 
 window.switchParty = function(event, id) {
-// hide all panels
-document.querySelectorAll('.party-panel').forEach(panel => {
-    panel.classList.remove('active');
+    // hide all panels
+    document.querySelectorAll('.party-panel').forEach(panel => {
+        panel.classList.remove('active');
+    });
+
+    // remove active from all subnav tabs
+    document.querySelectorAll('.subnav-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // show the selected panel
+    document.getElementById(id).classList.add('active');
+
+    // mark the clicked tab as active
+    event.target.classList.add('active');
+
+    // reflect selection in the URL
+    history.replaceState(null, '', `#${id}`);
+}
+
+// on page load, activate whichever party the URL hash specifies
+window.addEventListener('DOMContentLoaded', () => {
+    const id = location.hash.slice(1); // strip leading '#'
+    if (id) {
+        const tab = document.querySelector(`.tab-${id}`);
+        if (tab) {
+            switchParty({ target: tab }, id);
+        }
+    }
 });
 
-// remove active from all subnav tabs
-document.querySelectorAll('.subnav-tab').forEach(tab => {
-    tab.classList.remove('active');
-});
+//-----------------------------------------chart carousel functionality
 
-// show the selected panel
-document.getElementById(id).classList.add('active');
+window.switchSlide = function(event, panelId, index) {
+  const panel = document.getElementById(panelId);
 
-// mark the clicked tab as active
-event.target.classList.add('active');
+  panel.querySelectorAll('.chart-slide').forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  panel.querySelectorAll('.caption-slide').forEach((caption, i) => {
+    caption.classList.toggle('active', i === index);
+  });
+
+  panel.querySelectorAll('.dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
 }
 
 //------------------------------------------import statements
 
-const margin = {top: 10, right: 10, bottom: 10, left: 10},
-  width = 560 - margin.left - margin.right,
-  height = 560 - margin.top - margin.bottom;
+const container = document.getElementById("tree_map");
+// const margin = {top: 10, right: 10, bottom: 10, left: 10},
+//   width = container.clientWidth - margin.left - margin.right,
+//   height = container.clientHeight - margin.top - margin.bottom;
+const width = container.clientWidth;
+const height = container.clientHeight;
+console.log(width)
+console.log(height)
 
 const svg = d3.select("#tree_map")
     .append("svg")
         .attr("width", width)
         .attr("height", height)
         .style("display", "block")
-        .style("margin", "0 auto")
+        // .style("margin", "0 auto")
     .append("g")
-        .attr("transform", `translate(${margin.left}, ${margin.top})`);
+        // .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
 d3.csv("../../data/treemap_data_manual.csv").then(function(data){
@@ -63,16 +100,6 @@ d3.csv("../../data/treemap_data_manual.csv").then(function(data){
       .style("stroke", "black")
       .style("fill", function(d) { return d.data.color; })
 
-    // svg
-    // .selectAll("text")
-    // .data(root.leaves())
-    // .join("text")
-    //   .attr("x", function(d){ return d.x0+10})    // +10 to adjust position (more right)
-    //   .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
-    //   .text(function(d){ return d.data.party})
-    //   .attr("font-size", "15px")
-    //   .attr("fill", "white")
-    //   .style("text-wrap", "wrap")
     svg.selectAll("foreignObject")
     .data(root.leaves())
     .join("foreignObject")
@@ -91,10 +118,10 @@ d3.csv("../../data/treemap_data_manual.csv").then(function(data){
         .style("padding", "4px")
         .style("box-sizing", "border-box")
         .style("color", "white")
-        .style("font-size", "13px")
+        .style("font-size", "1vw")
         .style("overflow", "hidden")
         .html(d => `
         <div style="font-weight: bold; line-height: 1.2">${d.data.party}</div>
-        <div style="font-size: 11px; margin-top: 3px">${(d.data.percentage * 100).toFixed(1)}%</div>
+        <div style="font-size: .7vw; margin-top: 3px">${(d.data.percentage * 100).toFixed(1)}%</div>
     `);
 })

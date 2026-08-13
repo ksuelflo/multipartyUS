@@ -1,11 +1,11 @@
 party,total,percentage,parent,color,order
 Origin,,,,,
-Disengaged Center-Left,7561,0.126,Origin,#7ab8e8,4
-MAGA Right,7172,0.120,Origin,#6b0000,9
-Moderate Dems,6714,0.112,Origin,#2e86c1,3
-Political Bystanders,1483,0.025,Origin,#e8d44d,5
-Progressive Left,9334,0.156,Origin,#0a3d6b,1
-Racial Justice Conservatives,6213,0.104,Origin,#f4a043,6
-Religious Progressives,5492,0.092,Origin,#1a5fa0,2
-Secular Moderates,10348,0.172,Origin,#e05c2a,7
-Traditional Right,5683,0.095,Origin,#c02020,8
+Progressive Left,10297,0.17161666666666667,Origin,#0a3d6b,1
+Religious Moderates,11378,0.18963333333333332,Origin,#1a5fa0,2
+Moderate Left,8679,0.14465,Origin,#2e86c1,3
+Disillusioned Left,3443,0.057383333333333335,Origin,#7ab8e8,4
+Secular Moderates,2771,0.04618333333333333,Origin,#e8d44d,5
+MAGA Right,3517,0.058616666666666664,Origin,#f4a043,6
+Traditional Right,8495,0.14158333333333334,Origin,#e05c2a,7
+Faith-Based Conservatives,3195,0.05325,Origin,#c02020,8
+Nationalist Right,8225,0.13708333333333333,Origin,#6b0000,9
