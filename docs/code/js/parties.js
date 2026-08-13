@@ -71,9 +71,9 @@ const svg = d3.select("#tree_map")
     .append("g")
         // .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-
-d3.csv("../../data/treemap_data_manual.csv").then(function(data){
-
+console.log("made it right before treemap")
+d3.csv("data/treemap_data_manual.csv").then(function(data){
+    console.log("made it past treemap!")
     // stratify the data: reformatting for d3.js
     console.log("read in the data!")
     const root = d3.stratify()
