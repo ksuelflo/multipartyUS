@@ -15,6 +15,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src = "code/js/parties.js" type = "module"></script>
     <script src = "code/js/plots.js" type = "module"></script>
+
+    <div id="intro-modal-overlay">
+        <div id="intro-modal">
+            <button id="intro-modal-close" aria-label="Close">&times;</button>
+            <h1 class="intro-modal-title">Multi-Party Clustering Analysis</h1>
+            <p class="intro-modal-byline">By: Kyle Suelflow</p>
+            <div class="intro-modal-body">
+                <p>
+                    This project utilizes survey results from the <a href="https://tischcollege.tufts.edu/research-faculty/research-centers/cooperative-election-study">Cooperative Election Study (CES)</a>
+                    , a sixty thousand person nationally representative survey, to perform a clustering
+                     analysis on the respondents, with the goal of placing respondents into clusters that 
+                     might mimic different political parties. The survey asks respondents a wide range of 
+                     questions, with many questions centering around a single issue, like gun control, climate change, 
+                     or abortion. As more and more Americans become dissatisfied with the two major parties in the US, 
+                     this analysis attempts to group Americans into more than just those 2 parties. Heavy inspiration 
+                     was taken from Pew Research and their <a href="https://www.pewresearch.org/politics/2026/06/10/appendix-b-typology-group-creation-and-analysis/?_gl=1*1f4jhtb*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw1vXTBhB-EiwAEKr_kwh9zwBg_XY_FTUCjXlLeqkGjGHymuhF4U_jrnrsYhn10Vex9RyJ9BoCmJkQAvD_BwE&gbraid=0AAAAA-ddO9HE-Usxla55aZCjAeZZ4mY-r">methodology</a> for their political typology project. To account 
+                     for missing values in the data, multiple imputation using predictive mean matching was used. For the 
+                     clustering algorithm, CLARA was used due to the relatively large size of the survey, a key difference 
+                     from Pew Research’s methodology. Additionally, the number of clusters (9) and the types of survey questions 
+                     included in the clustering analysis were chosen to closely mimic Pew’s methodology. All analysis and data 
+                     processing was done in R. All data visualizations in the website were made using D3. For the full repository, 
+                     check out the <a href="https://github.com/ksuelflo/multipartyUS">github repo</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if (sessionStorage.getItem('hasVisitedSite')) {
+            document.getElementById('intro-modal-overlay').classList.add('hidden');
+        }
+    </script>
+
     <div class="nav-wrapper">
         <a href="index.html" class="nav-tab active">
         <i class="ti ti-users"></i>Parties
@@ -65,18 +98,24 @@
 
         <div class="panel title-map">
             <h1>Clustering the US into a Multi-party system</h1>
-            <h2>
-                By: <a href="YOUR_WEBSITE_URL" target="_blank">Kyle Suelflow</a>
-                <a href="YOUR_LINKEDIN_URL" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="YOUR_GITHUB_URL" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:YOUR_EMAIL" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </h2>
+            <div class="title-map-footer">
+                <h2 class="title-map-byline">
+                    By: <a href="https://ksuelflo.github.io/" target="_blank">Kyle Suelflow</a>
+                    <a href="https://www.linkedin.com/in/kyle-suelflow/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ksuelflo" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:kylesuelflow@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </h2>
+                <button id="learn-more-btn" class="learn-more-btn" aria-label="Learn more about this project">
+                    <span>Learn more:</span>
+                    <i class="ti ti-info-circle" id="learn"></i>
+                </button>
+            </div>
         </div>
 
         <div class="treemap" id="tree_map"></div>

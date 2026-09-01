@@ -7,6 +7,98 @@ body {
   font-family: Georgia, serif; /* very journalistic */
 }
 
+/* INTRO MODAL ---------------------------------------------------------------------------- */
+
+#intro-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#intro-modal {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    background: rgba(245, 245, 240, .9); /* translucent, matches body bg tone */
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    overflow-y: auto;
+    font-family: Georgia, serif;
+    color: #222222;
+}
+
+#intro-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    color: #444;
+    cursor: pointer;
+}
+
+#intro-modal-close:hover {
+    color: #000;
+}
+
+.intro-modal-title {
+    margin: 0 0 4px;
+    font-size: 32px;
+}
+
+.intro-modal-byline {
+    margin: 0 0 24px;
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+}
+
+.intro-modal-body p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#intro-modal-overlay.hidden {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------LEARN MORE BUTTON----------------------------------------------------- */
+
+.title-map-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #444444;
+    font-family: Georgia, serif;
+    font-size: 1.25vw;
+    font-weight: 600;
+    padding: 0;
+}
+
+.learn-more-btn:hover {
+    color: #111;
+}
+
+.learn-more-btn #learn {
+    font-size: 2em; /* relative to the button's own font-size, not the viewport */
+}
+
 /* ── Subnav ──---------------------------------------------- */
 .subnav-wrapper {
   width: 100%;

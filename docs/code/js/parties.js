@@ -1,4 +1,15 @@
 
+//-----------------------------------------Intro stuff
+sessionStorage.setItem('hasVisitedSite', 'true');
+
+document.getElementById('intro-modal-close').addEventListener('click', () => {
+    document.getElementById('intro-modal-overlay').classList.add('hidden');
+});
+
+document.getElementById('learn-more-btn').addEventListener('click', () => {
+    document.getElementById('intro-modal-overlay').classList.remove('hidden');
+});
+
 //-----------------------------------------sub-navbar functionality
 
 window.switchParty = function(event, id) {
